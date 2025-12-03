@@ -11,6 +11,7 @@ import MilestoneMetrics from "../components/milestones/milestones";
 import OurBlogs from "../components/blogs/blogs";
 import SocialStorytelling from "../components/socialstorytelling/socialstorytelling";
 import MarqueeTabsSlider from "../components/clients/clients";
+import HomeGallery from "../components/homegallery/HomeGallery";
 
 const page = () => {
   return (
@@ -40,8 +41,8 @@ const page = () => {
       <MilestoneMetrics />
       {/* <MarqueeTabsSlider /> */}
       <SocialStorytelling />
-
-      <OurBlogs />
+        <HomeGallery/>
+      {/* <OurBlogs /> */}
     </div>
   );
 };
