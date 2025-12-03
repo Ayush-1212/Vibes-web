@@ -1,0 +1,71 @@
+'use client'
+import {
+    NavigationMenu,
+    NavigationMenuItem,
+    NavigationMenuList,
+    NavigationMenuTrigger,
+    NavigationMenuContent,
+    NavigationMenuLink,
+    navigationMenuTriggerStyle,
+} from "@/components/ui/navigation-menu";
+import Link from "next/link";
+import { ComponentProps } from "react";
+
+export const NavMenu = (props: ComponentProps<typeof NavigationMenu>) => (
+    <NavigationMenu {...props}>
+        <NavigationMenuList className="space-x-0 data-[orientation=vertical]:flex-col data-[orientation=vertical]:items-start data-[orientation=vertical]:justify-start">
+            <NavigationMenuItem>
+                <NavigationMenuLink asChild className="font-poppins font-normal text-[17px] leading-[100%] tracking-[0] text-[#FFFFFF]">
+                    <Link href="/">WHO WE ARE</Link>
+                </NavigationMenuLink>
+            </NavigationMenuItem>
+            <NavigationMenuItem>
+                <NavigationMenuTrigger className=" bg-transparent font-poppins font-normal text-[17px] leading-[100%] tracking-[0] text-[#FFFFFF]">
+                    OUR SERVICES
+                </NavigationMenuTrigger>
+
+                <NavigationMenuContent>
+                    <ul className="grid gap-3 p-4 md:w-[300px]">
+                        <li>
+                            <Link href="/service1" className="block p-2 hover:bg-gray-100 rounded">
+                                Service 1
+                            </Link>
+                        </li>
+
+                        <li>
+                            <Link href="/service2" className="block p-2 hover:bg-gray-100 rounded">
+                                Service 2
+                            </Link>
+                        </li>
+
+                        <li>
+                            <Link href="/service3" className="block p-2 hover:bg-gray-100 rounded">
+                                Service 3
+                            </Link>
+                        </li>
+                    </ul>
+                </NavigationMenuContent>
+            </NavigationMenuItem>
+            <NavigationMenuItem>
+                <NavigationMenuLink asChild className="font-poppins font-normal text-[17px] leading-[100%] tracking-[0] text-[#FFFFFF]">
+                    <Link href="#">CASE STUDIES</Link>
+                </NavigationMenuLink>
+            </NavigationMenuItem>
+            <NavigationMenuItem>
+                <NavigationMenuLink asChild className="font-poppins font-normal text-[17px] leading-[100%] tracking-[0] text-[#FFFFFF]">
+                    <Link href="/blog">BLOGS</Link>
+                </NavigationMenuLink>
+            </NavigationMenuItem>
+            <NavigationMenuItem>
+                <NavigationMenuLink asChild className="font-poppins font-normal text-[17px] leading-[100%] tracking-[0] text-[#FFFFFF]">
+                    <Link href="#">CAREERS</Link>
+                </NavigationMenuLink>
+            </NavigationMenuItem>
+            <NavigationMenuItem>
+                <NavigationMenuLink asChild className="font-poppins font-normal text-[17px] leading-[100%] tracking-[0] text-[#FFFFFF]">
+                    <Link href="#">CONTACT US</Link>
+                </NavigationMenuLink>
+            </NavigationMenuItem>
+        </NavigationMenuList>
+    </NavigationMenu>
+);
