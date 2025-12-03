@@ -49,7 +49,7 @@ export default function CaseStudies() {
                 <div className="flex justify-between items-start">
                     <div>
                         <h3 className="font-poppins font-medium text-[48px] leading-[123%] tracking-normal">Vision to <span className="highlight relative z-9 w-fit">Verified Results</span></h3>
-                        <p className="text-[#707070] font-poppins font-normal text-[18px] leading-[123%] tracking-normal">Turning brand challenges into powerful growth narratives</p>
+                        <p className="text-[#707070] font-normal text-[16px] leading-[130%] tracking-[0]  max-w-2xl mx-auto  mt-5">Turning brand challenges into growth stories with strategies to solve, scale, and sustain showing how clear vision and 360° digital expertise drive results.</p>
                     </div>
 
                     <Button2 className="mt-5 p-[20px]">

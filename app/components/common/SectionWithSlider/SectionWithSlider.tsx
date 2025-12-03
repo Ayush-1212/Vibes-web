@@ -89,14 +89,14 @@ const SectionWithSlider: FC<SectionProps> = ({
             <div className="flex items-center gap-4 mt-6">
               <button
                 onClick={goPrev}
-                className="w-[48px] h-[48px] rounded-xl border border-white/40 flex items-center justify-center text-white"
+                className="w-[48px] h-[48px] rounded-xl border border-white/40 flex items-center justify-center text-white "
               >
                 <ArrowLeft size={22} />
               </button>
 
               <button
                 onClick={goNext}
-                className="w-[48px] h-[48px] rounded-xl border border-white/40 flex items-center justify-center text-white"
+                className="w-[48px] h-[48px] rounded-xl border border-white/40 flex items-center justify-center text-white cursor-pointer"
               >
                 <ArrowRight size={22} />
               </button>

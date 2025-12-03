@@ -34,6 +34,7 @@ export default function SocialStorytelling() {
                     <span className="highlight relative z-9 w-fit font-poppins font-semibold text-[40px] leading-[1.23] tracking-normal">Visual Impact</span>That <br />Speaks for Brands
 
                 </h3>
+                <p className="text-[#707070] font-normal text-[16px] leading-[130%] tracking-[0] text-center max-w-2xl mx-auto mb-16 mt-5">A curated showcase of visual work that shapes brand perception across channels, including social campaigns, identity design, and custom website builds.</p>
             </div>
 
             <div className="marquee-swiper swiper mt-10">
