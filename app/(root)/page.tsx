@@ -27,30 +27,28 @@ const page = () => {
       {/* <Technology />
       <Branding />
       <Digital /> */}
-      <div className="relative">
+      <div className="relative py-5">
 
-      <div className="sticky top-0 h-screen z-[10]">
+        <div className="sticky top-0 h-screen z-[10]">
           <Technology />
         </div>
-
         <div className="sticky top-0 h-screen z-[20]">
-          <Digital />
-        </div>
-
-        <div className="sticky top-0 h-screen z-[30]">
           <Branding />
         </div>
+        <div className="sticky top-0 h-screen z-[30]">
+          <Digital />
         </div>
+      </div>
 
-      
+
 
 
 
       <CaseStudies />
+      <SocialStorytelling />
       {/* <TeamMembers /> */}
       <MilestoneMetrics />
       {/* <MarqueeTabsSlider /> */}
-      <SocialStorytelling />
       <HomeGallery />
       {/* <OurBlogs /> */}
     </div>

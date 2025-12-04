@@ -5,6 +5,7 @@ import Swiper from "swiper";
 import { Autoplay } from "swiper/modules";
 import { Button2 } from "@/components/ui/button2";
 import { ArrowUpIcon } from "lucide-react";
+import Image from "next/image";
 import "swiper/css";
 
 export default function SocialStorytelling() {
@@ -34,13 +35,13 @@ export default function SocialStorytelling() {
                     <div className="px-6 py-2 rounded-full border border-[#F4BE00] inline-flex items-center gap-2">
                         <span className="w-2 h-2 rounded-full bg-[#F4BE00]"></span>
                         <span className="font-[Poppins] font-semibold text-[10px] leading-[1.23] uppercase text-[#F4BE00]">
-                            Key Performance Insights
+                            WORK SHOWCASE
                         </span>
                     </div>
                 </div>
 
-                <h3 className=" text-center font-poppins font-semibold text-[40px] leading-[1.23] tracking-norma]">
-                    <span className="highlight relative z-9 w-fit font-poppins font-semibold text-[40px] leading-[1.23] tracking-normal">Visual Impact</span>That <br />Speaks for Brands
+                <h3 className=" text-center font-poppins font-medium text-[40px] leading-[1.23] tracking-norma]">
+                    <span className="highlight relative z-9 w-fit font-poppins font-semibold text-[40px] leading-[1.23] tracking-normal">Brand Stories</span> in Motion
 
                 </h3>
                 <p className="text-[#707070] font-normal text-[16px] leading-[130%] tracking-[0] text-center max-w-2xl mx-auto mb-16 mt-5">A curated showcase of visual work that shapes brand perception across channels, including social campaigns, identity design, and custom website builds.</p>
@@ -59,8 +60,15 @@ export default function SocialStorytelling() {
 
                     <div className="swiper-slide odd-slide">
                         <div className="stacked-images">
-                            <img src="https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-img4.webp" />
-                            <img src="https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-img1.webp" />
+                            <Image
+                                src="/assests/img/home/brand-img-1.jpg"
+                                alt="event image 1" width={200} height={220} className="brand-img w-[200px] h-[220px] rounded-[10px]"
+                            />
+
+                            <Image
+                                src="/assests/img/home/brand-img-2.jpg"
+                                alt="event image 1" width={200} height={220} className="brand-img w-[200px] h-[220px] rounded-[10px]"
+                            />
                         </div>
                     </div>
                     <div className="swiper-slide even-slide">
@@ -72,51 +80,15 @@ export default function SocialStorytelling() {
                     </div>
                     <div className="swiper-slide odd-slide">
                         <div className="stacked-images">
-                            <img src="https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-img4.webp" />
-                            <img src="https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-img1.webp" />
-                        </div>
-                    </div>
-                    <div className="swiper-slide even-slide">
-                        <div className="videos-event flex align-center">
-                            <video autoPlay muted loop playsInline preload="none" className="videos_width">
-                                <source src="https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-video1.mp4" />
-                            </video>
-                        </div>
-                    </div>
+                            <Image
+                                src="/assests/img/home/brand-img-3.jpg"
+                                alt="event image 1" width={200} height={220} className="brand-img w-[200px] h-[220px] rounded-[10px]"
+                            />
 
-                    <div className="swiper-slide odd-slide">
-                        <div className="stacked-images">
-                            <img src="https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-img4.webp" />
-                            <img src="https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-img1.webp" />
-                        </div>
-                    </div>
-                    <div className="swiper-slide even-slide">
-                        <div className="videos-event flex align-center">
-                            <video autoPlay muted loop playsInline preload="none" className="videos_width">
-                                <source src="https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-video1.mp4" />
-                            </video>
-                        </div>
-                    </div>
-
-                    <div className="swiper-slide odd-slide">
-                        <div className="stacked-images">
-                            <img src="https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-img4.webp" />
-                            <img src="https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-img1.webp" />
-                        </div>
-                    </div>
-                    <div className="swiper-slide even-slide">
-                        <div className="videos-event flex align-center">
-                            <video autoPlay muted loop playsInline preload="none" className="videos_width">
-                                <source src="https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-video1.mp4" />
-                            </video>
-                        </div>
-                    </div>
-
-
-                    <div className="swiper-slide odd-slide">
-                        <div className="stacked-images">
-                            <img src="https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-img4.webp" />
-                            <img src="https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-img1.webp" />
+                            <Image
+                                src="/assests/img/home/brand-img-4.png"
+                                alt="event image 1" width={200} height={220} className="brand-img w-[200px] h-[220px] rounded-[10px]"
+                            />
                         </div>
                     </div>
                     <div className="swiper-slide even-slide">
@@ -129,8 +101,15 @@ export default function SocialStorytelling() {
 
                     <div className="swiper-slide odd-slide">
                         <div className="stacked-images">
-                            <img src="https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-img4.webp" />
-                            <img src="https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-img1.webp" />
+                            <Image
+                                src="/assests/img/home/brand-img-5.jpg"
+                                alt="event image 1" width={200} height={220} className="brand-img w-[200px] h-[220px] rounded-[10px]"
+                            />
+
+                            <Image
+                                src="/assests/img/home/brand-img-6.jpg"
+                                alt="event image 1" width={200} height={220} className="brand-img w-[200px] h-[220px] rounded-[10px]"
+                            />
                         </div>
                     </div>
                     <div className="swiper-slide even-slide">
@@ -141,11 +120,17 @@ export default function SocialStorytelling() {
                         </div>
                     </div>
 
-
                     <div className="swiper-slide odd-slide">
                         <div className="stacked-images">
-                            <img src="https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-img4.webp" />
-                            <img src="https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-img1.webp" />
+                            <Image
+                                src="/assests/img/home/brand-img-7.png"
+                                alt="event image 1" width={200} height={220} className="brand-img w-[200px] h-[220px] rounded-[10px]"
+                            />
+
+                            <Image
+                                src="/assests/img/home/brand-img-8.jpg"
+                                alt="event image 1" width={200} height={220} className="brand-img w-[200px] h-[220px] rounded-[10px]"
+                            />
                         </div>
                     </div>
                     <div className="swiper-slide even-slide">
@@ -159,8 +144,80 @@ export default function SocialStorytelling() {
 
                     <div className="swiper-slide odd-slide">
                         <div className="stacked-images">
-                            <img src="https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-img4.webp" />
-                            <img src="https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-img1.webp" />
+                            <Image
+                                src="/assests/img/home/brand-img-1.jpg"
+                                alt="event image 1" width={200} height={220} className="brand-img w-[200px] h-[220px] rounded-[10px]"
+                            />
+
+                            <Image
+                                src="/assests/img/home/brand-img-2.jpg"
+                                alt="event image 1" width={200} height={220} className="brand-img w-[200px] h-[220px] rounded-[10px]"
+                            />
+                        </div>
+                    </div>
+                    <div className="swiper-slide even-slide">
+                        <div className="videos-event flex align-center">
+                            <video autoPlay muted loop playsInline preload="none" className="videos_width">
+                                <source src="https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-video1.mp4" />
+                            </video>
+                        </div>
+                    </div>
+
+                    <div className="swiper-slide odd-slide">
+                        <div className="stacked-images">
+                            <Image
+                                src="/assests/img/home/brand-img-3.jpg"
+                                alt="event image 1" width={200} height={220} className="brand-img w-[200px] h-[220px] rounded-[10px]"
+                            />
+
+                            <Image
+                                src="/assests/img/home/brand-img-4.png"
+                                alt="event image 1" width={200} height={220} className="brand-img w-[200px] h-[220px] rounded-[10px]"
+                            />
+                        </div>
+                    </div>
+                    <div className="swiper-slide even-slide">
+                        <div className="videos-event flex align-center">
+                            <video autoPlay muted loop playsInline preload="none" className="videos_width">
+                                <source src="https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-video1.mp4" />
+                            </video>
+                        </div>
+                    </div>
+
+
+                    <div className="swiper-slide odd-slide">
+                        <div className="stacked-images">
+                            <Image
+                                src="/assests/img/home/brand-img-5.jpg"
+                                alt="event image 1" width={200} height={220} className="brand-img w-[200px] h-[220px] rounded-[10px]"
+                            />
+
+                            <Image
+                                src="/assests/img/home/brand-img-6.jpg"
+                                alt="event image 1" width={200} height={220} className="brand-img w-[200px] h-[220px] rounded-[10px]"
+                            />
+                        </div>
+                    </div>
+                    <div className="swiper-slide even-slide">
+                        <div className="videos-event flex align-center">
+                            <video autoPlay muted loop playsInline preload="none" className="videos_width">
+                                <source src="https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-video1.mp4" />
+                            </video>
+                        </div>
+                    </div>
+
+
+                    <div className="swiper-slide odd-slide">
+                        <div className="stacked-images">
+                            <Image
+                                src="/assests/img/home/brand-img-7.png"
+                                alt="event image 1" width={200} height={220} className="brand-img w-[200px] h-[220px] rounded-[10px]"
+                            />
+
+                            <Image
+                                src="/assests/img/home/brand-img-8.jpg"
+                                alt="event image 1" width={200} height={220} className="w-[200px] h-[220px] rounded-[10px] brand-img"
+                            />
                         </div>
                     </div>
                 </div>
@@ -196,10 +253,10 @@ export default function SocialStorytelling() {
           align-items: center;
         }
 
-        .swiper-slide img {
-          width: 250px;
-          border-radius: 10px;
-          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        .swiper-slide .brand-img {
+          width: 250px!important;
+          border-radius: 10px!importtant;
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1)!important;
         }
 
         .stacked-images {
@@ -208,9 +265,9 @@ export default function SocialStorytelling() {
           gap: 15px;
         }
 
-        .stacked-images img {
-          width: 200px;
-          height:220px;
+        .stacked-images .brand-img {
+          width: 200px!important;
+          height:220px!important;
         }
 
         .even-slide {

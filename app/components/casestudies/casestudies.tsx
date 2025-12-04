@@ -11,33 +11,33 @@ import "swiper/css/pagination";
 export default function CaseStudies() {
     const cards = [
         {
-            title: "Mofiso",
-            img: "/assests/img/home/case-studies-img-1.png",
+            title: "Interio Haven",
+            img: "/assests/img/home/interio-heaven-img.jpg",
             tags: ["Branding", "Creative", "Product Design"],
         },
         {
-            title: "Tomorrow’s",
-            img: "/assests/img/home/case-studies-img-2.png",
+            title: "Maha Kumbh Mela 2025",
+            img: "/assests/img/home/mahakumbh-img.png",
             tags: ["Branding", "Creative", "Product Design"],
         },
         {
-            title: "Steelonclick",
-            img: "/assests/img/home/case-studies-img-3.png",
+            title: "Tomorrow’s India",
+            img: "/assests/img/home/tomarrow-india-img.jpg",
             tags: ["Branding", "Creative", "Product Design"],
         },
         {
-            title: "Mofiso",
-            img: "/assests/img/home/case-studies-img-1.png",
+            title: "Interio Haven",
+            img: "/assests/img/home/interio-heaven-img.jpg",
             tags: ["Branding", "Creative", "Product Design"],
         },
         {
-            title: "Tomorrow’s",
-            img: "/assests/img/home/case-studies-img-2.png",
+            title: "Maha Kumbh Mela 2025",
+            img: "/assests/img/home/mahakumbh-img.png",
             tags: ["Branding", "Creative", "Product Design"],
         },
         {
-            title: "Steelonclick",
-            img: "/assests/img/home/case-studies-img-3.png",
+            title: "Tomorrow’s India",
+            img: "/assests/img/home/tomarrow-india-img.jpg",
             tags: ["Branding", "Creative", "Product Design"],
         },
     ];
@@ -57,13 +57,13 @@ export default function CaseStudies() {
                             className="w-2 h-2 rounded-full bg-[#F4BE00]"
                         ></span>
                         <span className="font-[Poppins] font-semibold text-[10px] leading-[1.23] uppercase text-[#F4BE00]">
-                            Key Performance Insights
+                            CASE STUDIES
                         </span>
                     </div>
                 </div>
                 <div className="flex justify-between items-start">
                     <div>
-                        <h3 className="font-poppins font-medium text-[48px] leading-[123%] tracking-normal">Vision to <span className="highlight relative z-9 w-fit">Verified Results</span></h3>
+                        <h3 className="font-poppins font-medium text-[48px] leading-[123%] tracking-normal">Vision to <span className="highlight font-semibold relative z-9 w-fit">Verified Results</span></h3>
                         <p className="text-[#707070] font-normal text-[16px] leading-[130%] tracking-[0]  max-w-2xl mx-auto  mt-5">Turning brand challenges into growth stories with strategies to solve, scale, and sustain showing how clear vision and 360° digital expertise drive results.</p>
                     </div>
 

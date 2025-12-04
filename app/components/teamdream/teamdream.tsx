@@ -36,18 +36,17 @@ const TeamDreamSection = () => {
                             <div className="px-6 py-2 rounded-full border border-[#F4BE00] inline-flex items-center gap-2">
                                 <span className="w-2 h-2 rounded-full bg-[#F4BE00]"></span>
                                 <span className="font-[Poppins] font-semibold text-[10px] leading-[1.23] uppercase text-[#F4BE00]">
-                                    Key Performance Insights
+                                    ABOUT US
                                 </span>
                             </div>
                         </div>
-                        <h3 className="font-poppins font-semibold text-[40px] leading-[1.23] tracking-norma]">
-                            One Team.One Dream.<br />
-                            <span className="highlight relative z-9 w-fit font-poppins font-semibold text-[40px] leading-[1.23] tracking-normal">Together for Tomorrow.</span>
+                        <h3 className="font-poppins font-medium text-[40px] leading-[1.23] tracking-norma]">
+                            Shaping Vision <br />
+                            <span className="highlight relative z-9 w-fit font-poppins font-semibold text-[40px] leading-[1.23] tracking-normal">Accelerating Growth.</span>
                         </h3>
 
                         <p className="text-[#525252] mt-5 max-w-md">
-                            Built on true partnership, the journey becomes a unified force merging strategy,
-                            technology, and creativity to shape what comes next.
+                            Vibes has shaped brand evolution for 15+ years through 360° technology, branding, and digital excellence. A unified ecosystem fuels stronger identity, higher performance, and future-ready growth driven by the spirit of One Team, One Dream, Together for Tomorrow
                         </p>
 
                         <Button2 className="mt-5 p-[20px]">
@@ -78,7 +77,7 @@ const TeamDreamSection = () => {
                     <div className="p-8 one-team-card">
                         <h3 className="font-semibold text-[20px] leading-[123%] mb-3">One Team</h3>
                         <p className="font-poppins font-normal text-[14px] leading-[130%] text-[#191919DB]">
-                            Your challenges, your goals, and your ambition become the foundation...
+                            Vibes aligns purposefully, turning challenges, goals and ambitions into one clear, unified brand narrative.
                         </p>
                     </div>
 
@@ -86,7 +85,7 @@ const TeamDreamSection = () => {
                     <div className="p-8 one-team-card">
                         <h3 className="font-semibold text-[20px] leading-[123%] mb-3">One Dream</h3>
                         <p className="font-poppins font-normal text-[14px] leading-[130%] text-[#191919DB]">
-                            Your challenges, your goals, and your ambition become the foundation...
+                            A brand starts with a vision, insight, innovation and data that turn it into a clear measurable and achievable roadmap.
                         </p>
                     </div>
 
@@ -94,7 +93,7 @@ const TeamDreamSection = () => {
                     <div className="p-8 one-team-card">
                         <h3 className="font-semibold text-[20px] leading-[123%] mb-3">Together for Tomorrow</h3>
                         <p className="font-poppins font-normal text-[14px] leading-[130%] text-[#191919DB]">
-                            We turn that vision into a roadmap powered by insight and innovation.
+                            Growth continues beyond every project, evolving so each step today strengthens the success of tomorrow.
                         </p>
                     </div>
 

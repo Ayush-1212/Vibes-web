@@ -44,7 +44,7 @@ const Footer = () => {
 
             <span className="ml-3 text-black font-medium text-sm 
           opacity-0 group-hover:opacity-100 transition-opacity duration-700 whitespace-nowrap">
-              Coffee Table
+              Coffee Table Book
             </span>
           </div>
         </div>
@@ -57,7 +57,7 @@ const Footer = () => {
 
             <span className="ml-3 text-white font-medium text-sm 
           opacity-0 group-hover:opacity-100 transition-opacity duration-700 whitespace-nowrap">
-              Chat With Bot
+              AI Assistant
             </span>
           </div>
         </div>
@@ -74,7 +74,7 @@ const Footer = () => {
               className="ml-3 text-white font-medium text-sm
       opacity-0 group-hover:opacity-100 transition-opacity duration-700 whitespace-nowrap"
             >
-              WhatsApp Support
+              WhatsApp
             </span>
           </div>
         </div>

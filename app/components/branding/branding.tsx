@@ -4,6 +4,7 @@ export default function Branding() {
     return (
         <div className="branding-wrapper">
             <SectionWithSlider
+                heading="Service"
                 title="Branding"
                 highlight="& Strategy"
                 description="Identity, Story, and Experience- Reimagined.Distinctive brand identities, narratives, and visual systems built to spark connection and inspire loyalty. Evolving brands into powerful experiences that stand apart with purpose.
@@ -16,11 +17,10 @@ export default function Branding() {
                 ]}
                 buttonText="Build Your Brand"
                 images={[
-                    "/assests/img/home/slider-img-2.png",
-                    "/assests/img/home/slider-img-3.png",
-                    "/assests/img/home/slider-img-1.png",
+                    "/assests/img/home/branding-img-1.jpg",
+                    "/assests/img/home/branding-img-2.jpg",
                 ]}
-                reverse={false}
+                reverse={true}
             />
         </div>
     );
