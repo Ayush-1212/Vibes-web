@@ -24,7 +24,7 @@ const TeamDreamSection = () => {
                 }
             `}</style>
 
-            <div className="container mx-auto">
+            <div className="container mx-auto max-w-screen-xl px-4 md:px-8">
 
                 <div className="max-w-7xl mx-auto px-5 lg:px-0 flex flex-col lg:flex-row items-center gap-12">
 
@@ -49,7 +49,7 @@ const TeamDreamSection = () => {
                             Vibes has shaped brand evolution for 15+ years through 360° technology, branding, and digital excellence. A unified ecosystem fuels stronger identity, higher performance, and future-ready growth driven by the spirit of One Team, One Dream, Together for Tomorrow
                         </p>
 
-                        <Button2 className="mt-5 p-[20px]">
+                        <Button2 className="mt-5 p-[20px]  hover:border-[#2B4C69] hover:border-[2px] hover:text-[#F4BE00] hover:bg-transparent">
                             <span>Discover Who We Are</span>
                             <ArrowUpIcon className="transform rotate-45" />
                         </Button2>
@@ -61,7 +61,7 @@ const TeamDreamSection = () => {
                             src="/assests/img/home/one-team-img.png"
                             alt="Team Dream"
                             width={500}
-                            height={500}
+                            height={500} priority unoptimized
                             className="object-contain"
                         />
                     </div>

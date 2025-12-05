@@ -45,7 +45,7 @@ export default function CaseStudies() {
 
     return (
         <section className="casestudies-wrapper section-gap">
-            <div className="container mx-auto  px-4">
+            <div className="container mx-auto max-w-screen-xl px-4 md:px-8">
                 <div className="flex justify-start mb-5">
                     <div className="
         px-6 py-2 
@@ -67,7 +67,7 @@ export default function CaseStudies() {
                         <p className="text-[#707070] font-normal text-[16px] leading-[130%] tracking-[0]  max-w-2xl mx-auto  mt-5">Turning brand challenges into growth stories with strategies to solve, scale, and sustain showing how clear vision and 360° digital expertise drive results.</p>
                     </div>
 
-                    <Button2 className="mt-5 p-[20px]">
+                    <Button2 className="mt-5 p-[20px] hover:border-[#2B4C69] hover:border-[2px] hover:text-[#F4BE00] hover:bg-transparent">
                         <span>Explore Case Studies</span>
                         <ArrowUpIcon className="transform rotate-45" />
                     </Button2>
@@ -112,7 +112,7 @@ export default function CaseStudies() {
                                         ))}
                                     </div>
 
-                                    <Button3 className="text-[#204667] p-[5px] flex items-center gap-2">
+                                    <Button3 className="text-[#204667] p-[5px] flex items-center gap-2 hover:text-[#F4BE00]">
                                         <span>View More</span>
                                         <ArrowUpIcon className="transform rotate-45" />
                                     </Button3>

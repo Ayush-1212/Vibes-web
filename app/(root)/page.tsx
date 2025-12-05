@@ -27,15 +27,15 @@ const page = () => {
       {/* <Technology />
       <Branding />
       <Digital /> */}
-      <div className="relative py-5">
+      <div className="relative ">
 
-        <div className="sticky top-0 h-screen z-[10]">
+        <div className="sticky top-0 z-[10]">
           <Technology />
         </div>
-        <div className="sticky top-0 h-screen z-[20]">
+        <div className="sticky top-0 z-[20]">
           <Branding />
         </div>
-        <div className="sticky top-0 h-screen z-[30]">
+        <div className="sticky top-0 z-[30]">
           <Digital />
         </div>
       </div>
