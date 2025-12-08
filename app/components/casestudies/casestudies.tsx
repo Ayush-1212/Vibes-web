@@ -7,6 +7,7 @@ import { Button3 } from "@/components/ui/button3";
 import { ArrowUpIcon } from "lucide-react";
 import "swiper/css";
 import "swiper/css/pagination";
+import SlideUp from "../animations/SlideUp";
 
 export default function CaseStudies() {
     const cards = [
@@ -47,12 +48,7 @@ export default function CaseStudies() {
         <section className="casestudies-wrapper section-gap">
             <div className="container mx-auto max-w-screen-xl px-4 md:px-8">
                 <div className="flex justify-start mb-5">
-                    <div className="
-        px-6 py-2 
-        rounded-full 
-        border border-[#F4BE00] 
-        inline-flex items-center gap-2
-      ">
+                    <div className="px-6 py-2 rounded-full border border-[#F4BE00] inline-flex items-center gap-2">
                         <span
                             className="w-2 h-2 rounded-full bg-[#F4BE00]"
                         ></span>
@@ -72,7 +68,7 @@ export default function CaseStudies() {
                         <ArrowUpIcon className="transform rotate-45" />
                     </Button2>
                 </div>
-
+                <SlideUp delay={0.5}>
                 <Swiper
                     modules={[Pagination, Autoplay]}
                     spaceBetween={30}
@@ -86,6 +82,7 @@ export default function CaseStudies() {
                     }}
                     className="mt-16 pb-12"
                 >
+                    
                     {cards.map((card, index) => (
                         <SwiperSlide key={index}>
                             <div className="bg-white rounded-2xl mb-5 p-1 shadow-[0_8px_30px_rgba(0,0,0,0.06)]">
@@ -119,8 +116,11 @@ export default function CaseStudies() {
                                 </div>
                             </div>
                         </SwiperSlide>
+                        
                     ))}
+                    
                 </Swiper>
+                </SlideUp>
             </div>
         </section>
     );

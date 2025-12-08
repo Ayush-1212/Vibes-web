@@ -43,6 +43,7 @@ const SectionWithSlider: FC<SectionProps> = ({
       <div className="grid grid-cols-1 md:grid-cols-12 items-center gap-10 md:gap-0">
 
         {/* LEFT SIDE CONTENT */}
+        
         <div
           className={`p-15 md:col-span-5 space-y-6 ${reverse ? "md:order-2" : "md:order-1"}`}
         >

@@ -4,6 +4,9 @@ import { Button2 } from "@/components/ui/button2";
 import { ArrowUpIcon } from "lucide-react";
 import React, { useState } from "react";
 import TeamMembers from "../teammember/teammember";
+import SlideRight from "../animations/SlideRight";
+import SlideLeft from "../animations/SlideLeft";
+import SlideUp from "../animations/SlideUp";
 
 const TeamDreamSection = () => {
 
@@ -31,8 +34,9 @@ const TeamDreamSection = () => {
 
                     {/* Left Content */}
                     <div className="flex-1">
-
+                        <SlideLeft delay={0.5}>
                         <div className="flex justify-start mb-5">
+                            
                             <div className="px-6 py-2 rounded-full border border-[#F4BE00] inline-flex items-center gap-2">
                                 <span className="w-2 h-2 rounded-full bg-[#F4BE00]"></span>
                                 <span className="font-[Poppins] font-semibold text-[10px] leading-[1.23] uppercase text-[#F4BE00]">
@@ -53,10 +57,12 @@ const TeamDreamSection = () => {
                             <span>Discover Who We Are</span>
                             <ArrowUpIcon className="transform rotate-45" />
                         </Button2>
+                        </SlideLeft>
                     </div>
 
                     {/* Right Logo */}
                     <div className="flex-1 flex justify-center">
+                        <SlideRight delay={0.5}>
                         <Image
                             src="/assests/img/home/one-team-img.png"
                             alt="Team Dream"
@@ -64,6 +70,7 @@ const TeamDreamSection = () => {
                             height={500} priority unoptimized
                             className="object-contain"
                         />
+                        </SlideRight>
                     </div>
                 </div>
 
@@ -74,28 +81,34 @@ const TeamDreamSection = () => {
                 >
 
                     {/* Card 1 */}
+                     <SlideRight delay={0.5}>
                     <div className="p-8 one-team-card">
                         <h3 className="font-semibold text-[20px] leading-[123%] mb-3">One Team</h3>
                         <p className="font-poppins font-normal text-[14px] leading-[130%] text-[#191919DB]">
                             Vibes aligns purposefully, turning challenges, goals and ambitions into one clear, unified brand narrative.
                         </p>
                     </div>
+                    </SlideRight>
 
                     {/* Card 2 */}
+                     <SlideUp delay={0.5}>
                     <div className="p-8 one-team-card">
                         <h3 className="font-semibold text-[20px] leading-[123%] mb-3">One Dream</h3>
                         <p className="font-poppins font-normal text-[14px] leading-[130%] text-[#191919DB]">
                             A brand starts with a vision, insight, innovation and data that turn it into a clear measurable and achievable roadmap.
                         </p>
                     </div>
+                    </SlideUp>
 
                     {/* Card 3 */}
+                    <SlideLeft delay={0.5}>
                     <div className="p-8 one-team-card">
                         <h3 className="font-semibold text-[20px] leading-[123%] mb-3">Together for Tomorrow</h3>
                         <p className="font-poppins font-normal text-[14px] leading-[130%] text-[#191919DB]">
                             Growth continues beyond every project, evolving so each step today strengthens the success of tomorrow.
                         </p>
                     </div>
+                    </SlideLeft>
 
                 </div>
             </div>
