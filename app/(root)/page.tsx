@@ -40,10 +40,6 @@ const page = () => {
         </div>
       </div>
 
-
-
-
-
       <CaseStudies />
       <SocialStorytelling />
       {/* <TeamMembers /> */}
