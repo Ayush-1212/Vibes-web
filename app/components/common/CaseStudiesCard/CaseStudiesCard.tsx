@@ -16,7 +16,7 @@ export default function CaseStudiesCard({ data }: CaseStudiesCardProps) {
     return (
 
         data.map((item: SingleCardProps, index: number) => (
-            <div key={item.id} className="bg-white mb-[100px] rounded-2xl p-3 shadow-[0_8px_30px_rgba(0,0,0,0.06)] w-full " >
+            <div key={item.id} className="bg-white mb-[70px] rounded-2xl p-3 shadow-[0_8px_30px_rgba(0,0,0,0.06)] w-full " >
 
                 {/* Image */}
                 < div className="relative w-full h-[450px] rounded-xl overflow-hidden group " >
