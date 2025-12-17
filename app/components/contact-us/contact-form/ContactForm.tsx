@@ -73,19 +73,19 @@ const ContactForm = () => {
       return;
     }
 
-        const validation = contactSchema.safeParse(formData);
+    const validation = contactSchema.safeParse(formData);
 
-        if (!validation.success) {
-        validation.error.issues.forEach((issue) => {
-            toast.error(issue.message);
-        });
-        return;
-        }
+    if (!validation.success) {
+      validation.error.issues.forEach((issue) => {
+        toast.error(issue.message);
+      });
+      return;
+    }
 
 
     try {
-    const res = await submitContact(formData).unwrap();
-    toast.success(res.msg);
+      const res = await submitContact(formData).unwrap();
+      toast.success(res.msg);
       refreshCaptcha();
       setFormData({
         firstname: "",
@@ -96,18 +96,18 @@ const ContactForm = () => {
         message: "",
       });
     } catch (error) {
-        toast.error("Something went wrong. Please try again.");
-        }
-    };
+      toast.error("Something went wrong. Please try again.");
+    }
+  };
 
   return (
     <section className="w-full py-16">
       <div className="container mx-auto px-4">
 
-       
+
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
 
-          <div className="bg-[#ECF3EE] shadow-md rounded-xl p-6 flex gap-4">
+          <div className="bg-[#ECF3EE] shadow-md rounded-xl p-6 flex gap-4 items-center">
             <div className="p-4 bg-[#F4BE00] text-[#2b3332] rounded-full text-[20px] h-[50px] w-[50px]">
               <IoIosMail />
             </div>
@@ -119,7 +119,7 @@ const ContactForm = () => {
             </div>
           </div>
 
-          <div className="bg-[#ECF3EE] shadow-md rounded-xl p-6 flex gap-4">
+          <div className="bg-[#ECF3EE] shadow-md rounded-xl p-6 flex items-center gap-4">
             <div className="p-4 bg-[#F4BE00] text-[#2b3332] rounded-full text-[20px] h-[50px] w-[50px]">
               <FaPhoneAlt />
             </div>
@@ -131,7 +131,7 @@ const ContactForm = () => {
             </div>
           </div>
 
-          <div className="bg-[#ECF3EE] shadow-md rounded-xl p-6 flex gap-4">
+          <div className="bg-[#ECF3EE] shadow-md rounded-xl p-6 flex items-center gap-4">
             <div className="p-4 bg-[#F4BE00] text-[#2b3332] rounded-full text-[20px] h-[50px] w-[50px]">
               <HiOfficeBuilding />
             </div>
@@ -144,10 +144,10 @@ const ContactForm = () => {
           </div>
         </div>
 
-        
+
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
 
-          
+
           <div className="bg-[#ECF3EE] shadow-lg rounded-2xl p-8">
             <h3 className="text-2xl font-semibold mb-6">Connect With Us</h3>
 
@@ -159,7 +159,7 @@ const ContactForm = () => {
                   value={formData.firstname}
                   onChange={handleChange}
                   required
-                   className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:border-black bg-white"
+                  className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:border-black bg-white"
                 />
                 <input
                   name="lastname"
@@ -178,7 +178,7 @@ const ContactForm = () => {
                   value={formData.mobile_no}
                   onChange={handleChange}
                   required
-                   className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:border-black bg-white"
+                  className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:border-black bg-white"
                 />
                 <input
                   name="email"
@@ -196,7 +196,7 @@ const ContactForm = () => {
                 placeholder="Website"
                 value={formData.website}
                 onChange={handleChange}
-                 className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:border-black bg-white"
+                className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:border-black bg-white"
               />
 
               <textarea
@@ -205,10 +205,10 @@ const ContactForm = () => {
                 rows={5}
                 value={formData.message}
                 onChange={handleChange}
-                 className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:border-black bg-white"
+                className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:border-black bg-white"
               />
 
-             
+
               <div>
                 <label className="block font-medium mb-2">Captcha</label>
                 <div className="flex gap-4 items-center">
@@ -216,7 +216,7 @@ const ContactForm = () => {
                     placeholder="Enter Captcha"
                     value={captchaInput}
                     onChange={(e) => setCaptchaInput(e.target.value)}
-                     className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:border-black bg-white"
+                    className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:border-black bg-white"
                   />
                   <div className="min-w-[160px] h-[48px] bg-[#7a7a7a] text-white rounded-md flex items-center justify-center tracking-widest">
                     {captcha}
@@ -242,12 +242,12 @@ const ContactForm = () => {
             </form>
           </div>
 
-          
+
           <div className="rounded-2xl overflow-hidden shadow-lg h-[635px]">
             <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d755.3230908954598!2d77.32894854443926!3d28.59704149805207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce4ffd0000001%3A0x97587b436ee39762!2sVibes%20Communications%20%7C%20Best%20Digital%20Marketing%20Agency%20in%20Noida%20%2C%20Delhi%20NCR!5e0!3m2!1sen!2sin!4v1765798139858!5m2!1sen!2sin"
-                className="w-full h-full border-0"
-                loading="lazy"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d755.3230908954598!2d77.32894854443926!3d28.59704149805207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce4ffd0000001%3A0x97587b436ee39762!2sVibes%20Communications%20%7C%20Best%20Digital%20Marketing%20Agency%20in%20Noida%20%2C%20Delhi%20NCR!5e0!3m2!1sen!2sin!4v1765798139858!5m2!1sen!2sin"
+              className="w-full h-full border-0"
+              loading="lazy"
             ></iframe>
           </div>
         </div>

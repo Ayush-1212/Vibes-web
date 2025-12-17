@@ -54,13 +54,26 @@ const workflowSteps = [
 
 const WebDevelopmentWorkflow = () => {
     return (
-        <section className="bg-[#E7EFE8] py-20">
-            <div className="container mx-auto px-4">
+        <section className=" development-process-wrapper bg-[#E7EFE8] section-gap">
+            <div className="container mx-auto max-w-screen-xl px-4 md:px-8">
+                <div className="flex justify-center mb-5">
+                    <div className="px-6 py-2 rounded-full border border-[#F4BE00] inline-flex items-center gap-2">
+                        <span className="w-2 h-2 rounded-full bg-[#F4BE00]"></span>
+                        <span className="font-[Poppins] font-semibold text-[10px] leading-[1.23] uppercase text-[#F4BE00]">
+                            Workflow
+                        </span>
+                    </div>
+                </div>
+
+                <h3 className=" text-center font-poppins font-medium text-[40px] leading-[1.23] tracking-norma]">Development <span className="highlight relative z-9 w-fit font-poppins font-semibold text-[40px] leading-[1.23] tracking-normal">Process</span>
+
+                </h3>
+                <p className="text-[#707070] font-normal text-[16px] leading-[130%] tracking-[0] text-center max-w-2xl mx-auto mb-16 mt-5">From concept to launch, explore the clear process that bring websites to life with precision and purpose.</p>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
                     {workflowSteps.map((step) => (
                         <div
                             key={step.id}
-                            className={`relative rounded-sm p-6 min-h-[280px] transition-all
+                            className={`relative rounded-sm p-3 min-h-[280px] transition-all
                 ${step.active
                                     ? "bg-gradient-to-br from-[#3F6B57] to-[#2F5443] text-white"
                                     : "bg-[#FAF8F3] text-[#2B2B2B] border-b-[5px] border-[#4B7057]"
@@ -68,19 +81,17 @@ const WebDevelopmentWorkflow = () => {
                         >
                             {/* Number */}
                             <span
-                                className={`absolute top-5 right-6 font-poppins font-semibold text-[48px]
-                  ${step.active
-                                        ? "text-[#F4BE00]"
-                                        : "text-transparent stroke-[1.5px] stroke-[#8FA795]"
+                                className={`absolute top-5 right-6 font-poppins font-semibold text-[70px]
+    ${step.active
+                                        ? "text-[#f4be00]"
+                                        : "text-[#DEE9E1]"
                                     }`}
                                 style={{
-                                    WebkitTextStroke:
-                                        step.active ? "0px" : "1.5px #8FA795",
+                                    WebkitTextStroke: step.active ? "0px" : "1px #466E59",
                                 }}
                             >
                                 {step.id}
                             </span>
-
                             {/* Icon */}
                             <div className="mb-6 mt-20">
                                 <Image
@@ -94,16 +105,16 @@ const WebDevelopmentWorkflow = () => {
 
                             {/* Title */}
                             <h3
-                                className={`font-poppins font-semibold text-[18px] leading-[130%] mb-3
-                  ${step.active ? "text-white" : "text-[#2B2B2B]"}`}
+                                className={`font-poppins font-semibold text-[18px] leading-[1.23] tracking-normal mb-3
+                  ${step.active ? "text-white" : "text-[#4C4C4C]"}`}
                             >
                                 {step.title}
                             </h3>
 
                             {/* Description */}
                             <p
-                                className={`font-poppins text-[14px] leading-[160%]
-                  ${step.active ? "text-[#E6EFEA]" : "text-[#6B6B6B]"}`}
+                                className={`font-poppins font-normal text-[12px] leading-[1.3] tracking-normal
+                  ${step.active ? "text-[#E6EFEA]" : "text-[#575757DB]"}`}
                             >
                                 {step.desc}
                             </p>

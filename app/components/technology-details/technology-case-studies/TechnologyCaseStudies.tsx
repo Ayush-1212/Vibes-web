@@ -40,7 +40,7 @@ const cards = [
 const TechnologyCaseStudies = () => {
     return (
         <div className="technology-casestudies-wrapper section-gap bg-[#dfe8dd]">
-            <div className="container mx-auto max-w-screen-xl px-4 md:px-8 ">
+            <div className="container mx-auto max-w-screen-xl px-4 md:px-8">
                 <div className="grid grid-cols-12 relative">
                     <div className="col-span-6 sticky top-0 h-screen flex items-center ">
                         <div className="flex-1 ">
