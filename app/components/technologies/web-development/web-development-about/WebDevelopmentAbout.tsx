@@ -2,8 +2,8 @@ import Image from "next/image";
 
 const WebDevelopmentAbout = () => {
     return (
-        <section className=" bg-[#FAF8F3] overflow-hidden">
-            <div className="container mx-auto px-4 py-20">
+        <section className="web-development-about-wrapper bg-[#FAF8F3] overflow-hidden section-gap">
+            <div className="container mx-auto max-w-screen-xl px-4 md:px-8">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
 
                     {/* LEFT IMAGE SECTION */}
@@ -20,84 +20,82 @@ const WebDevelopmentAbout = () => {
 
                     {/* RIGHT CONTENT SECTION */}
                     <div>
-                        {/* About Tag */}
-                        <span className="inline-flex items-center px-4 py-1 rounded-full border border-[#F4BE00] text-[#F4BE00] text-sm font-medium mb-6">
-                            ABOUT US
-                        </span>
+                        <div className="flex-1">
 
-                        {/* Heading */}
-                        <h2 className="font-poppins font-semibold text-[42px] leading-[120%] text-[#2B2B2B]">
-                            IT Solutions Engineered <br />
-                            for{" "}
-                            <span className="relative inline-block">
-                                Speed and Scalability
-                                <span className="absolute left-0 -bottom-1 w-full h-[6px] bg-[#F4BE00] -z-10"></span>
-                            </span>
-                        </h2>
+                            <div className="flex justify-start mb-5">
 
-                        {/* Description */}
-                        <p className="mt-6 font-poppins font-normal text-[16px] leading-[160%] text-[#6B6B6B] max-w-xl">
-                            Vibes develops secure, bespoke web platforms engineered for high
-                            performance, scalability, and reliability, supported by refined
-                            development and adaptive design.
-                        </p>
+                                <div className="px-6 py-2 rounded-full border border-[#F4BE00] inline-flex items-center gap-2">
+                                    <span className="w-2 h-2 rounded-full bg-[#F4BE00]"></span>
+                                    <span className="font-[Poppins] font-semibold text-[10px] leading-[1.23] uppercase text-[#F4BE00]">
+                                        ABOUT US
+                                    </span>
+                                </div>
+                            </div>
+                            <h3 className="font-poppins font-medium text-[40px] leading-[1.23] tracking-norma]">
+                                IT Solutions Engineered<br />for <span className="highlight relative z-9 w-fit font-poppins font-semibold text-[40px] leading-[1.23] tracking-normal">Speed and Scalability </span>
+                            </h3>
+
+                            <p className="text-[#525252] mt-5">
+                                Vibes develops secure, bespoke web platforms engineered for high performance, scalability, and reliability, supported by refined development and adaptive design.
+                            </p>
+                        </div>
 
                         {/* Features */}
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-10">
 
                             {/* Feature Item */}
                             <div className="flex items-start gap-4">
-                                <div className="w-12 h-12 rounded-full bg-[#3F6B57] flex items-center justify-center">
+                                <div className="w-15 h-15 rounded-full bg-[#466E59] flex items-center justify-center">
                                     <Image
-                                        src="/assets/icons/code.svg"
+                                        src="/assests/img/web-development/built-way-icon-1.png"
                                         alt="icon"
-                                        width={22}
-                                        height={22}
+                                        width={25}
+                                        height={25}
                                     />
                                 </div>
-                                <p className="font-poppins font-medium text-[16px] text-[#2B2B2B]">
-                                    Custom-Coded, <br /> Secure Builds
+                                <p className="font-poppins font-medium text-[18px] leading-[1.2] tracking-normal text-[#525252ED]">
+                                    Custom-Coded,<br /> Secure Builds
                                 </p>
                             </div>
 
                             <div className="flex items-start gap-4">
-                                <div className="w-12 h-12 rounded-full bg-[#3F6B57] flex items-center justify-center">
+                                <div className="w-15 h-15 rounded-full bg-[#466E59] flex items-center justify-center">
                                     <Image
-                                        src="/assets/icons/speed.svg"
+                                        src="/assests/img/web-development/built-way-icon-1.png"
                                         alt="icon"
-                                        width={22}
-                                        height={22}
+                                        width={25}
+                                        height={25}
                                     />
                                 </div>
-                                <p className="font-poppins font-medium text-[16px] text-[#2B2B2B]">
+                                <p className="font-poppins font-medium text-[18px] leading-[1.2] tracking-normal text-[#525252ED]">
                                     High-Speed <br /> Performance
                                 </p>
                             </div>
 
                             <div className="flex items-start gap-4">
-                                <div className="w-12 h-12 rounded-full bg-[#3F6B57] flex items-center justify-center">
+                                <div className="w-15 h-15 rounded-full bg-[#466E59] flex items-center justify-center">
                                     <Image
-                                        src="/assets/icons/architecture.svg"
+                                        src="/assests/img/web-development/built-way-icon-1.png"
                                         alt="icon"
-                                        width={22}
-                                        height={22}
+                                        width={25}
+                                        height={25}
                                     />
                                 </div>
-                                <p className="font-poppins font-medium text-[16px] text-[#2B2B2B]">
+                                <p className="font-poppins font-medium text-[18px] leading-[1.2] tracking-normal text-[#525252ED]">
                                     Scalable <br /> Architecture
                                 </p>
                             </div>
 
                             <div className="flex items-start gap-4">
-                                <div className="w-12 h-12 rounded-full bg-[#3F6B57] flex items-center justify-center">
+                                <div className="w-15 h-15 rounded-full bg-[#466E59] flex items-center justify-center">
                                     <Image
-                                        src="/assets/icons/delivery.svg"
+                                        src="/assests/img/web-development/built-way-icon-1.png"
                                         alt="icon"
-                                        width={22}
-                                        height={22}
+                                        width={25}
+                                        height={25}
                                     />
                                 </div>
-                                <p className="font-poppins font-medium text-[16px] text-[#2B2B2B]">
+                                <p className="font-poppins font-medium text-[18px] leading-[1.2] tracking-normal text-[#525252ED]">
                                     On-Time Project <br /> Delivery
                                 </p>
                             </div>

@@ -8,16 +8,11 @@ import "swiper/css";
 import "swiper/css/navigation";
 
 const logoConfig: Record<string, string[]> = {
-    digital: [
-        "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/buzaria-logo.png",
-        "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/buzaria-logo.png",
-        "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/buzaria-logo.png",
-    ],
-    branding: [
-        "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/buzaria-logo.png",
-        "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/buzaria-logo.png",
-    ],
     technology: [
+        "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/buzaria-logo.png",
+        "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/buzaria-logo.png",
+        "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/buzaria-logo.png",
+        "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/buzaria-logo.png",
         "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/buzaria-logo.png",
         "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/buzaria-logo.png",
     ],
@@ -36,14 +31,12 @@ export default function MarqueeTabsSlider() {
     const swiperRef = useRef<any>(null);
 
     const allLogos = useMemo(() => {
-        const merged: string[] = [];
-        Object.values(logoConfig).forEach((arr) => merged.push(...arr));
-        return merged;
+        return logoConfig.technology;
     }, []);
 
     return (
-        <section className="w-full section-gap bg-[#466E59] text-white">
-            <div className="container mx-auto">
+        <section className="clients-wrapper section-gap bg-[#466E59]">
+            <div className="container mx-auto max-w-screen-xl px-4 md:px-8">
                 <div className="flex justify-center mb-5">
                     <div className=" px-6 py-2 rounded-full border border-[#F4BE00] inline-flex items-center gap-2">
                         <span className="w-2 h-2 rounded-full bg-[#F4BE00]"></span>
@@ -57,19 +50,19 @@ export default function MarqueeTabsSlider() {
                 <p className="text-[#FFFFFFDB] font-normal text-[16px] leading-[130%] tracking-[0] text-center max-w-2xl mx-auto mb-16 mt-5">
                     A curated showcase of visual work that shapes brand perception across channels, including social campaigns, identity design, and custom website builds.
                 </p>
-
-
                 {/* SINGLE MARQUEE */}
-                <div className="overflow-hidden w-[90%] mx-auto mb-14 mt-12">
+                <div className="overflow-hidden w-[95%] mx-auto mb-14 mt-12">
                     <div className="flex animate-marquee-right gap-5">
                         {[...allLogos, ...allLogos].map((src, i) => (
                             <div
                                 key={i}
-                                className="min-w-[153px] h-[80px] bg-[#71A68A] flex items-center justify-center px-6 shadow-md border border-[#6f8f7c]"
+                                className="min-w-[153px] h-[80px] bg-[#71A68A]
+                                flex items-center justify-center px-6
+                                shadow-md border border-[#6f8f7c]"
                             >
                                 <img
                                     src={src}
-                                    className="max-h-[50px] w-auto hover:opacity-100 transition"
+                                    className="max-h-[50px] w-auto transition"
                                 />
                             </div>
                         ))}
@@ -95,7 +88,9 @@ export default function MarqueeTabsSlider() {
                     >
                         {bottomTabs.map((t) => (
                             <SwiperSlide key={t}>
-                                <div className="font-[Poppins] font-medium text-[16px] leading-[1.23] tracking-normal px-2 py-2 rounded-sm  text-center capitalize bg-[#D9D9D908] text-[#FFFFFFA8] cursor-pointer">
+                                <div className="font-[Poppins] font-medium text-[16px]
+                                px-2 py-2 rounded-sm text-center capitalize
+                                bg-[#D9D9D908] text-[#FFFFFFA8] cursor-pointer">
                                     {t}
                                 </div>
                             </SwiperSlide>
