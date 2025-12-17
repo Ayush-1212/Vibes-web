@@ -1,23 +1,63 @@
 "use client";
 
-export default function SuccessStory() {
-    return (
-        <section className="w-full py-20 bg-gradient-to-b from-[#f3f6eb] to-[#e7efe3]">
-            <div className=" curve-box max-w-7xl mx-auto px-6 relative">
-                <div className="h-[180px] flex items-center justify-between px-40">
-                    <div className="">
-                        <h3 className=" text-[#F4BE00] font-poppins font-semibold text-[35px] leading-[100%] tracking-[0]">Your Success Story Starts Here</h3>
-                        <p className="text-[#EEEEEE] mt-3 font-poppins font-medium text-[20px] leading-[100%] tracking-[0]">Creating digital value that powers your journey</p>
-                    </div>
-                    <div>
-                        sdf
-                    </div>
+import Image from "next/image";
+import { Button2 } from "@/components/ui/button2";
+import { ArrowUpIcon } from "lucide-react";
 
-                </div>
+interface SuccessStoryProps {
+  title: string;
+  subtitle: string;
+  buttonText: string;
+  arrowImage?: string;
+  onButtonClick?: () => void;
+  className?: string;
+}
 
-            </div>
+export default function SuccessStory({
+  title,
+  subtitle,
+  buttonText,
+  arrowImage = "/assests/img/technology-details/arrow.png",
+  onButtonClick,
+  className = "",
+}: SuccessStoryProps) {
+  return (
+    <section className={`w-full pt-15 pb-20 bg-success-story ${className}`}>
+      <div className="curve-box max-w-7xl mx-auto px-6 relative">
+        <div className="h-full flex flex-col lg:flex-row items-center justify-between gap-8 px-10">
 
+          {/* Arrow Image */}
+          <Image
+            src={arrowImage}
+            alt="Arrow"
+            width={120}
+            height={50}
+            className="arrow-img"
+          />
 
-        </section>
-    );
+          {/* Text */}
+          <div className="text-center lg:text-left">
+            <h3 className="text-[#F4BE00] font-poppins font-semibold text-[35px] leading-[100%]">
+              {title}
+            </h3>
+            <p className="text-[#EEEEEE] mt-3 font-poppins font-medium text-[20px] leading-[100%]">
+              {subtitle}
+            </p>
+          </div>
+
+          {/* Button */}
+          <div>
+            <Button2
+              onClick={onButtonClick}
+              className="mt-5 p-[20px] bg-[#fff]"
+            >
+              <span className="text-[#000]">{buttonText}</span>
+              <ArrowUpIcon className="transform rotate-45 text-[#000]" />
+            </Button2>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  );
 }

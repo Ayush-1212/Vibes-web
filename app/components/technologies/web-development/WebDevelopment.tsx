@@ -1,5 +1,4 @@
 
-import React from 'react'
 import WebDevelopmentHero from './web-development-hero/WebDevelopmentHero'
 import WebDevelopmentAbout from './web-development-about/WebDevelopmentAbout'
 import WebDevelopmentWorkflow from './web-development-workflow/WebDevelopmentWorkflow'
