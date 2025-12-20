@@ -758,7 +758,11 @@ height:503px;
     top: 60%;
     left: 50%;
 }
-
+.branding-details-hero-wrapper{
+background: url("/assests/img/branding-details/branding-bg.jpg") center/cover no-repeat;
+height: 763px;
+width:100%;
+}
 /* 404 Pages */
 .grad-container{
   background: #57C785;
