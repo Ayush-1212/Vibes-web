@@ -11,9 +11,9 @@ export const careerApi = createApi({
     tagTypes: ["careerApi"],
     endpoints: (builder) => ({
         // get all jobs from api
-        getAllJobs: builder.query<JobListResponse,void>({
-            query: () => ({
-                url: careerApiUrls.getAllJobs
+        getAllJobs: builder.query<JobListResponse, number>({
+            query: (jobid) => ({
+                url: careerApiUrls.getAllJobs(jobid)
             })
         }),
         //apply to job mutation

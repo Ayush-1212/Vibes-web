@@ -27,6 +27,6 @@ export const galleryApiUrls = {
 };
 
 export const careerApiUrls = {
-  getAllJobs: "/getJob",
+  getAllJobs: (jobid: number) => `/getJob?job_type=${jobid}`,
   applyToJob: "/jobApply"
 }
