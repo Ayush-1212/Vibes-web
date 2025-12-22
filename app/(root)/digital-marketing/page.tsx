@@ -1,4 +1,5 @@
 "use client";
+"use client";
 import OurBlogs from '@/app/components/blogs/blogs'
 import CommonCasestudy from '@/app/components/common/CommonCasestudy/CommonCasestudy'
 import MarqueeStorySection, { SlideItem } from '@/app/components/common/MarqueeStorySection/MarqueeStorySection'
@@ -142,7 +143,6 @@ const tabs = [
   "government",
 ];
 
-
 const page = () => {
   const router = useRouter();
   return (
@@ -150,25 +150,6 @@ const page = () => {
       <DigitalMarketingDetailsHero />
       <DigitalMarketingSolutions />
       <WhyChooseUs />
-
-      <MarqueeStorySection
-        badge="WORK SHOWCASE"
-        highlightTitle="Brand Stories"
-        title="in Motion"
-        description="A curated showcase of visual work that shapes brand perception across channels."
-        slides={slides}
-        ctaText="Talk to us today"
-        bgImage="/assests/img/home/brand-stories-bg.png"
-      />
-      <CommonCasestudy
-        badgeText="CASE STUDIES"
-        title="Code that Delivers"
-        highlightTitle="Real Impact"
-        description="Explore real technology success stories where Vibes turns complex challenges into measurable outcomes, delivering smarter, scalable digital solutions."
-        buttonText="Dive Into Success Stories"
-        cards={cards}
-        bgColor="#dfe8dd"
-      />
       <OurBlogs />
       <MarqueeTabsSlider
         badgeText="Trusted Clients"
