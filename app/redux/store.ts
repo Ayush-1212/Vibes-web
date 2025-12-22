@@ -5,6 +5,9 @@ import { caseStudyApi } from "./api/caseStudyApi";
 import { teamMembersApi } from "./api/teamMembersApi";
 import { contactApi } from "./api/contactApi";
 import { galleryApi } from "./api/galleryApi";
+import { technologyApi } from "./api/technologyApi";
+import { digitalApi } from "./api/digitalApi";
+import { brandingApi } from "./api/brandingApi";
 import { careerApi } from "./api/careerApi";
 // import { caseStudyApi } from "../redux/api/caseStudyApi";
 
@@ -16,6 +19,9 @@ export const store = configureStore({
     [teamMembersApi.reducerPath]: teamMembersApi.reducer,
     [contactApi.reducerPath]: contactApi.reducer,
     [galleryApi.reducerPath]: galleryApi.reducer,
+    [technologyApi.reducerPath]: technologyApi.reducer,
+    [digitalApi.reducerPath]: digitalApi.reducer,
+    [brandingApi.reducerPath]: brandingApi.reducer,
     [careerApi.reducerPath]: careerApi.reducer
   },
   middleware: (getDefaultMiddleware) =>
@@ -26,6 +32,9 @@ export const store = configureStore({
       teamMembersApi.middleware,
       contactApi.middleware,
       galleryApi.middleware,
+      technologyApi.middleware,
+      digitalApi.middleware,
+      brandingApi.middleware,
       careerApi.middleware
     ),
 });

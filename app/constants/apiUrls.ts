@@ -10,7 +10,7 @@ export const blogApiUrls = {
 
 export const caseStudyApiUrls = {
   getAllCasestudy: "/casestudy",
-
+    getSingleCasestudy: "/single-casestudy/"
 };
 
 export const teamMembersApiUrls = {
@@ -26,7 +26,20 @@ export const galleryApiUrls = {
   getGallery: "/image-gallery",
 };
 
+export const technologyApiUrls = {
+  getTechnologyServices: "/services/technology",
+};
+
+export const digitalApiUrls = {
+  getDigitalServices: "/services/digital",
+};
+
+export const brandingApiUrls = {
+  getBrandingServices: "/services/branding",
+};
+
+
 export const careerApiUrls = {
   getAllJobs: (jobid: number) => `/getJob?job_type=${jobid}`,
-  applyToJob: "/jobApply"
-}
+  applyToJob: "/jobApply",
+};
