@@ -120,6 +120,14 @@ body {
 @apply bg-background text-foreground;
 }
 }
+
+ .nav-menu-new .focus\:bg-accent:focus {
+    background-color: transparent!important;
+    color: #fff !important;
+}
+.navmenu-dropdown-new{
+  color: #fff !important;
+}
 /* Hide scrollbar but keep scrolling */
 .no-scrollbar::-webkit-scrollbar {
 display: none;
@@ -729,6 +737,18 @@ content: "";
     border-top-right-radius: 4px;
     border-bottom-right-radius: 4px;
 }
+.hero-highlight1::before{
+content: "";
+    z-index: -9;
+    background: #C32B2B;
+    width: 30%;
+    height: 8px;
+    position: absolute;
+    bottom: -12px;
+    left: 0;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
 
 .contact-hero-wrapper{
 background: url("/assests/img/contact/contact-us-bg.jpg") center/cover no-repeat;
@@ -1047,4 +1067,57 @@ background: #204667;
 .blog-content p{
   font-size: .85rem;
   color: #333333;
+}.tech-solution-wrapper{
+background: url("/assests/img/technology-details/technology-key-services-bg.jpg") center/cover no-repeat;
+width:100%;
+}
+.casestudy-common-wrapper{
+ background: url("/assests/img/technology-details/common-casestudy-bg.jpg") center/cover no-repeat;
+width:100%;
+}
+.blogs-wrapper{
+background: url("/assests/img/technology-details/common-blog-bg.png") center/cover no-repeat;
+width:100%; 
+}
+.clients-wrapper {
+  background: url("/assests/img/technology-details/common-clients-bg.png") center/cover no-repeat;
+width:100%; 
+}
+.branding-services-wrapper{
+  background: url("/assests/img/branding-details/branding-services-bg.jpg") center/cover no-repeat;
+width:100%; 
+}
+.branding-customer-wrapper{
+ background: url("/assests/img/technology-details/common-casestudy-bg.jpg") center/cover no-repeat;
+width:100%;
+}
+.branding-casestudy-wrapper {
+background: url("/assests/img/branding-details/branding-casestudy-bg.jpg") center/cover no-repeat;
+width:100%
+}
+.digital-solution-wrapper {
+  background: url("/assests/img/digital-m-details/dm-solution-bg.png") center/cover no-repeat;
+width:100%
+}
+.digital-choose-us-wrapper{
+ background: url("/assests/img/technology-details/common-casestudy-bg.jpg") center/cover no-repeat;
+width:100%;
+}
+.case-study-details-hero-wrapper{
+background: url("/assests/img/case-study-details/case-study-hero-bg.jpg") center/cover no-repeat;
+width:100%;
+}
+.case-study-listing-wrapper .case-study-card-common{
+height: 250px;
+}
+.case-study-listing-wrapper .case-study-common-tags{
+  font-size: 10px;
+}
+.case-study-listing-wrapper .case-study-tags-gap{
+ gap: calc(var(--spacing) * 2);
+}
+.casestudy-listing-hero-wrapper{
+background: url("/assests/img/case-study-details/casestudy-listing-bg.png") center/cover no-repeat;
+width:100%;
+height:503px;
 }
