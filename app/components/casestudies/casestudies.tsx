@@ -12,6 +12,7 @@ import SlideUp from "../animations/SlideUp";
 import { useGetAllCaseStudiesQuery } from "@/app/redux/api/caseStudyApi";
 // import { useGetAllCaseStudiesQuery } from "@/store/services/caseStudyApi";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 
 export default function CaseStudies() {
@@ -51,11 +52,12 @@ export default function CaseStudies() {
                             Turning brand challenges into growth stories with strategies to solve, scale, and sustain.
                         </p>
                     </div>
-
-                    <Button2 className="mt-5 p-[20px] hover:border-[#2B4C69] hover:border-[2px] hover:text-[#F4BE00] hover:bg-transparent">
-                        <span>Explore Case Studies</span>
-                        <ArrowUpIcon className="transform rotate-45" />
-                    </Button2>
+                    <Link href="/case-study">
+                        <Button2 className="cursor-pointer mt-5 p-[20px] hover:border-[#2B4C69] hover:border-[2px] hover:text-[#F4BE00] hover:bg-transparent">
+                            <span>Explore Case Studies</span>
+                            <ArrowUpIcon className="transform rotate-45" />
+                        </Button2>
+                    </Link>
                 </div>
 
                 <SlideUp delay={0.5}>
