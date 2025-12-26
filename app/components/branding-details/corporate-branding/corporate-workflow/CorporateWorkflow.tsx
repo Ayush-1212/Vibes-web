@@ -7,7 +7,7 @@ import "swiper/css";
 
 const CorporateWorkflow = () => {
     return (
-        <div>
+        <div className="branding-workflow-wrapper section-gap">
             <div className="w-full mb-2 ">
                 <Swiper
                     modules={[Autoplay]}
@@ -16,7 +16,7 @@ const CorporateWorkflow = () => {
                         disableOnInteraction: false,
                     }}
                     loop
-                    spaceBetween={8}
+                    spaceBetween={20}
                     slidesPerView={2}
                     breakpoints={{
                         0: {
@@ -26,7 +26,7 @@ const CorporateWorkflow = () => {
                             slidesPerView: 2,
                         },
                         1024: {
-                            slidesPerView: 2,
+                            slidesPerView: 2.5,
                         },
                     }}
                     className="w-full"
@@ -39,15 +39,15 @@ const CorporateWorkflow = () => {
                         "/assests/img/branding-details/branding-bottom-img-1.png",
                     ].map((src, index) => (
                         <SwiperSlide key={index}>
-                            <div className="overflow-hidden">
+                            <div className="overflow-hidden border-[5px] border-white">
                                 <Image
                                     src={src}
                                     alt="Integrated Brand Identity"
                                     width={720}
                                     height={674}
+                                    priority
                                     unoptimized
-                                    className="w-full h-auto object-cover transition-transform duration-700 ease-in-out hover:scale-110"
-                                />
+                                    className="w-full h-[433px] object-cover transition-transform duration-700 ease-in-out hover:scale-110" />
                             </div>
                         </SwiperSlide>
                     ))}

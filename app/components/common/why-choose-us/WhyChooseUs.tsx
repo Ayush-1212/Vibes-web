@@ -130,10 +130,10 @@ const WhyChooseUs: React.FC<WhyChooseUsProps> = ({
                     </div>
 
                     <div className="customer-inner">
-                     <div className="customer-content">
+                      <div className="customer-content">
                         <h5 className="font-normal text-[24px] leading-[1.23] tracking-normal text-[#08325A] mb-3">{item.title}</h5>
-                        <p className="font-normal text-[18px] leading-[1.23] tracking-normal  text-[#575757DB] ">{item.desc}</p>
-                    </div>
+                        <p className="font-normal text-[14px] leading-[1.23] tracking-normal  text-[#575757DB] ">{item.desc}</p>
+                      </div>
                     </div>
 
                   </div>

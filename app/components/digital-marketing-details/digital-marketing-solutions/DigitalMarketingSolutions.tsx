@@ -27,7 +27,7 @@ const services = [
         hoverBgImage: "/assests/img/technology-details/tech-cards-bg.png",
         icon: "/assests/img/digital-m-details/digital-solution-icon-2.png",
         tags: ["Lead Generation", "Meta Ads", "Google Ads", "LinkedIn Ads"],
-        url: "/technology/app-development",
+        url: "digital-marketing/performance-marketing",
     },
     {
         title: "Social Media Management ",

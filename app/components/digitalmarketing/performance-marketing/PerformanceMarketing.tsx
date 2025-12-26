@@ -1,8 +1,112 @@
+"use client";
 import React from 'react'
+import { useRouter } from "next/navigation";
+import PerformanceMarketingHero from './performance-marketing-hero/PerformanceMarketingHero'
+import AboutSection from '../../common/AboutUs/AboutSection';
+import WhyChooseUsSection from "@/app/components/common/WhyChooseUsSection/WhyChooseUsSection";
+import WhyChooseUs from '@/app/components/common/why-choose-us/WhyChooseUs';
+import OurBlogs from '../../blogs/blogs';
+import SuccessStory from "@/app/components/technology-details/success-story/SuccessStory";
 
 const PerformanceMarketing = () => {
+  const router = useRouter();
   return (
-    <div>PerformanceMarketing</div>
+    <div>
+      <PerformanceMarketingHero />
+      <AboutSection
+        badgeText="Overview"
+        heading="Performance "
+        highlightText="Advertising Solutions"
+        description="Results-focused advertising strategies designed to generate high-quality leads, maximize reach, and drive measurable conversions across search and social platforms with precision targeting and data-backed optimization."
+        mainImage="/assests/img/performance-marketing/pm-overview-left-img.png"
+        features={[
+          {
+            icon: "/assests/img/web-development/built-way-icon-1.png",
+            title: <>Lead <br />Generation</>,
+          },
+          {
+            icon: "/assests/img/web-development/built-way-icon-1.png",
+            title: <>Meta<br />Ads</>,
+          },
+          {
+            icon: "/assests/img/web-development/built-way-icon-1.png",
+            title: <>Google<br />Ads</>,
+          },
+          {
+            icon: "/assests/img/web-development/built-way-icon-1.png",
+            title: <>LinkedIn<br />Ads</>,
+          },
+        ]}
+      />
+      <WhyChooseUsSection
+        badgeText="Growth Strategy"
+        heading={
+          <>
+            How Brands  <br />
+            <span className="highlight relative w-fit font-semibold">Move Forward?</span>
+          </>
+        }
+        description="Focused branding strategies designed to strengthen identity, build trust, and drive long-term progress."
+        cards={[
+          {
+            title: "Mission-Driven Strategy",
+            desc: " Marketing initiatives aligned closely with business objectives to ensure every campaign supports long-term growth.",
+            dark: true,
+          },
+          {
+            title: "Performance-First Approach",
+            desc: "Every decision guided by data, focusing on conversions, ROI, and measurable outcomes rather than vanity metrics.",
+            dark: false,
+          },
+          {
+            title: "Smart Audience Targeting",
+            desc: "Advanced segmentation and intent-based targeting to reach the right audience at the right stage of the funnel.",
+            dark: false,
+          },
+          {
+            title: "Transparent Performance Reporting",
+            desc: "Clear, actionable reporting with complete visibility into spend, performance, and optimization insights.",
+            dark: true,
+          },
+        ]}
+      />
+      <WhyChooseUs
+        backgroundImage="/assests/img/technology-details/common-casestudy-bg.jpg"
+        heading="Vibes Performance "
+        highlightText="Advantage"
+        description="A results-focused model blending strategy, data, creativity, and transparency to drive consistent growth"
+        centerText={`Why Brands,\nTrust Vibes?`}
+        slides={[
+          {
+            title: "Results-Driven Execution",
+            desc: "Campaigns built around clear KPIs, conversions, and ROI, ensuring every marketing effort delivers measurable business impact.",
+          },
+          {
+            title: "Data, Strategy & Creativity Combined",
+            desc: "Performance insights, audience intelligence, and compelling creatives work together to maximize efficiency and scale.",
+          },
+          {
+            title: "Complete Transparency & Accountability",
+            desc: "Clear reporting, real-time performance tracking, and optimization insights provide full visibility into outcomes and spend.",
+          },
+          {
+            title: "Results-Driven Execution",
+            desc: "Campaigns built around clear KPIs, conversions, and ROI, ensuring every marketing effort delivers measurable business impact.",
+          },
+
+        ]}
+      />
+      <OurBlogs />
+      <SuccessStory
+        title="Turn Clicks Into Conversions"
+        subtitle="High-impact performance strategies built to maximize ROI and accelerate results."
+        buttonText="Let’s Connect"
+        arrowImage="/assests/img/technology-details/arrow.png"
+        className="bg-black"
+        onButtonClick={() => router.push("/contact")}
+      />
+
+    </div>
   )
 }
 

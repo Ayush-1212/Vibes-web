@@ -11,105 +11,105 @@ import TechnologyStackSection from '../../common/TechnologyStackSection/Technolo
 
 const WebDevelopment = () => {
   const router = useRouter();
-    return (
-        <div>
-            <WebDevelopmentHero />
-            <AboutSection
-              badgeText="ABOUT US"
-              heading="IT Solutions Engineered for"
-              highlightText="Speed and Scalability"
-              description="Vibes develops secure, bespoke web platforms engineered for high performance, scalability, and reliability."
-              mainImage="/assests/img/web-development/webdevelopment-about-img.png"
-              features={[
-                {
-                  icon: "/assests/img/web-development/built-way-icon-1.png",
-                  title: <>Custom-Coded,<br />Secure Builds</>,
-                },
-                {
-                  icon: "/assests/img/web-development/built-way-icon-1.png",
-                  title: <>High-Speed <br />Performance</>,
-                },
-                {
-                  icon: "/assests/img/web-development/built-way-icon-1.png",
-                  title: <>Scalable <br />Architecture</>,
-                },
-                {
-                  icon: "/assests/img/web-development/built-way-icon-1.png",
-                  title: <>On-Time Project<br />Delivery</>,
-                },
-              ]}
-            />
+  return (
+    <div>
+      <WebDevelopmentHero />
+      <AboutSection
+        badgeText="ABOUT US"
+        heading="IT Solutions Engineered for"
+        highlightText="Speed and Scalability"
+        description="Vibes develops secure, bespoke web platforms engineered for high performance, scalability, and reliability."
+        mainImage="/assests/img/web-development/webdevelopment-about-img.png"
+        features={[
+          {
+            icon: "/assests/img/web-development/built-way-icon-1.png",
+            title: <>Custom-Coded,<br />Secure Builds</>,
+          },
+          {
+            icon: "/assests/img/web-development/built-way-icon-1.png",
+            title: <>High-Speed <br />Performance</>,
+          },
+          {
+            icon: "/assests/img/web-development/built-way-icon-1.png",
+            title: <>Scalable <br />Architecture</>,
+          },
+          {
+            icon: "/assests/img/web-development/built-way-icon-1.png",
+            title: <>On-Time Project<br />Delivery</>,
+          },
+        ]}
+      />
 
-            <WebDevelopmentWorkflow />
-            <WhyChooseSection
-            badgeText="Why Choose Us"
-            heading={
-              <>
-                <span className="highlight relative z-9 w-fit font-poppins font-semibold text-[40px] leading-[1.23] tracking-normal">Choose Vibes.</span> Choose Certainty.
-              </>
-            }
-            description="Vibes delivers high-performing, scalable, secure digital solutions built with precision and trust."
-            items={[
-              {
-                title: "Insight-Led Execution",
-                desc: "Smart decisions guide every build, ensuring each solution aligns with goals.",
-                icon: "/assests/img/web-development/why-choose-icon2.png",
-              },
-              {
-                title: "Future-Ready Architecture",
-                desc: "Code crafted for speed, stability, and effortless scaling.",
-                icon: "/assests/img/web-development/why-choose-icon1.png",
-              },
-              {
-                title: "Delivery You Can Count On",
-                desc: "Every milestone met without compromising quality.",
-                icon: "/assests/img/web-development/why-choose-icon3.png",
-              },
-              {
-                title: "Continuous Care & Support",
-                desc: "Ongoing updates, fixes, and monitoring.",
-                icon: "/assests/img/web-development/why-choose-icon4.png",
-              },
-            ]}
-          />
+      <WebDevelopmentWorkflow />
+      <WhyChooseSection
+        badgeText="Why Choose Us"
+        heading={
+          <>
+            <span className="highlight relative z-9 w-fit font-poppins font-semibold text-[40px] leading-[1.23] tracking-normal">Choose Vibes.</span> Choose Certainty.
+          </>
+        }
+        description="Vibes delivers high-performing, scalable, secure digital solutions built with precision and trust."
+        items={[
+          {
+            title: "Insight-Led Execution",
+            desc: "Smart decisions guide every build, ensuring each solution aligns with goals.",
+            icon: "/assests/img/web-development/why-choose-icon2.png",
+          },
+          {
+            title: "Future-Ready Architecture",
+            desc: "Code crafted for speed, stability, and effortless scaling.",
+            icon: "/assests/img/web-development/why-choose-icon1.png",
+          },
+          {
+            title: "Delivery You Can Count On",
+            desc: "Every milestone met without compromising quality.",
+            icon: "/assests/img/web-development/why-choose-icon3.png",
+          },
+          {
+            title: "Continuous Care & Support",
+            desc: "Ongoing updates, fixes, and monitoring.",
+            icon: "/assests/img/web-development/why-choose-icon4.png",
+          },
+        ]}
+      />
 
-           <TechnologyStackSection
-              badgeText="Technology we use"
-              heading={
-                <>
-                  Technology <span className="highlight relative z-9">Stack</span>
-                </>
-              }
-              description="Vibes uses a robust, future-ready tech stack built for speed, security, and scale."
-              topLogos={[
-                "/assests/img/web-development/php-logo.png",
-                "/assests/img/web-development/react-logo.png",
-                "/assests/img/web-development/github-logo.png",
-                "/assests/img/web-development/css-logo.png",
-                "/assests/img/web-development/node-logo.png",
-                "/assests/img/web-development/html-logo.png",
-                "/assests/img/web-development/bootstrap-logo.png",
-              ]}
-              bottomLogos={[
-                "/assests/img/web-development/shopify-logo.png",
-                "/assests/img/web-development/postgresql-logo.png",
-                "/assests/img/web-development/wordpress-logo.png",
-                "/assests/img/web-development/mysql-logo.png",
-                "/assests/img/web-development/ci-4-logo.png",
-                "/assests/img/web-development/mongodb-logo.png",
-              ]}
-            />
+      <TechnologyStackSection
+        badgeText="Technology we use"
+        heading={
+          <>
+            Technology <span className="highlight relative z-9">Stack</span>
+          </>
+        }
+        description="Vibes uses a robust, future-ready tech stack built for speed, security, and scale."
+        topLogos={[
+          "/assests/img/web-development/php-logo.png",
+          "/assests/img/web-development/react-logo.png",
+          "/assests/img/web-development/github-logo.png",
+          "/assests/img/web-development/css-logo.png",
+          "/assests/img/web-development/node-logo.png",
+          "/assests/img/web-development/html-logo.png",
+          "/assests/img/web-development/bootstrap-logo.png",
+        ]}
+        bottomLogos={[
+          "/assests/img/web-development/shopify-logo.png",
+          "/assests/img/web-development/postgresql-logo.png",
+          "/assests/img/web-development/wordpress-logo.png",
+          "/assests/img/web-development/mysql-logo.png",
+          "/assests/img/web-development/ci-4-logo.png",
+          "/assests/img/web-development/mongodb-logo.png",
+        ]}
+      />
 
-            <BuiltWay />
-            <SuccessStory
-              title="Let’s Build Something Powerful"
-              subtitle="Scalable digital solutions tailored for you"
-              buttonText="Talk to Experts"
-              arrowImage="/assests/img/technology-details/arrow.png"
-              className="bg-black"
-              onButtonClick={() => router.push("/contact")}
-              />
-        </div>
+      <BuiltWay />
+      <SuccessStory
+        title="Let’s Build Something Powerful"
+        subtitle="Scalable digital solutions tailored for you"
+        buttonText="Talk to Experts"
+        arrowImage="/assests/img/technology-details/arrow.png"
+        className="bg-black"
+        onButtonClick={() => router.push("/contact")}
+      />
+          </div >
     )
 }
 

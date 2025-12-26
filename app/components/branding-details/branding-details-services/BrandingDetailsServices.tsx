@@ -1,11 +1,13 @@
 import React from "react";
 import { Button2 } from "@/components/ui/button2";
 import { ArrowUpIcon } from "lucide-react";
+import Link from "next/link";
 
 type ServiceItem = {
     title: string;
     description: string;
     tags: string[];
+    url: string;
     highlighted?: boolean;
 };
 
@@ -20,6 +22,7 @@ const services: ServiceItem[] = [
             "Brand Guidelines",
             "Employer Branding",
         ],
+        url: "/branding/corporate-branding",
         highlighted: true,
     },
     {
@@ -31,6 +34,7 @@ const services: ServiceItem[] = [
             "PR, Photoshoot & Videos",
             "Graphic Design",
         ],
+        url: "/branding/corporate-branding",
     },
     {
         title: "Brand Communication & Strategy",
@@ -42,6 +46,7 @@ const services: ServiceItem[] = [
             "Storytelling",
             "Brand Positioning",
         ],
+        url: "/branding/corporate-branding",
     },
 ];
 
@@ -100,8 +105,8 @@ const BrandingDetailsServices: React.FC = () => {
                             </div>
 
                             <div className="lg:col-span-3 flex lg:justify-end">
-                                <Button2 className="mt-5 p-[20px]  hover:border-[#2B4C69] hover:border-[2px] hover:text-[#F4BE00] hover:bg-transparent text-[14px]">
-                                    <span>View More</span>
+                                <Button2 className="mt-5 p-[20px]  hover:border-[#2B4C69] hover:bord[2px] hover:text-[#F4BE00] hover:bg-transparent text-[14px]">
+                                    <Link href={item.url}><span>View More</span></Link>
                                     <ArrowUpIcon className="transform rotate-45" />
                                 </Button2>
                             </div>

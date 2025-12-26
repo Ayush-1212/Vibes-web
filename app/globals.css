@@ -1167,3 +1167,49 @@ width:100%;
  background: url("/assests/img/digital-m-details/dm-solution-bg.png") center/cover no-repeat;
 width:100%
 }
+.branding-workflow-wrapper{
+   background: url("/assests/img/technology-details/common-casestudy-bg.jpg") center/cover no-repeat;
+width:100%;
+}
+
+.branding-customer-wrapper .customer-slider .slick-dots li.slick-active button:before {
+      opacity: 1;
+    content: "";
+    background-color: #f4be00;
+    border-radius: 61px;
+    width: 13px;
+    height: 20px;
+margin: -4px 0px;
+    display: block;
+    color: #f4be00 !important;
+    border: none !important;
+}
+.branding-customer-wrapper .slick-dots li.slick-active button:before {
+width: 12px;
+height: 18px;      
+border-radius: 61px;
+background-color: #F4BE00;
+content: "";        
+display: block;
+margin: -3px -4px;
+border: none!important;
+}
+.branding-customer-wrapper .slick-dots li {
+cursor: pointer;
+width: 20px;
+height: 20px;
+margin: 0 1px;
+padding: 0;
+display: inline-block;
+position: relative;
+}
+.branding-customer-wrapper  .slick-dots li button:before {
+font-size: 0 !important;  
+} 
+.branding-customer-wrapper  .slick-dots li button {
+width: 4px;
+height: 4px;
+background:#466e5999;
+border-radius: 50%;
+border: 1px solid #466E59
+}
