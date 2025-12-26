@@ -1213,3 +1213,6 @@ background:#466e5999;
 border-radius: 50%;
 border: 1px solid #466E59
 }
+[data-radix-navigation-menu-trigger] {
+  background: transparent !important;
+}
