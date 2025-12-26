@@ -25,11 +25,14 @@ export const NavMenu = (props: ComponentProps<typeof NavigationMenu>) => {
 
     const linkClass = (active: boolean) =>
         clsx(
-            "relative font-poppins font-normal text-[14px] leading-[100%] tracking-[0] text-white",
-            "after:absolute after:left-0 after:-bottom-1 after:h-[4px] after:w-full after:bg-[#F4BE00] after:scale-x-0 after:transition-transform after:duration-300 after:origin-left after:rounded-tl-[30px] after:rounded-tr-[30px]",
-            active && "after:scale-x-100 text-[#F4BE00]"
+            "relative font-poppins font-normal text-[14px] leading-[100%] tracking-[0]",
+            "text-white bg-transparent",
+            "hover:text-white focus:text-white data-[active]:text-white",
+            "hover:bg-transparent focus:bg-transparent data-[active]:bg-transparent",
+            "after:absolute after:left-0 after:-bottom-1 after:h-[4px] after:w-full after:bg-[#F4BE00]",
+            "after:scale-x-0 after:transition-transform after:duration-300 after:origin-left after:rounded-tl-[30px] after:rounded-tr-[30px]",
+            active && "after:scale-x-100"
         );
-
     return (
         <NavigationMenu {...props}>
             <NavigationMenuList className=" nav-menu-new space-x-3 data-[orientation=vertical]:flex-col data-[orientation=vertical]:items-start">
@@ -49,9 +52,12 @@ export const NavMenu = (props: ComponentProps<typeof NavigationMenu>) => {
                 <NavigationMenuItem>
                     <NavigationMenuTrigger
                         className={clsx(
-                            "text-[#FFFFFF] bg-transparent font-poppins font-normal text-[14px] leading-[100%] tracking-[0]",
-                            "relative after:absolute after:left-0 after:-bottom-1 after:h-[4px] after:w-full after:bg-[#F4BE00] after:scale-x-0 after:transition-transform after:duration-300 after:origin-left after:rounded-tl-[30px] after:rounded-tr-[30px]",
-                            isWhatWeDoActive && "after:scale-x-100 text-[#F4BE00]"
+                            "bg-transparent text-white font-poppins font-normal text-[14px] leading-[100%]",
+                            "hover:text-white focus:text-white data-[state=open]:text-white",
+                            "hover:bg-transparent focus:bg-transparent data-[state=open]:bg-transparent",
+                            "relative after:absolute after:left-0 after:-bottom-1 after:h-[4px] after:w-full after:bg-[#F4BE00]",
+                            "after:scale-x-0 after:transition-transform after:duration-300 after:origin-left after:rounded-tl-[30px] after:rounded-tr-[30px]",
+                            isWhatWeDoActive && "after:scale-x-100"
                         )}
                     >
                         WHAT WE DO
@@ -79,7 +85,10 @@ export const NavMenu = (props: ComponentProps<typeof NavigationMenu>) => {
                 </NavigationMenuItem>
 
                 <NavigationMenuItem>
-                    <NavigationMenuLink asChild className={linkClass(isActive("/case-studies"))}>
+                    <NavigationMenuLink
+                        asChild
+                        className={linkClass(isActive("/case-study"))}
+                    >
                         <Link href="/case-study">CASE STUDIES</Link>
                     </NavigationMenuLink>
                 </NavigationMenuItem>
