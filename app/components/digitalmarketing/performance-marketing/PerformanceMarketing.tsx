@@ -23,18 +23,22 @@ const PerformanceMarketing = () => {
           {
             icon: "/assests/img/web-development/built-way-icon-1.png",
             title: <>Lead <br />Generation</>,
+            subtitle: ""
           },
           {
             icon: "/assests/img/web-development/built-way-icon-1.png",
             title: <>Meta<br />Ads</>,
+              subtitle: ""
           },
           {
             icon: "/assests/img/web-development/built-way-icon-1.png",
             title: <>Google<br />Ads</>,
+              subtitle: ""
           },
           {
             icon: "/assests/img/web-development/built-way-icon-1.png",
             title: <>LinkedIn<br />Ads</>,
+              subtitle: ""
           },
         ]}
       />
