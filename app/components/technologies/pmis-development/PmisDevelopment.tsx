@@ -6,14 +6,62 @@ import WhyChooseUs from '@/app/components/common/why-choose-us/WhyChooseUs';
 import WhyChooseSection from '../../common/WhyChooseSection/WhyChooseSection';
 import TechnologyStackSection from '../../common/TechnologyStackSection/TechnologyStackSection';
 import SuccessStory from '../../technology-details/success-story/SuccessStory'
+import BuiltWaySlider, { BuiltWaySlide } from '../../common/BuiltWaySlider/BuiltWaySlider';
+import HeroSection from '../../common/HeroSection/HeroSection';
+
+const slides: BuiltWaySlide[] = [
+  {
+    id: "1",
+    title: "End-to-End Project Visibility",
+    desc: "Complete oversight across planning, execution, monitoring, and closure stages.",
+    icon: "/assests/img/web-development/built-way-icon-1.png",
+  },
+  {
+    id: "2",
+    title: "Real-Time Monitoring & Tracking",
+    desc: "Live performance updates enable timely course correction and progress control.",
+    icon: "/assests/img/web-development/built-way-icon-2.png",
+  },
+  {
+    id: "3",
+    title: "Stronger Governance & Accountability",
+    desc: "Clearly defined roles approvals, and audit trails ensure compliance and resposibility",
+    icon: "/assests/img/web-development/built-way-icon-3.png",
+  },
+  {
+    id: "4",
+    title: "End-to-End Project Visibility",
+    desc: "Complete oversight across planning, execution, monitoring, and closure stages.",
+    icon: "/assests/img/web-development/built-way-icon-1.png",
+  },
+];
 
 const PmisDevelopment = () => {
   const router = useRouter();
   return (
     <div>
-      <PmisDevelopmentHero />
-
+      <HeroSection
+        bgImage="/assests/img/pmis/pmis-development-banner.jpg"
+        title={
+          <>
+            PROJECT MANAGEMENT<br />
+            <span className="hero-highlight relative z-9 w-fit font-poppins font-semibold text-[65px] leading-[116%] tracking-normal capitalize text-[#F4BE00]">INFORMATION SYSTEM (PMIS)</span>
+          </>
+        }
+        description="Vibes builds secure scalable websites with strong UI/UX and reliable backend systems for seamless user experiences"
+      />
+      <BuiltWaySlider
+        badgeText="Core Purpose"
+        heading={
+          <>
+            Why PMIS Matter:<br /> <span className="highlight relative z-9 w-fit font-poppins font-semibold text-[40px] leading-[1.23] tracking-normal">Purpose & Value</span>
+          </>
+        }
+        description="Turning brand challenges into growth stories with strategies to solve, scale, and sustain showing how clear vision and 360° digital expertise drive results."
+        slides={slides}
+      />
       <WhyChooseUs
+        badgeText="Clear Governance"
         backgroundImage="/assests/img/technology-details/common-casestudy-bg.jpg"
         heading="Enabling PMIS Across"
         highlightText="Governance & Execution"
@@ -81,21 +129,21 @@ const PmisDevelopment = () => {
         }
         description="Delivered large-scale, mission-critical digital solutions in collaboration with PwC and EY, supporting transparency, governance, and data-driven decision-making across key government initiatives."
         topLogos={[
-          "/assests/img/web-development/php-logo.png",
-          "/assests/img/web-development/react-logo.png",
-          "/assests/img/web-development/github-logo.png",
-          "/assests/img/web-development/css-logo.png",
-          "/assests/img/web-development/node-logo.png",
-          "/assests/img/web-development/html-logo.png",
-          "/assests/img/web-development/bootstrap-logo.png",
+          "/assests/img/pmis/cris-logo.png",
+          "/assests/img/pmis/pm-mitra-logo.png",
+          "/assests/img/pmis/education-logo.png",
+          "/assests/img/pmis/prayagraj-logo.jpg",
+          "/assests/img/pmis/kumbh-logo.png",
+          "/assests/img/pmis/dtis-logo.png",
+          "/assests/img/pmis/moh-logo.png",
         ]}
         bottomLogos={[
-          "/assests/img/web-development/shopify-logo.png",
-          "/assests/img/web-development/postgresql-logo.png",
-          "/assests/img/web-development/wordpress-logo.png",
-          "/assests/img/web-development/mysql-logo.png",
-          "/assests/img/web-development/ci-4-logo.png",
-          "/assests/img/web-development/mongodb-logo.png",
+          "/assests/img/pmis/dtis-logo.png",
+          "/assests/img/pmis/kumbh-logo.png",
+          "/assests/img/pmis/cris-logo.png",
+          "/assests/img/pmis/moh-logo.png",
+          "/assests/img/pmis/pm-mitra-logo.png",
+          "/assests/img/pmis/prayagraj-logo.jpg",
         ]}
       />
       <SuccessStory

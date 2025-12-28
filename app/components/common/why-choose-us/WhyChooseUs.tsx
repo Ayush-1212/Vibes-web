@@ -27,7 +27,7 @@ type WhyChooseUsProps = {
 /* ---------------- COMPONENT ---------------- */
 
 const WhyChooseUs: React.FC<WhyChooseUsProps> = ({
-  badgeText = "Why Choose Us",
+  badgeText,
   heading,
   highlightText,
   description,
@@ -88,8 +88,8 @@ const WhyChooseUs: React.FC<WhyChooseUsProps> = ({
 
         {/* HEADING */}
         <h3 className="text-center font-poppins font-medium text-[40px] leading-[1.23]">
-          {heading}{" "}
-          <span className="highlight font-poppins font-semibold">
+          {heading}{" "}<br />
+          <span className="highlight relative w-fit z-9  font-poppins font-semibold">
             {highlightText}
           </span>
         </h3>
@@ -131,7 +131,7 @@ const WhyChooseUs: React.FC<WhyChooseUsProps> = ({
 
                     <div className="customer-inner">
                       <div className="customer-content">
-                        <h5 className="font-normal text-[24px] leading-[1.23] tracking-normal text-[#08325A] mb-3">{item.title}</h5>
+                        <h5 className="font-semibold text-[24px] leading-[1.23] tracking-normal text-[#404040] mb-3">{item.title}</h5>
                         <p className="font-normal text-[14px] leading-[1.23] tracking-normal  text-[#575757DB] ">{item.desc}</p>
                       </div>
                     </div>

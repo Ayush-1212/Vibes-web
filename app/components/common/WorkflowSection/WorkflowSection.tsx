@@ -53,24 +53,23 @@ const WorkflowSection: React.FC<WorkflowSectionProps> = ({
         </p>
 
         {/* STEPS GRID */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 justify-items-center ">
           {steps.map((step) => (
             <div
               key={step.id}
-              className={`relative rounded-sm p-3 min-h-[280px] transition-all shadow-md
-                ${
-                  step.active
-                    ? "bg-gradient-to-br from-[#3F6B57] to-[#2F5443] text-white"
-                    : "bg-[#FAF8F3] text-[#2B2B2B] border-b-[5px] border-[#4B7057]"
-                }`}
+              className="
+                group relative rounded-sm p-3 min-h-[280px] transition-all shadow-md
+                bg-[#FAF8F3] text-[#2B2B2B] border-b-[5px] border-[#4B7057]
+                hover:bg-gradient-to-br hover:from-[#3F6B57] hover:to-[#2F5443] hover:text-white
+              "
             >
               {/* NUMBER */}
               <span
-                className={`absolute top-5 right-6 font-poppins font-semibold text-[70px]
-                  ${step.active ? "text-[#F4BE00]" : "text-[#DEE9E1]"}`}
-                style={{
-                  WebkitTextStroke: step.active ? "0px" : "1px #466E59",
-                }}
+                className="
+                  absolute top-5 right-6 font-poppins font-semibold text-[70px]
+                  text-[#DEE9E1] group-hover:text-[#F4BE00]
+                "
+                style={{ WebkitTextStroke: "1px #466E59" }}
               >
                 {step.id}
               </span>
@@ -82,23 +81,17 @@ const WorkflowSection: React.FC<WorkflowSectionProps> = ({
                   alt={step.title}
                   width={36}
                   height={36}
-                  className={step.active ? "invert" : ""}
+                  className="transition group-hover:invert"
                 />
               </div>
 
               {/* TITLE */}
-              <h3
-                className={`font-poppins font-semibold text-[18px] mb-3
-                  ${step.active ? "text-white" : "text-[#4C4C4C]"}`}
-              >
+              <h3 className="font-poppins font-semibold text-[18px] mb-3 text-[#4C4C4C] group-hover:text-white">
                 {step.title}
               </h3>
 
               {/* DESCRIPTION */}
-              <p
-                className={`font-poppins text-[12px] leading-[1.3]
-                  ${step.active ? "text-[#E6EFEA]" : "text-[#575757DB]"}`}
-              >
+              <p className="font-poppins text-[12px] leading-[1.3] text-[#575757DB] group-hover:text-[#E6EFEA]">
                 {step.desc}
               </p>
             </div>

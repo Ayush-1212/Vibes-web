@@ -1,5 +1,4 @@
 "use client";
-
 import React from "react";
 import { useRouter } from "next/navigation";
 
@@ -13,6 +12,98 @@ import SuccessStory from "@/app/components/technology-details/success-story/Succ
 import { useGetAllCaseStudiesQuery } from "@/app/redux/api/caseStudyApi";
 import { SingleCaseStudyCard } from "@/app/components/common/CaseStudiesCard/CaseStudiesCard";
 import WhyChooseUsSection from "@/app/components/common/WhyChooseUsSection/WhyChooseUsSection";
+import MarqueeStorySection, { SlideItem } from "@/app/components/common/MarqueeStorySection/MarqueeStorySection";
+
+const slides: SlideItem[] = [
+  {
+    type: "video",
+    src: "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-video1.mp4",
+  },
+  {
+    type: "images",
+    images: [
+      { src: "/assests/img/home/brand-img-1.jpg" },
+      { src: "/assests/img/home/brand-img-2.jpg" },
+    ],
+  },
+  {
+    type: "video",
+    src: "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-video1.mp4",
+  },
+  {
+    type: "images",
+    images: [
+      { src: "/assests/img/home/brand-img-3.jpg" },
+      { src: "/assests/img/home/brand-img-4.png" },
+    ],
+  },
+  {
+    type: "video",
+    src: "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-video1.mp4",
+  },
+  {
+    type: "images",
+    images: [
+      { src: "/assests/img/home/brand-img-1.jpg" },
+      { src: "/assests/img/home/brand-img-2.jpg" },
+    ],
+  },
+  {
+    type: "video",
+    src: "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-video1.mp4",
+  },
+  {
+    type: "images",
+    images: [
+      { src: "/assests/img/home/brand-img-3.jpg" },
+      { src: "/assests/img/home/brand-img-4.png" },
+    ],
+  },
+  {
+    type: "video",
+    src: "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-video1.mp4",
+  },
+  {
+    type: "images",
+    images: [
+      { src: "/assests/img/home/brand-img-1.jpg" },
+      { src: "/assests/img/home/brand-img-2.jpg" },
+    ],
+  },
+  {
+    type: "video",
+    src: "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-video1.mp4",
+  },
+  {
+    type: "images",
+    images: [
+      { src: "/assests/img/home/brand-img-3.jpg" },
+      { src: "/assests/img/home/brand-img-4.png" },
+    ],
+  },
+  {
+    type: "video",
+    src: "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-video1.mp4",
+  },
+  {
+    type: "images",
+    images: [
+      { src: "/assests/img/home/brand-img-1.jpg" },
+      { src: "/assests/img/home/brand-img-2.jpg" },
+    ],
+  },
+  {
+    type: "video",
+    src: "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/event-video1.mp4",
+  },
+  {
+    type: "images",
+    images: [
+      { src: "/assests/img/home/brand-img-3.jpg" },
+      { src: "/assests/img/home/brand-img-4.png" },
+    ],
+  },
+];
 
 const logos = [
   "https://vibes-work.s3.ap-south-1.amazonaws.com/event-marketing/assets/images/buzaria-logo.png",
@@ -57,28 +148,36 @@ export default function Page() {
         description="Vibes applies a structured, insight-led digital marketing framework that aligns strategy, creativity, and performance."
         cards={[
           {
-              title: "Strategic Alignment",
-              desc: "Digital strategies aligned with business goals, market realities, and customer intent to drive measurable outcomes.",
-              dark: true,
+            title: "Strategic Alignment",
+            desc: "Digital strategies aligned with business goals, market realities, and customer intent to drive measurable outcomes.",
+            dark: true,
           },
           {
-              title: "Audience Intelligence",
-              desc: "Data-driven insights and behavioral analysis guide precise targeting, messaging, and channel selection.",
-              dark: false,
+            title: "Audience Intelligence",
+            desc: "Data-driven insights and behavioral analysis guide precise targeting, messaging, and channel selection.",
+            dark: false,
           },
           {
-              title: "Omnichannel Execution",
-              desc: "Search, media, content, and social function as one integrated system to maximize performance and efficiency.",
-              dark: false,
+            title: "Omnichannel Execution",
+            desc: "Search, media, content, and social function as one integrated system to maximize performance and efficiency.",
+            dark: false,
           },
           {
-              title: "Performance Optimization",
-              desc: "Continuous monitoring and refinement ensure relevance, scalability, and sustained digital growth.",
-              dark: true,
+            title: "Performance Optimization",
+            desc: "Continuous monitoring and refinement ensure relevance, scalability, and sustained digital growth.",
+            dark: true,
           },
-      ]}
+        ]}
       />
-
+      <MarqueeStorySection
+        badge="Work Showcase"
+        title="Digital Work That "
+        highlightTitle="Drives Impact"
+        description="A showcase of strategic digital campaigns, performance marketing, and brand-building initiatives that deliver measurable results across industries."
+        slides={slides}
+        ctaText="View Our Digital Work"
+        bgImage="/assests/img/home/brand-stories-bg.png"
+      />
 
       {/* CASE STUDIES */}
       {isLoading && (

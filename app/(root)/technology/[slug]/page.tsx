@@ -20,16 +20,16 @@ const page = async ({ params }: { params: Promise<{ slug: string }> }) => {
       </div>
     );
 
-  if (slug === "ecomm-development") 
+  if (slug === "ecomm-development")
     return (
-  <div>
-    <EcommDevelopment/>
-  </div>
-  );
-  if (slug === "pmis-development") 
+      <div>
+        <EcommDevelopment />
+      </div>
+    );
+  if (slug === "pmis-development")
     return (
-  <PmisDevelopment/>
-  );
+      <PmisDevelopment />
+    );
 };
 
 export default page;

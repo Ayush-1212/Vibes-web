@@ -34,7 +34,7 @@ const services: ServiceItem[] = [
             "PR, Photoshoot & Videos",
             "Graphic Design",
         ],
-        url: "/branding/corporate-branding",
+        url: "/branding/brand-upliftment",
     },
     {
         title: "Brand Communication & Strategy",
@@ -46,7 +46,7 @@ const services: ServiceItem[] = [
             "Storytelling",
             "Brand Positioning",
         ],
-        url: "/branding/corporate-branding",
+        url: "/branding/brand-communication-and-strategy",
     },
 ];
 
@@ -77,7 +77,9 @@ const BrandingDetailsServices: React.FC = () => {
             </p>
             {services.map((item, index) => (
                 <div
-                    key={index}>
+                    key={index}
+                    className="group transition-colors duration-300 hover:bg-[#E9F1EC]"
+                >
                     <div className="container mx-auto px-4 py-14">
                         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
                             <div className="lg:col-span-4">
@@ -105,7 +107,7 @@ const BrandingDetailsServices: React.FC = () => {
                             </div>
 
                             <div className="lg:col-span-3 flex lg:justify-end">
-                                <Button2 className="mt-5 p-[20px]  hover:border-[#2B4C69] hover:bord[2px] hover:text-[#F4BE00] hover:bg-transparent text-[14px]">
+                                <Button2 className=" transition-all duration-300 group-hover:translate-x-5 not-odd:mt-5 p-[20px]  hover:border-[#2B4C69] hover:bord[2px] hover:text-[#F4BE00] hover:bg-transparent text-[14px]">
                                     <Link href={item.url}><span>View More</span></Link>
                                     <ArrowUpIcon className="transform rotate-45" />
                                 </Button2>

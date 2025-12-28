@@ -7,7 +7,7 @@ import Image from "next/image";
 import "swiper/css";
 
 export type BuiltWaySlide = {
-  id: string; // ✅ unique key
+  id: string;
   title: string;
   desc: string;
   icon: string;

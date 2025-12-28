@@ -42,7 +42,7 @@ const WebDevelopment = () => {
   return (
     <div>
       <HeroSection
-        bgImage="/assests/img/web-development/web-development-bg.jpg"
+        bgImage="/assests/img/web-development/web-development-banner.jpg"
         title={
           <>
             Web <br />

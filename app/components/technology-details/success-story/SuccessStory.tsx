@@ -40,7 +40,7 @@ export default function SuccessStory({
             <h3 className="text-[#F4BE00] font-poppins font-semibold text-[35px] leading-[100%]">
               {title}
             </h3>
-            <p className="text-[#EEEEEE] mt-3 font-poppins font-medium text-[20px] leading-[100%]">
+            <p className="text-[#EEEEEE] mt-3 font-poppins font-medium text-[20px] max-w-xl leading-[100%]">
               {subtitle}
             </p>
           </div>

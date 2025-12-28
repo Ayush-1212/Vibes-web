@@ -7,12 +7,22 @@ import WhyChooseUsSection from "@/app/components/common/WhyChooseUsSection/WhyCh
 import WhyChooseUs from '@/app/components/common/why-choose-us/WhyChooseUs';
 import OurBlogs from '../../blogs/blogs';
 import SuccessStory from "@/app/components/technology-details/success-story/SuccessStory";
+import HeroSection from '../../common/HeroSection/HeroSection';
 
 const PerformanceMarketing = () => {
   const router = useRouter();
   return (
     <div>
-      <PerformanceMarketingHero />
+      <HeroSection
+        bgImage="/assests/img/app-development/app-development-bannner.jpg"
+        title={
+          <>
+            PERFORMANCE <br />
+            <span className="hero-highlight relative z-9 w-fit font-poppins font-semibold text-[65px] leading-[116%] tracking-normal capitalize text-[#F4BE00]">MARKETING </span>
+          </>
+        }
+        description="Data-led digital campaigns focused on conversions, ROI, and scalable business growth across platforms."
+      />
       <AboutSection
         badgeText="Overview"
         heading="Performance "
@@ -23,18 +33,22 @@ const PerformanceMarketing = () => {
           {
             icon: "/assests/img/web-development/built-way-icon-1.png",
             title: <>Lead <br />Generation</>,
+            subtitle: ""
           },
           {
             icon: "/assests/img/web-development/built-way-icon-1.png",
-            title: <>Meta<br />Ads</>,
+            title: <>Meta Ads</>,
+            subtitle: ""
           },
           {
             icon: "/assests/img/web-development/built-way-icon-1.png",
-            title: <>Google<br />Ads</>,
+            title: <>Google Ads</>,
+            subtitle: ""
           },
           {
             icon: "/assests/img/web-development/built-way-icon-1.png",
-            title: <>LinkedIn<br />Ads</>,
+            title: <>LinkedIn Ads</>,
+            subtitle: ""
           },
         ]}
       />

@@ -55,9 +55,9 @@ const AboutSection = ({
 
             {/* Heading */}
             <h3 className="font-poppins font-medium text-[40px] leading-[1.23]">
-              {heading}{" "}
+              {heading}{" "}<br />
               {highlightText && (
-                <span className="font-semibold text-[40px]">
+                <span className=" relative highlight w-fit z-9 font-semibold text-[40px]">
                   {highlightText}
                 </span>
               )}
@@ -95,7 +95,7 @@ const AboutSection = ({
           </div>
         </div>
       </div>
-    </section>
+    </section >
   );
 };
 

@@ -7,7 +7,7 @@ import { ArrowUpIcon } from "lucide-react";
 type HeroSectionProps = {
   title: React.ReactNode;
   description: string;
-  bgImage: string;             
+  bgImage: string;
   height?: string;
   overlay?: boolean;
   showCTA?: boolean;
@@ -27,7 +27,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
 }) => {
   return (
     <section
-      className={`relative flex items-center ${height} bg-cover bg-center bg-no-repeat`}
+      className={`relative flex items-center ${height} bg-cover bg-center bg-no-repeat bg-right`}
       style={{
         backgroundImage: `url(${bgImage})`,
       }}
@@ -40,7 +40,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
       <div className="relative z-10 container mx-auto max-w-screen-xl px-4 md:px-8">
         <div className="grid grid-cols-12 items-center">
           {/* LEFT */}
-          <div className="col-span-12 md:col-span-6">
+          <div className="col-span-12 md:col-span-5">
             <h1 className="font-poppins font-normal text-[60px] leading-[116%] text-white">
               {title}
             </h1>
@@ -60,7 +60,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
           </div>
 
           {/* RIGHT (reserved) */}
-          <div className="col-span-12 md:col-span-6" />
+          <div className="col-span-12 md:col-span-7" />
         </div>
       </div>
     </section>

@@ -14,14 +14,14 @@ const AppDevelopment = () => {
   return (
     <div>
       <HeroSection
-        bgImage="/assests/img/web-development/web-development-bg.jpg"
+        bgImage="/assests/img/app-development/app-development-bannner.jpg"
         title={
           <>
-            Web <br />
+            Mobile App <br />
             <span className="hero-highlight relative z-9 w-fit font-poppins font-semibold text-[65px] leading-[116%] tracking-normal capitalize text-[#F4BE00]">Development</span>
           </>
         }
-        description="Vibes builds secure scalable websites with strong UI/UX and reliable backend systems for seamless user experiences"
+        description=" End-to-end mobile app development focused on performance, usability, and scalability across platforms."
       />
       <AboutSection
         badgeText="Services"
@@ -48,61 +48,56 @@ const AppDevelopment = () => {
         badgeText="Workflow"
         heading={
           <>
-            Development{" "}
-            <span className="highlight relative z-9 w-fit font-poppins font-semibold text-[40px] leading-[1.23] tracking-normal">Process</span>
+            From Concept to {" "}
+            <span className="highlight relative z-9 w-fit font-poppins font-semibold text-[40px] leading-[1.23] tracking-normal">Launch</span>
           </>
         }
-        description="From concept to launch, explore the clear process that bring websites to life with precision and purpose."
+        description=" A streamlined process delivering reliable, scalable mobile applications."
         steps={[
           {
             id: "01",
-            title: "Discovery & Planning",
-            desc: "The goals, audience, and structure are defined during Discovery & Planning to create a scalable foundation for the website.",
+            title: "Ideation & Strategy",
+            desc: "Define the core app idea, unique value proposition (UVP), target audience, and feature roadmap.",
             icon: "/assests/img/web-development/workflow-icon-1.png",
           },
           {
             id: "02",
-            title: "Wireframing & Architecture",
-            desc: "Wireframes and architecture are used as the blueprint to define structure and function before design begins.",
+            title: "Planning & Analysis",
+            desc: "Market research, competitor analysis, MVP feature definition, and structured planning for timelines and budgets.",
             icon: "/assests/img/web-development/workflow-icon-2.png",
           },
           {
             id: "03",
             title: "UI/UX Design",
-            desc: "UI/UX design is used to create intuitive digital experiences, using clear layouts, colors, and flows to ensure smooth, efficient user interaction.",
+            desc: "User-centric wireframes, intuitive user flows, and visually engaging interfaces with interactive prototypes.",
             icon: "/assests/img/web-development/workflow-icon-3.png",
           },
           {
             id: "04",
-            title: "Front-End Development",
-            desc: "Front-end development is used to turn designs into responsive, interactive interfaces with HTML, CSS, JavaScript, and modern UI frameworks.",
+            title: "Development",
+            desc: "End-to-end app development covering front-end, back-end, and APIs using native and cross-platform technologies",
             icon: "/assests/img/web-development/workflow-icon-1.png",
           },
           {
             id: "05",
-            title: "Back-End Development",
-            desc: "Server logic, databases, APIs, and security are built in the backend to support scalable and reliable applications.",
+            title: "Testing & Quality Assurance (QA)",
+            desc: "Comprehensive testing for functionality, performance, security, and usability across devices and platforms.",
             icon: "/assests/img/web-development/workflow-icon-4.png",
           },
           {
             id: "06",
-            title: "Testing",
-            desc: "Website testing is conducted to verify functionality, meet requirements, and ensure performance across devices and browsers.",
+            title: "Deployment & Launch",
+            desc: "App Store and Play Store submissions with ASO-ready assets for smooth approvals and visibility.",
             icon: "/assests/img/web-development/workflow-icon-5.png",
             active: true,
           },
           {
             id: "07",
-            title: "Deployment",
-            desc: "The tested product is deployed to production, configured for use, and optimized for performance and stability.",
+            title: "Post-Launch: Maintenance & Updates",
+            desc: "Ongoing monitoring, feature enhancements, performance optimization, and regular updates.",
             icon: "/assests/img/web-development/workflow-icon-6.png",
           },
-          {
-            id: "08",
-            title: "Support & Maintenance",
-            desc: "Performed to keep software secure, updated, and high-performing through continuous monitoring and improvements.",
-            icon: "/assests/img/web-development/workflow-icon-7.png",
-          },
+
         ]}
       />
       <WhyChooseSection
@@ -136,7 +131,7 @@ const AppDevelopment = () => {
           },
         ]}
       />
-      <TechnologyStackSection
+      {/* <TechnologyStackSection
         badgeText="Technology we use"
         heading={
           <>
@@ -162,10 +157,10 @@ const AppDevelopment = () => {
           "/assests/img/web-development/mongodb-logo.png",
         ]}
       />
-      <BuiltWay />
+      <BuiltWay /> */}
       <SuccessStory
-        title="Let’s Build Something Powerful"
-        subtitle="Scalable digital solutions tailored for you"
+        title="Let’s Build Your App"
+        subtitle="Turn ideas into high-impact mobile applications that users trust and engage with"
         buttonText="Talk to Experts"
         arrowImage="/assests/img/technology-details/arrow.png"
         className="bg-black"

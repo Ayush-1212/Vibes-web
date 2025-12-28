@@ -17,7 +17,7 @@ const services = [
             "Influencer Marketing",
             "Event Marketing",
         ],
-        url: "/",
+        url: "digital-marketing/campaign-management",
     },
     {
         title: "Performance Marketing",
@@ -37,7 +37,7 @@ const services = [
         hoverBgImage: "/assests/img/technology-details/tech-cards-bg.png",
         icon: "/assests/img/digital-m-details/digital-solution-icon-3.png",
         tags: ["Content Creation & Planning", "B2B: LinkedIn Management", "B2C: LinkedIn Management"],
-        url: "/technology/ecomm-development",
+        url: "digital-marketing/social-media-management",
     },
     {
         title: "Search Engine Optimization",
@@ -47,7 +47,7 @@ const services = [
         hoverBgImage: "/assests/img/technology-details/tech-cards-bg.png",
         icon: "/assests/img/digital-m-details/digital-solution-icon-4.png",
         tags: ["On-Page SEO", "Off-Page SEO", "Technical SEO", "LLM", "Keyword Strategy"],
-        url: "/technology/pmis-development",
+        url: "digital-marketing/search-engine-optimization",
     },
 ];
 
@@ -55,6 +55,22 @@ const DigitalMarketingSolutions = () => {
     return (
         <div className="digital-solution-wrapper section-gap">
             <div className="container mx-auto max-w-screen-xl px-4 md:px-8">
+                <div className="flex justify-center mb-5">
+                    <div className="px-6 py-2 rounded-full border border-[#F4BE00] inline-flex items-center gap-2">
+                        <span className="w-2 h-2 rounded-full bg-[#F4BE00]" />
+                        <span className="font-poppins font-semibold text-[10px] uppercase text-[#F4BE00]">
+                            Services Highlight
+                        </span>
+                    </div>
+                </div>
+
+                <h3 className="text-center font-poppins font-medium text-[40px]">Digital <span className=" relative w-fit highlight z-9 font-semibold">Marketing Solutions</span>
+                </h3>
+
+                <p className="text-[#707070] text-center max-w-2xl mx-auto mb-16 mt-5">
+                    Practical, data-driven digital marketing services focused on real outcomes strong visibility, quality leads, higher engagement, and consistent business growth
+                </p>
+
 
                 {/* GRID */}
                 <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-5 items-stretch">
