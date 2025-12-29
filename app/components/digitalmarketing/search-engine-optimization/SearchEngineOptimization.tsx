@@ -7,6 +7,23 @@ import SuccessStory from "@/app/components/technology-details/success-story/Succ
 import HeroSection from '../../common/HeroSection/HeroSection';
 import WhyChooseUs from '@/app/components/common/why-choose-us/WhyChooseUs';
 
+interface blogContent {
+  title: string;
+  Subtitle: React.ReactNode; 
+  bgImage?: string;
+}
+const textcontent: blogContent = {
+  title: 'Tech Ideas & Insights',
+  Subtitle: (
+    <>
+      Explore curated articles on emerging tech, smart solutions, and expert
+      <br /> perspectives from Vibes built to inform.
+    </>
+  ),
+  bgImage: '/assets/img/web-development/wd-services-bg.jpg'
+};
+
+
 const SearchEngineOptimization = () => {
   const router = useRouter();
   return (
@@ -84,7 +101,7 @@ const SearchEngineOptimization = () => {
 
         ]}
       />
-      <OurBlogs bgImage="/assests/img/web-development/wd-services-bg.jpg" />
+      <OurBlogs tData={textcontent} />
       <SuccessStory
         title="Stronger Rankings Start With Smarter SEO"
         subtitle=" Identify gaps, unlock opportunities, and build search visibility that delivers consistent results."

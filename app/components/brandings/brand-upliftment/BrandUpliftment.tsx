@@ -6,6 +6,22 @@ import ImageCarousel from "../../common/ImageCarouselWorkflow/ImageCarousel";
 import HeroSection from '../../common/HeroSection/HeroSection';
 import WhyChooseUsSection from "@/app/components/common/WhyChooseUsSection/WhyChooseUsSection";
 
+interface blogContent {
+  title: string;
+  Subtitle: React.ReactNode; 
+  bgImage?: string;
+}
+const textcontent: blogContent = {
+  title: 'Tech Ideas & Insights',
+  Subtitle: (
+    <>
+      Explore curated articles on emerging tech, smart solutions, and expert
+      <br /> perspectives from Vibes built to inform.
+    </>
+  ),
+  bgImage: '/assets/img/web-development/wd-services-bg.jpg'
+};
+
 const images = [
   { src: "/assests/img/branding-details/branding-bottom-img-1.png" },
   { src: "/assests/img/branding-details/branding-bottom-img-2.png" },
@@ -74,7 +90,7 @@ const BrandUpliftment = () => {
             " A curated selection of brand refinements delivering clarity, consistency, and stronger market presence",
         }}
       />
-      <OurBlogs bgImage="/assests/img/web-development/wd-services-bg.jpg" />
+      <OurBlogs tData={textcontent} />
       <SuccessStory
         title="Talk to Branding Experts"
         subtitle="Connect for strategic guidance on enhancing brand presence with clarity and intent."

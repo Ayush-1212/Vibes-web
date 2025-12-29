@@ -8,6 +8,22 @@ import OurBlogs from '../../blogs/blogs';
 import SuccessStory from "@/app/components/technology-details/success-story/SuccessStory";
 import HeroSection from '../../common/HeroSection/HeroSection';
 
+interface blogContent {
+  title: string;
+  Subtitle: React.ReactNode; 
+  bgImage?: string;
+}
+const textcontent: blogContent = {
+  title: 'Tech Ideas & Insights',
+  Subtitle: (
+    <>
+      Explore curated articles on emerging tech, smart solutions, and expert
+      <br /> perspectives from Vibes built to inform.
+    </>
+  ),
+  bgImage: '/assets/img/web-development/wd-services-bg.jpg'
+};
+
 const CampaignManagement = () => {
   const router = useRouter();
   return (
@@ -73,7 +89,7 @@ const CampaignManagement = () => {
       />
 
 
-      <OurBlogs bgImage="/assests/img/web-development/wd-services-bg.jpg" />
+      <OurBlogs tData={textcontent} />
       <SuccessStory
         title="Plan Your Campaign"
         subtitle="Build campaigns that connect, engage, and perform across every channel."

@@ -17,8 +17,13 @@ interface BlogCardProps {
     link: string;
 
 }
-interface OurBlogsProps {
-    bgImage?: string;
+interface blogContent {
+  title: string;
+  Subtitle: React.ReactNode; 
+  bgImage?: string;
+}
+interface BlogsProps {
+  tData: blogContent;
 }
 const blogs: BlogCardProps[] = [
     {
@@ -47,12 +52,12 @@ const blogs: BlogCardProps[] = [
     },
 ];
 
-export default function OurBlogs({ bgImage }: OurBlogsProps) {
+export default function OurBlogs({ tData }: BlogsProps) {
     return (
         <section
             className="blogs-wrapper section-gap relative w-full bg-no-repeat bg-cover bg-center"
             style={{
-                backgroundImage: bgImage ? `url(${bgImage})` : "none",
+                backgroundImage: tData?.bgImage ? `url(${tData?.bgImage})` : "none",
             }}
         >
             <div className="container mx-auto max-w-screen-xl px-4 md:px-8 relative z-10">
@@ -68,11 +73,11 @@ export default function OurBlogs({ bgImage }: OurBlogsProps) {
                             </div>
                         </div>
                         <h3 className="font-poppins font-medium text-[40px] leading-[1.23] tracking-norma]">
-                            Tech Ideas & Insights <span className="highlight relative z-9 w-fit font-poppins font-semibold text-[40px] leading-[1.23] tracking-normal">Insights</span>
+                            {tData?.title} <span className="highlight relative z-9 w-fit font-poppins font-semibold text-[40px] leading-[1.23] tracking-normal">Insights</span>
                         </h3>
 
                         <p className="text-[#525252] mt-5 ">
-                            Explore curated articles on emerging tech, smart solutions, and expert<br /> perspectives from Vibes built to inform, inspire, and accelerate digital growth.
+                            {tData?.Subtitle}
 
                         </p>
 

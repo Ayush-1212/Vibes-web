@@ -6,6 +6,22 @@ import ImageCarousel from "../../common/ImageCarouselWorkflow/ImageCarousel";
 import HeroSection from '../../common/HeroSection/HeroSection';
 import WhyChooseUsSection from "@/app/components/common/WhyChooseUsSection/WhyChooseUsSection";
 
+interface blogContent {
+  title: string;
+  Subtitle: React.ReactNode; 
+  bgImage?: string;
+}
+const textcontent: blogContent = {
+  title: 'Tech Ideas & Insights',
+  Subtitle: (
+    <>
+      Explore curated articles on emerging tech, smart solutions, and expert
+      <br /> perspectives from Vibes built to inform.
+    </>
+  ),
+  bgImage: '/assets/img/web-development/wd-services-bg.jpg'
+};
+
 const images = [
   { src: "/assests/img/branding-details/branding-bottom-img-1.png" },
   { src: "/assests/img/branding-details/branding-bottom-img-2.png" },
@@ -74,7 +90,7 @@ const CorporateBranding = () => {
             "Turning brand challenges into growth stories with strategies to solve, scale, and sustain showing how clear vision and 360° digital expertise drive results.",
         }}
       />
-      <OurBlogs bgImage="/assests/img/web-development/wd-services-bg.jpg" />
+      <OurBlogs tData={textcontent} />
       <SuccessStory
         title="Build a Brand That Commands Trust"
         subtitle="Branding designed to deliver clarity, consistency, and credibility across every business touchpoint."

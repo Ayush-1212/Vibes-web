@@ -7,6 +7,22 @@ import SuccessStory from "@/app/components/technology-details/success-story/Succ
 import HeroSection from '../../common/HeroSection/HeroSection';
 import WhyChooseUs from '@/app/components/common/why-choose-us/WhyChooseUs';
 
+interface blogContent {
+  title: string;
+  Subtitle: React.ReactNode; 
+  bgImage?: string;
+}
+const textcontent: blogContent = {
+  title: 'Tech Ideas & Insights',
+  Subtitle: (
+    <>
+      Explore curated articles on emerging tech, smart solutions, and expert
+      <br /> perspectives from Vibes built to inform.
+    </>
+  ),
+  bgImage: '/assets/img/web-development/wd-services-bg.jpg'
+};
+
 const SocialMediaManagement = () => {
   const router = useRouter();
   return (
@@ -75,7 +91,7 @@ const SocialMediaManagement = () => {
         ]}
       />
 
-      <OurBlogs bgImage="/assests/img/web-development/wd-services-bg.jpg" />
+      <OurBlogs tData={textcontent} />
       <SuccessStory
         title="Elevate Your Social Presence"
         subtitle="Create a social media presence that reflects brand value, clarity, and consistency across every platform"
