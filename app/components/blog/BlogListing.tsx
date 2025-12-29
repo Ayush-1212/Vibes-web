@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import { useGetAllBlogsQuery } from "@/app/redux/api/blogApi";
+import { titleCase } from "title-case";
 import {
   Select,
   SelectContent,
@@ -26,7 +27,7 @@ export default function BlogListing() {
       : blogs.filter((blog: any) => blog.blog_service === selectedFilter);
     
     const services = Array.from(
-  new Set(blogs.map((blog: any) => blog.blog_service))
+    new Set(blogs.map((blog: any) => blog.blog_service))
 );
 
 
@@ -107,7 +108,7 @@ export default function BlogListing() {
 
               <SelectContent>
                 <SelectGroup>
-                  <SelectLabel>Services</SelectLabel>
+                  {/* <SelectLabel>Services</SelectLabel> */}
 
                   {/* ALL OPTION */}
                   <SelectItem value="All">All</SelectItem>
@@ -115,7 +116,7 @@ export default function BlogListing() {
                   {/* DYNAMIC OPTIONS */}
                   {services.map((service) => (
                     <SelectItem key={service} value={service}>
-                      {service}
+                      {titleCase(service)}
                     </SelectItem>
                   ))}
                 </SelectGroup>
