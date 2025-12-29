@@ -9,7 +9,22 @@ import React from 'react'
 import { useRouter } from "next/navigation";
 import WhyChooseUs from '@/app/components/common/why-choose-us/WhyChooseUs';
 
-
+interface blogContent {
+  title: string;
+  Subtitle: React.ReactNode;
+  bgImage?: string;
+  highlighttitle: string,
+}
+const textcontent: blogContent = {
+  title: 'Branding',
+  highlighttitle: "Insights",
+  Subtitle: (
+    <>
+      Expert perspectives, trends, and strategic thinking that explore branding, <br />identity, and communication shaping how brands grow and stay relevant.
+    </>
+  ),
+  bgImage: '/assets/img/web-development/wd-services-bg.jpg'
+};
 
 const page = () => {
   const router = useRouter();
@@ -44,8 +59,9 @@ const page = () => {
         ]}
       />
 
+
       <BrandingCasestudies />
-      <OurBlogs bgImage="/assests/img/web-development/wd-services-bg.jpg" />
+      <OurBlogs tData={textcontent} />
       <SuccessStory
         title="Build the Brand You Imagine"
         subtitle=" Branding designed to create clarity, and long-term impact"

@@ -6,6 +6,23 @@ import ImageCarousel from "../../common/ImageCarouselWorkflow/ImageCarousel";
 import HeroSection from '../../common/HeroSection/HeroSection';
 import WhyChooseUsSection from "@/app/components/common/WhyChooseUsSection/WhyChooseUsSection";
 
+interface blogContent {
+  title: string;
+  Subtitle: React.ReactNode;
+  bgImage?: string;
+  highlighttitle: string,
+}
+const textcontent: blogContent = {
+  title: 'Thoughts on Brand ',
+  highlighttitle: "Narrative",
+  Subtitle: (
+    <>
+      nsights, perspectives, and trends shaping effective brand communication<br /> in evolving markets.
+    </>
+  ),
+  bgImage: '/assets/img/web-development/wd-services-bg.jpg'
+};
+
 const images = [
   { src: "/assests/img/branding-details/branding-bottom-img-1.png" },
   { src: "/assests/img/branding-details/branding-bottom-img-2.png" },
@@ -75,7 +92,7 @@ const BrandCommunicationStrategy = () => {
             "Selected projects highlighting how strong communication and positioning drive brand impact.",
         }}
       />
-      <OurBlogs bgImage="/assests/img/web-development/wd-services-bg.jpg" />
+      <OurBlogs tData={textcontent} />
       <SuccessStory
         title="Let’s Define Your Brand Voice"
         subtitle=" Start building a clear, consistent, and compelling communication foundation."

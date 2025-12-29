@@ -7,12 +7,30 @@ import SuccessStory from "@/app/components/technology-details/success-story/Succ
 import HeroSection from '../../common/HeroSection/HeroSection';
 import WhyChooseUs from '@/app/components/common/why-choose-us/WhyChooseUs';
 
+interface blogContent {
+  title: string;
+  Subtitle: React.ReactNode;
+  bgImage?: string;
+  highlighttitle: string,
+}
+const textcontent: blogContent = {
+  title: 'SEO Insights & ',
+  highlighttitle: "Blogs",
+  Subtitle: (
+    <>
+      Practical perspectives on evolving search algorithms, AI-driven SEO,<br /> content performance, and organic growth strategies.
+    </>
+  ),
+  bgImage: '/assets/img/web-development/wd-services-bg.jpg'
+};
+
+
 const SearchEngineOptimization = () => {
   const router = useRouter();
   return (
     <div>
       <HeroSection
-        bgImage="/assests/img/search-engine-optimization/search-engine-optimization-banner.jpg"
+        bgImage="/assests/img/search-engine-optimization/seo-banner.jpg"
         title={
           <>
             Search Engine <br />
@@ -84,7 +102,7 @@ const SearchEngineOptimization = () => {
 
         ]}
       />
-      <OurBlogs bgImage="/assests/img/web-development/wd-services-bg.jpg" />
+      <OurBlogs tData={textcontent} />
       <SuccessStory
         title="Stronger Rankings Start With Smarter SEO"
         subtitle=" Identify gaps, unlock opportunities, and build search visibility that delivers consistent results."

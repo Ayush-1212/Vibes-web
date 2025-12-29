@@ -8,6 +8,23 @@ import OurBlogs from '../../blogs/blogs';
 import SuccessStory from "@/app/components/technology-details/success-story/SuccessStory";
 import HeroSection from '../../common/HeroSection/HeroSection';
 
+interface blogContent {
+  title: string;
+  Subtitle: React.ReactNode;
+  bgImage?: string;
+  highlighttitle: string,
+}
+const textcontent: blogContent = {
+  title: 'Tech Ideas & Insights',
+  highlighttitle: "Insights",
+  Subtitle: (
+    <>
+      Explore thought leadership, trends, and proven strategies behind<br /> successful influencer and event-led campaigns shaping modern brand communication.
+    </>
+  ),
+  bgImage: '/assets/img/web-development/wd-services-bg.jpg'
+};
+
 const CampaignManagement = () => {
   const router = useRouter();
   return (
@@ -73,7 +90,7 @@ const CampaignManagement = () => {
       />
 
 
-      <OurBlogs bgImage="/assests/img/web-development/wd-services-bg.jpg" />
+      <OurBlogs tData={textcontent} />
       <SuccessStory
         title="Plan Your Campaign"
         subtitle="Build campaigns that connect, engage, and perform across every channel."

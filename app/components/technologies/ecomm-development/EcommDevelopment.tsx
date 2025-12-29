@@ -14,7 +14,7 @@ const EcommDevelopment = () => {
   return (
     <div>
       <HeroSection
-        bgImage="/assests/img/ecommerce-development/ecommerce-development-bannner.jpg"
+        bgImage="/assests/img/ecommerce-development/ecommerce-banner.jpg"
         title={
           <>
             E-Commerce <br />
