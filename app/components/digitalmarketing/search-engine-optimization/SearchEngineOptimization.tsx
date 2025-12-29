@@ -9,15 +9,16 @@ import WhyChooseUs from '@/app/components/common/why-choose-us/WhyChooseUs';
 
 interface blogContent {
   title: string;
-  Subtitle: React.ReactNode; 
+  Subtitle: React.ReactNode;
   bgImage?: string;
+  highlighttitle: string,
 }
 const textcontent: blogContent = {
-  title: 'Tech Ideas & Insights',
+  title: 'SEO Insights & ',
+  highlighttitle: "Blogs",
   Subtitle: (
     <>
-      Explore curated articles on emerging tech, smart solutions, and expert
-      <br /> perspectives from Vibes built to inform.
+      Practical perspectives on evolving search algorithms, AI-driven SEO,<br /> content performance, and organic growth strategies.
     </>
   ),
   bgImage: '/assets/img/web-development/wd-services-bg.jpg'
@@ -29,7 +30,7 @@ const SearchEngineOptimization = () => {
   return (
     <div>
       <HeroSection
-        bgImage="/assests/img/search-engine-optimization/search-engine-optimization-banner.jpg"
+        bgImage="/assests/img/search-engine-optimization/seo-banner.jpg"
         title={
           <>
             Search Engine <br />

@@ -8,15 +8,16 @@ import WhyChooseUsSection from "@/app/components/common/WhyChooseUsSection/WhyCh
 
 interface blogContent {
   title: string;
-  Subtitle: React.ReactNode; 
+  Subtitle: React.ReactNode;
   bgImage?: string;
+  highlighttitle: string,
 }
 const textcontent: blogContent = {
-  title: 'Tech Ideas & Insights',
+  title: 'Branding',
+  highlighttitle: "Insights",
   Subtitle: (
     <>
-      Explore curated articles on emerging tech, smart solutions, and expert
-      <br /> perspectives from Vibes built to inform.
+      Expert insights, trends, and ideas focused on keeping brands relevant in<br /> changing markets.
     </>
   ),
   bgImage: '/assets/img/web-development/wd-services-bg.jpg'

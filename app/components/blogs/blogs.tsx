@@ -18,12 +18,13 @@ interface BlogCardProps {
 
 }
 interface blogContent {
-  title: string;
-  Subtitle: React.ReactNode; 
-  bgImage?: string;
+    title: string;
+    Subtitle: React.ReactNode;
+    bgImage?: string;
+    highlighttitle: string,
 }
 interface BlogsProps {
-  tData: blogContent;
+    tData: blogContent;
 }
 const blogs: BlogCardProps[] = [
     {
@@ -73,7 +74,7 @@ export default function OurBlogs({ tData }: BlogsProps) {
                             </div>
                         </div>
                         <h3 className="font-poppins font-medium text-[40px] leading-[1.23] tracking-norma]">
-                            {tData?.title} <span className="highlight relative z-9 w-fit font-poppins font-semibold text-[40px] leading-[1.23] tracking-normal">Insights</span>
+                            {tData?.title} <span className="highlight relative z-9 w-fit font-poppins font-semibold text-[40px] leading-[1.23] tracking-normal">{tData?.highlighttitle}</span>
                         </h3>
 
                         <p className="text-[#525252] mt-5 ">

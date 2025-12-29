@@ -11,15 +11,16 @@ import WhyChooseUs from '@/app/components/common/why-choose-us/WhyChooseUs';
 
 interface blogContent {
   title: string;
-  Subtitle: React.ReactNode; 
+  Subtitle: React.ReactNode;
   bgImage?: string;
+  highlighttitle: string,
 }
 const textcontent: blogContent = {
-  title: 'Tech Ideas & Insights',
+  title: 'Branding',
+  highlighttitle: "Insights",
   Subtitle: (
     <>
-      Explore curated articles on emerging tech, smart solutions, and expert
-      <br /> perspectives from Vibes built to inform.
+      Expert perspectives, trends, and strategic thinking that explore branding, <br />identity, and communication shaping how brands grow and stay relevant.
     </>
   ),
   bgImage: '/assets/img/web-development/wd-services-bg.jpg'
@@ -57,7 +58,7 @@ const page = () => {
 
         ]}
       />
-      
+
 
       <BrandingCasestudies />
       <OurBlogs tData={textcontent} />

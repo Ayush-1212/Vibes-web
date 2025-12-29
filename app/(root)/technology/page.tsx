@@ -15,15 +15,16 @@ import { SingleCaseStudyCard } from "@/app/components/common/CaseStudiesCard/Cas
 
 interface blogContent {
   title: string;
-  Subtitle: React.ReactNode; 
+  Subtitle: React.ReactNode;
   bgImage?: string;
+  highlighttitle: string;
 }
 const textcontent: blogContent = {
-  title: 'Tech Ideas & Insights',
+  title: 'Tech Ideas &',
+  highlighttitle: "Insights",
   Subtitle: (
     <>
-      Explore curated articles on emerging tech, smart solutions, and expert
-      <br /> perspectives from Vibes built to inform.
+      Explore curated articles on emerging tech, smart solutions, and expert perspectives from<br /> Vibes built to inform, inspire, and accelerate digital growth.
     </>
   ),
   bgImage: '/assets/img/web-development/wd-services-bg.jpg'

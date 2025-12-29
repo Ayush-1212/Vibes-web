@@ -15,15 +15,16 @@ import WhyChooseUsSection from "@/app/components/common/WhyChooseUsSection/WhyCh
 import MarqueeStorySection, { SlideItem } from "@/app/components/common/MarqueeStorySection/MarqueeStorySection";
 interface blogContent {
   title: string;
-  Subtitle: React.ReactNode; 
+  Subtitle: React.ReactNode;
   bgImage?: string;
+  highlighttitle: string;
 }
 const textcontent: blogContent = {
-  title: 'Tech Ideas & Insights',
+  title: 'Ideas, insights, and intelligent ',
+  highlighttitle: "digital success.",
   Subtitle: (
     <>
-      Explore curated articles on emerging tech, smart solutions, and expert
-      <br /> perspectives from Vibes built to inform.
+      Subtext: Insights focused on performance, visibility, and sustainable<br /> digital growth.
     </>
   ),
   bgImage: '/assets/img/web-development/wd-services-bg.jpg'
