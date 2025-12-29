@@ -9,6 +9,24 @@ import OurBlogs from '../../blogs/blogs';
 import SuccessStory from "@/app/components/technology-details/success-story/SuccessStory";
 import HeroSection from '../../common/HeroSection/HeroSection';
 
+interface blogContent {
+  title: string;
+  Subtitle: React.ReactNode;
+  bgImage?: string;
+  highlighttitle: string,
+}
+const textcontent: blogContent = {
+  title: 'Branding',
+  highlighttitle: "Insights",
+  Subtitle: (
+    <>
+      Expert perspectives, trends, and strategic thinking that explore branding, <br />identity, and communication shaping how brands grow and stay relevant.
+    </>
+  ),
+  bgImage: '/assests/img/technology-details/common-casestudy-bg.jpg'
+};
+
+
 const PerformanceMarketing = () => {
   const router = useRouter();
   return (
@@ -114,7 +132,8 @@ const PerformanceMarketing = () => {
 
         ]}
       />
-      <OurBlogs bgImage="/assests/img/technology-details/common-casestudy-bg.jpg" />
+
+      <OurBlogs tData={textcontent} />
       <SuccessStory
         title="Turn Clicks Into Conversions"
         subtitle="High-impact performance strategies built to maximize ROI and accelerate results."
