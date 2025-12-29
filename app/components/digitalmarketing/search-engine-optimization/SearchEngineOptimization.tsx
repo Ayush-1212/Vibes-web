@@ -5,6 +5,7 @@ import AboutSection from '../../common/AboutUs/AboutSection';
 import OurBlogs from '../../blogs/blogs';
 import SuccessStory from "@/app/components/technology-details/success-story/SuccessStory";
 import HeroSection from '../../common/HeroSection/HeroSection';
+import WhyChooseUs from '@/app/components/common/why-choose-us/WhyChooseUs';
 
 const SearchEngineOptimization = () => {
   const router = useRouter();
@@ -26,6 +27,7 @@ const SearchEngineOptimization = () => {
         highlightText="Sustainable Results"
         description="Data-driven optimization frameworks designed to strengthen rankings, improve site health, and convert organic visibility into business impact."
         mainImage="/assests/img/performance-marketing/pm-overview-left-img.png"
+        bgImage="/assests/img/web-development/wd-services-bg.jpg"
         features={[
           {
             icon: "/assests/img/web-development/built-way-icon-1.png",
@@ -55,8 +57,34 @@ const SearchEngineOptimization = () => {
           },
         ]}
       />
+      <WhyChooseUs
+        badgeText="Why Choose Us?"
+        backgroundImage="/assests/img/technology-details/common-casestudy-bg.jpg"
+        heading=" Vibes Search "
+        highlightText="Visibility Advantage"
+        description="Data-backed SEO strategies focused on sustainable rankings, traffic quality, and long-term growth."
+        centerText={`Why Brands,\nTrust Vibes?`}
+        slides={[
+          {
+            title: "Intent-Focused Keyword Strategy",
+            desc: "Search strategies built around user intent, relevance, and conversion potential—not just rankings.",
+          },
+          {
+            title: "Technical, Content & Authority Alignment",
+            desc: "On-page optimization, technical SEO, and content authority work together for holistic performance.",
+          },
+          {
+            title: "Transparent Tracking & Measurable Growth",
+            desc: " Clear SEO reporting, ranking visibility, and traffic insights ensure accountability and steady progress.",
+          },
+          {
+            title: "Intent-Focused Keyword Strategy",
+            desc: "Search strategies built around user intent, relevance, and conversion potential—not just rankings.",
+          },
 
-      <OurBlogs />
+        ]}
+      />
+      <OurBlogs bgImage="/assests/img/web-development/wd-services-bg.jpg" />
       <SuccessStory
         title="Stronger Rankings Start With Smarter SEO"
         subtitle=" Identify gaps, unlock opportunities, and build search visibility that delivers consistent results."

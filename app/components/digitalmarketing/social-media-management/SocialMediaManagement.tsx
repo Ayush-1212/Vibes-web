@@ -5,6 +5,7 @@ import AboutSection from '../../common/AboutUs/AboutSection';
 import OurBlogs from '../../blogs/blogs';
 import SuccessStory from "@/app/components/technology-details/success-story/SuccessStory";
 import HeroSection from '../../common/HeroSection/HeroSection';
+import WhyChooseUs from '@/app/components/common/why-choose-us/WhyChooseUs';
 
 const SocialMediaManagement = () => {
   const router = useRouter();
@@ -26,6 +27,7 @@ const SocialMediaManagement = () => {
         highlightText="Services"
         description=" End-to-end social media solutions focused on planning, storytelling, and performance crafted to align brand objectives with audience behaviour."
         mainImage="/assests/img/performance-marketing/pm-overview-left-img.png"
+        bgImage="/assests/img/web-development/wd-services-bg.jpg"
         features={[
           {
             icon: "/assests/img/web-development/built-way-icon-1.png",
@@ -45,8 +47,35 @@ const SocialMediaManagement = () => {
           },
         ]}
       />
+      <WhyChooseUs
+        badgeText="Why Choose Us?"
+        backgroundImage="/assests/img/technology-details/common-casestudy-bg.jpg"
+        heading=" Vibes Social Growth "
+        highlightText="Framework"
+        description=" Purpose-driven social strategies built to engage audiences and strengthen brand relevance."
+        centerText={`Why Brands,\nTrust Vibes?`}
+        slides={[
+          {
+            title: "Content with Clear Intent",
+            desc: " Every post, reel, and story aligns with brand goals—engagement, community building, or lead generation.",
+          },
+          {
+            title: "Platform-Specific Strategy",
+            desc: "Customized content and formats optimized for each social platform to maximize reach and interaction.",
+          },
+          {
+            title: "Insights, Analytics & Consistency",
+            desc: "Performance-driven content calendars, analytics-led refinements, and consistent brand voice across channels.",
+          },
+          {
+            title: "Content with Clear Intent",
+            desc: " Every post, reel, and story aligns with brand goals—engagement, community building, or lead generation.",
+          },
 
-      <OurBlogs />
+        ]}
+      />
+
+      <OurBlogs bgImage="/assests/img/web-development/wd-services-bg.jpg" />
       <SuccessStory
         title="Elevate Your Social Presence"
         subtitle="Create a social media presence that reflects brand value, clarity, and consistency across every platform"

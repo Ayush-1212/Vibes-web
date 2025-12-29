@@ -7,18 +7,18 @@ export default function FooterRightSection() {
         <div className="text-white grid grid-cols-12 gap-y-8 ps-5  items-center">
             <div className="col-span-4">
                 <ul className="space-y-3 text-[15px] font-light tracking-wide">
-                    <li className="list-disc list-inside font-[500] text-[#7C7C7C] text-[16px] leading-[100%] tracking-[0] "><Link href="#" className="hover:text-[#F4BE00] transition-colors">Who we are</Link></li>
-                    <li className="list-disc list-inside font-[500] text-[#7C7C7C] text-[16px] leading-[100%] tracking-[0]"><Link href="#" className="hover:text-[#F4BE00] transition-colors">Case study</Link></li>
-                    <li className="list-disc list-inside font-[500] text-[#7C7C7C] text-[16px] leading-[100%] tracking-[0] "><Link href="#" className="hover:text-[#F4BE00] transition-colors">Career</Link></li>
-                    
+                    <li className="list-disc list-inside font-[500] text-[#7C7C7C] text-[16px] leading-[100%] tracking-[0] "><Link href="/who-we-are" className="hover:text-[#F4BE00] transition-colors">Who we are</Link></li>
+                    <li className="list-disc list-inside font-[500] text-[#7C7C7C] text-[16px] leading-[100%] tracking-[0]"><Link href="/case-study" className="hover:text-[#F4BE00] transition-colors">Case study</Link></li>
+                    <li className="list-disc list-inside font-[500] text-[#7C7C7C] text-[16px] leading-[100%] tracking-[0] "><Link href="/careers" className="hover:text-[#F4BE00] transition-colors">Career</Link></li>
+
                 </ul>
             </div>
 
             <div className="col-span-4 ">
                 <ul className="space-y-3 text-[15px] font-light tracking-wide">
                     <li className="list-disc list-inside font-[500] text-[#7C7C7C] text-[16px] leading-[100%] tracking-[0] "><Link href="/blog" className="hover:text-[#F4BE00] transition-colors">Blogs</Link></li>
-                    <li className="list-disc list-inside font-[500] text-[#7C7C7C] text-[16px] leading-[100%] tracking-[0] "><Link href="#" className="hover:text-[#F4BE00] transition-colors">Culture</Link></li>
-                    <li className="list-disc list-inside font-[500] text-[#7C7C7C] text-[16px] leading-[100%] tracking-[0] "><Link href="#" className="hover:text-[#F4BE00] transition-colors">Contact us</Link></li>
+                    <li className="list-disc list-inside font-[500] text-[#7C7C7C] text-[16px] leading-[100%] tracking-[0] "><Link href="/gallery" className="hover:text-[#F4BE00] transition-colors">Culture</Link></li>
+                    <li className="list-disc list-inside font-[500] text-[#7C7C7C] text-[16px] leading-[100%] tracking-[0] "><Link href="/contact-us" className="hover:text-[#F4BE00] transition-colors">Contact us</Link></li>
                 </ul>
             </div>
 

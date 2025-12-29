@@ -16,7 +16,7 @@ type WorkflowSectionProps = {
   heading: React.ReactNode;
   description: string;
   steps: WorkflowStep[];
-  bgClass?: string;
+  bgImage?: string;
 };
 
 /* ---------------- COMPONENT ---------------- */
@@ -26,10 +26,14 @@ const WorkflowSection: React.FC<WorkflowSectionProps> = ({
   heading,
   description,
   steps,
-  bgClass = "bg-[#E7EFE8]",
+  bgImage,
 }) => {
   return (
-    <section className={`${bgClass} section-gap`}>
+    <section className="section-gap bg-no-repeat bg-cover bg-center"
+      style={{
+        backgroundImage: bgImage ? `url(${bgImage})` : "none",
+      }}
+    >
       <div className="container mx-auto max-w-screen-xl px-4 md:px-8">
 
         {/* BADGE */}

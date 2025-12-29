@@ -29,6 +29,7 @@ const BrandUpliftment = () => {
       />
       <WhyChooseUsSection
         badgeText="Services Highlight"
+        bgImage="/assests/img/web-development/wd-services-bg.jpg"
         heading={
           <>
             Specialised Brand <br />
@@ -73,7 +74,7 @@ const BrandUpliftment = () => {
             " A curated selection of brand refinements delivering clarity, consistency, and stronger market presence",
         }}
       />
-      <OurBlogs />
+      <OurBlogs bgImage="/assests/img/web-development/wd-services-bg.jpg" />
       <SuccessStory
         title="Talk to Branding Experts"
         subtitle="Connect for strategic guidance on enhancing brand presence with clarity and intent."

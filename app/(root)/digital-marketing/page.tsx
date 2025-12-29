@@ -139,10 +139,11 @@ export default function Page() {
       <DigitalMarketingSolutions />
       <WhyChooseUsSection
         badgeText="Why Choose Us"
+        bgImage="/assests/img/technology-details/common-casestudy-bg.jpg"
         heading={
           <>
             A Smarter Way to <br />
-            <span className="font-semibold">Build Digital Brands</span>
+            <span className="highlight w-fit relative z-9 font-semibold">Build Digital Brands</span>
           </>
         }
         description="Vibes applies a structured, insight-led digital marketing framework that aligns strategy, creativity, and performance."
@@ -176,7 +177,7 @@ export default function Page() {
         description="A showcase of strategic digital campaigns, performance marketing, and brand-building initiatives that deliver measurable results across industries."
         slides={slides}
         ctaText="View Our Digital Work"
-        bgImage="/assests/img/home/brand-stories-bg.png"
+        bgImage="/assests/img/web-development/wd-services-bg.jpg"
       />
 
       {/* CASE STUDIES */}
@@ -200,11 +201,12 @@ export default function Page() {
           description="Discover how our digital marketing strategies turn insights into action and brands into market leaders."
           buttonText="Explore Case Studies"
           cards={cards}
-          bgColor="#dfe8dd"
+          bgImage="/assests/img/technology-details/common-casestudy-bg.jpg"
+
         />
       )}
 
-      <OurBlogs />
+      <OurBlogs bgImage="/assests/img/web-development/wd-services-bg.jpg" />
 
       <MarqueeTabsSlider
         badgeText="Trusted Clients"

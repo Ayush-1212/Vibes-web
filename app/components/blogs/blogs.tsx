@@ -15,8 +15,11 @@ interface BlogCardProps {
     title: string;
     description: string;
     link: string;
-}
 
+}
+interface OurBlogsProps {
+    bgImage?: string;
+}
 const blogs: BlogCardProps[] = [
     {
         id: "101",
@@ -44,9 +47,14 @@ const blogs: BlogCardProps[] = [
     },
 ];
 
-export default function OurBlogs() {
+export default function OurBlogs({ bgImage }: OurBlogsProps) {
     return (
-        <section className="blogs-wrapper section-gap relative w-full">
+        <section
+            className="blogs-wrapper section-gap relative w-full bg-no-repeat bg-cover bg-center"
+            style={{
+                backgroundImage: bgImage ? `url(${bgImage})` : "none",
+            }}
+        >
             <div className="container mx-auto max-w-screen-xl px-4 md:px-8 relative z-10">
                 <div className="flex justify-between items-center mb-12">
                     <div className="flex-1">
@@ -70,11 +78,12 @@ export default function OurBlogs() {
 
                     </div>
 
-
-                    <Button2 className="mt-5 p-[20px]">
-                        <span>Explore Our Blogs</span>
-                        <ArrowUpIcon className="transform rotate-45" />
-                    </Button2>
+                    <Link href="/blog">
+                        <Button2 className="mt-5 p-[20px]">
+                            <span>Explore Our Blogs</span>
+                            <ArrowUpIcon className="transform rotate-45" />
+                        </Button2>
+                    </Link>
                 </div>
 
                 {/* Swiper */}

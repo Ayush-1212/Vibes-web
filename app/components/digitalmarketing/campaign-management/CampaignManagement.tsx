@@ -28,6 +28,7 @@ const CampaignManagement = () => {
         highlightText="Drives Engagement"
         description=" From audience discovery to on-ground activation, campaigns are designed, managed, and optimized to deliver visibility, relevance, and results across multiple touchpoints."
         mainImage="/assests/img/performance-marketing/pm-overview-left-img.png"
+        bgImage="/assests/img/web-development/wd-services-bg.jpg"
         features={[
           {
             icon: "/assests/img/web-development/built-way-icon-1.png",
@@ -39,77 +40,40 @@ const CampaignManagement = () => {
             title: <>Event Marketing</>,
             subtitle: "Concept-to-closure event execution that creates immersive brand experiences, drives audience participation, and strengthens brand recall through seamless planning and promotion."
           },
-          // {
-          //   icon: "/assests/img/web-development/built-way-icon-1.png",
-          //   title: <>Google Ads</>,
-          //   subtitle: ""
-          // },
-          // {
-          //   icon: "/assests/img/web-development/built-way-icon-1.png",
-          //   title: <>LinkedIn Ads</>,
-          //   subtitle: ""
-          // },
+
         ]}
       />
-      {/* <WhyChooseUsSection
-        badgeText="Growth Strategy"
-        heading={
-          <>
-            How Brands  <br />
-            <span className="highlight relative w-fit font-semibold">Move Forward?</span>
-          </>
-        }
-        description="Focused branding strategies designed to strengthen identity, build trust, and drive long-term progress."
-        cards={[
-          {
-            title: "Mission-Driven Strategy",
-            desc: " Marketing initiatives aligned closely with business objectives to ensure every campaign supports long-term growth.",
-            dark: true,
-          },
-          {
-            title: "Performance-First Approach",
-            desc: "Every decision guided by data, focusing on conversions, ROI, and measurable outcomes rather than vanity metrics.",
-            dark: false,
-          },
-          {
-            title: "Smart Audience Targeting",
-            desc: "Advanced segmentation and intent-based targeting to reach the right audience at the right stage of the funnel.",
-            dark: false,
-          },
-          {
-            title: "Transparent Performance Reporting",
-            desc: "Clear, actionable reporting with complete visibility into spend, performance, and optimization insights.",
-            dark: true,
-          },
-        ]}
-      /> */}
-      {/* <WhyChooseUs
+
+      <WhyChooseUs
+        badgeText="Why Choose Us?"
         backgroundImage="/assests/img/technology-details/common-casestudy-bg.jpg"
-        heading="Vibes Performance "
-        highlightText="Advantage"
-        description="A results-focused model blending strategy, data, creativity, and transparency to drive consistent growth"
+        heading="Vibes Campaign "
+        highlightText="Excellence"
+        description=" Strategic, insight-led campaigns designed for reach, relevance, and measurable outcomes."
         centerText={`Why Brands,\nTrust Vibes?`}
         slides={[
           {
-            title: "Results-Driven Execution",
-            desc: "Campaigns built around clear KPIs, conversions, and ROI, ensuring every marketing effort delivers measurable business impact.",
+            title: "Performance-Led Campaign Design",
+            desc: "Campaigns planned around defined objectives, audience intent, and conversion metrics to deliver tangible results.",
           },
           {
-            title: "Data, Strategy & Creativity Combined",
-            desc: "Performance insights, audience intelligence, and compelling creatives work together to maximize efficiency and scale.",
+            title: "Integrated Planning & Execution",
+            desc: " Media strategy, creative direction, and execution aligned across platforms for consistent brand impact.",
           },
           {
-            title: "Complete Transparency & Accountability",
-            desc: "Clear reporting, real-time performance tracking, and optimization insights provide full visibility into outcomes and spend.",
+            title: "Continuous Optimization & Reporting",
+            desc: " Live tracking, performance reviews, and data-backed optimizations ensure efficiency throughout the campaign lifecycle.",
           },
           {
-            title: "Results-Driven Execution",
-            desc: "Campaigns built around clear KPIs, conversions, and ROI, ensuring every marketing effort delivers measurable business impact.",
+            title: "Performance-Led Campaign Design",
+            desc: "Campaigns planned around defined objectives, audience intent, and conversion metrics to deliver tangible results.",
           },
 
         ]}
-      /> */}
-      <OurBlogs />
+      />
+
+
+      <OurBlogs bgImage="/assests/img/web-development/wd-services-bg.jpg" />
       <SuccessStory
         title="Plan Your Campaign"
         subtitle="Build campaigns that connect, engage, and perform across every channel."

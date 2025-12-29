@@ -769,7 +769,7 @@ height:503px;
 }
 
 .bg-success-story{
-  background: url("/assests/img/technology-details/bg-green-element.png") center/cover no-repeat;
+  background: url("/assests/img/technology-details/cta-bg.jpg") center/cover no-repeat;
   width:100%
 }
 
@@ -1214,4 +1214,8 @@ height: 4px;
 background:#466e5999;
 border-radius: 50%;
 border: 1px solid #466E59
+}
+.case-study-listing-wrapper{
+background: url("/assests/img/digital-m-details/dm-solution-bg.png") center/cover no-repeat;
+width:100%
 }

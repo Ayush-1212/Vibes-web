@@ -23,10 +23,12 @@ const BrandingDetailsHero: React.FC = () => {
                             From insight to identity, built for business impact
                         </p>
                         <div className=" mt-4">
-                            <Button2 className="mt-5 p-[20px] hover:border-[#2B4C69] hover:border-[2px] hover:text-[#F4BE00] hover:bg-transparent bg-[#FFFFFF] text-[#204667]">
-                                <span>Create a Stronger Brand</span>
-                                <ArrowUpIcon className="transform rotate-45" />
-                            </Button2>
+                            <Link href="contact-us">
+                                <Button2 className="mt-5 p-[20px] hover:border-[#2B4C69] hover:border-[2px] hover:text-[#F4BE00] hover:bg-transparent bg-[#FFFFFF] text-[#204667]">
+                                    <span>Create a Stronger Brand</span>
+                                    <ArrowUpIcon className="transform rotate-45" />
+                                </Button2>
+                            </Link>
                         </div>
                         <div className=" mt-9 max-w-7xl me-auto  flex flex-col md:flex-row items-center justify-center gap-5 w-max">
                             <div className="flex items-center -space-x-5 me-auto">

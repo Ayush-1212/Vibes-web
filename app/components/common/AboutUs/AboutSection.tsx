@@ -7,17 +7,18 @@ type Feature = {
 };
 
 type AboutSectionProps = {
-  sectionBg?: string;
+  bgImage?: string;
   badgeText: string;
   heading: string;
   highlightText?: string;
   description: string;
   mainImage: string;
   features: Feature[];
+
 };
 
 const AboutSection = ({
-  sectionBg = "bg-[#FAF8F3]",
+  bgImage,
   badgeText,
   heading,
   highlightText,
@@ -26,7 +27,12 @@ const AboutSection = ({
   features,
 }: AboutSectionProps) => {
   return (
-    <section className={`overflow-hidden section-gap ${sectionBg}`}>
+    <section
+      className="overflow-hidden section-gap bg-no-repeat bg-cover bg-center"
+      style={{
+        backgroundImage: bgImage ? `url(${bgImage})` : "none",
+      }}
+    >
       <div className="container mx-auto max-w-screen-xl px-4 md:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
 

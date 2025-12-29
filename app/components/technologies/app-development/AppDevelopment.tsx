@@ -29,6 +29,8 @@ const AppDevelopment = () => {
         highlightText="Performance"
         description="Custom-built mobile applications that support business growth across Android and iOS platforms."
         mainImage="/assests/img/web-development/webdevelopment-about-img.png"
+        bgImage="/assests/img/web-development/wd-services-bg.jpg"
+
         features={[
           {
             icon: "/assests/img/web-development/built-way-icon-1.png",
@@ -46,6 +48,7 @@ const AppDevelopment = () => {
 
       <WorkflowSection
         badgeText="Workflow"
+        bgImage="/assests/img/technology-details/common-casestudy-bg.jpg"
         heading={
           <>
             From Concept to {" "}
@@ -102,31 +105,33 @@ const AppDevelopment = () => {
       />
       <WhyChooseSection
         badgeText="Why Choose Vibes?"
+        bgImage="/assests/img/web-development/wd-services-bg.jpg"
+
         heading={
           <>
             <span className="highlight relative z-9 w-fit font-poppins font-semibold text-[40px] leading-[1.23] tracking-normal">Choose Vibes.</span> Choose Certainty.
           </>
         }
-        description="Vibes delivers high-performing, scalable, secure digital solutions built with precision and trust."
+        description="A reliable mobile app partner delivering strategic thinking, technical excellence, and measurable outcomes."
         items={[
           {
-            title: "Insight-Led Execution",
-            desc: "Smart decisions guide every build, ensuring each solution aligns with goals.",
+            title: "Strategy-Led Development",
+            desc: " Mobile apps built with clear goals, purpose, and measurable outcomes.",
             icon: "/assests/img/web-development/why-choose-icon2.png",
           },
           {
-            title: "Future-Ready Architecture",
-            desc: "Code crafted for speed, stability, and effortless scaling.",
+            title: "Scalable Architecture",
+            desc: " Robust app frameworks designed to grow with evolving business needs.",
             icon: "/assests/img/web-development/why-choose-icon1.png",
           },
           {
-            title: "Delivery You Can Count On",
-            desc: "Every milestone met without compromising quality.",
+            title: "End-to-End Ownership",
+            desc: " Complete lifecycle management from idea to launch and beyond.",
             icon: "/assests/img/web-development/why-choose-icon3.png",
           },
           {
-            title: "Continuous Care & Support",
-            desc: "Ongoing updates, fixes, and monitoring.",
+            title: "User-Centric Design",
+            desc: " Intuitive experiences crafted for engagement, usability, and retention.",
             icon: "/assests/img/web-development/why-choose-icon4.png",
           },
         ]}

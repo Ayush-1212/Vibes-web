@@ -6,6 +6,7 @@ import { ArrowUpIcon } from "lucide-react";
 import CaseStudiesCard, {
   SingleCaseStudyCard,
 } from "../CaseStudiesCard/CaseStudiesCard";
+import Link from "next/link";
 
 interface CaseStudiesSectionProps {
   badgeText: string;
@@ -14,12 +15,12 @@ interface CaseStudiesSectionProps {
   description: string;
   buttonText: string;
   cards: SingleCaseStudyCard[];
-  bgColor?: string;
+  bgImage?: string; // ✅ add this
 }
 
-const CommonCasestudy = ({ badgeText, title, highlightTitle, description, buttonText, cards, bgColor = "#dfe8dd" }: CaseStudiesSectionProps) => {
+const CommonCasestudy = ({ badgeText, title, highlightTitle, description, buttonText, cards, bgImage, }: CaseStudiesSectionProps) => {
   return (
-    <section className="section-gap" style={{ backgroundColor: bgColor }}>
+    <section className="section-gap bg-no-repeat bg-cover bg-center" style={{ backgroundImage: bgImage ? `url(${bgImage})` : "none" }}>
       <div className="container mx-auto max-w-screen-xl px-4 md:px-8">
         <div className="grid grid-cols-12 relative">
 
@@ -52,11 +53,12 @@ const CommonCasestudy = ({ badgeText, title, highlightTitle, description, button
               </p>
 
               {/* CTA BUTTON */}
-              <Button2 className="mt-6 p-[20px] hover:border-[#2B4C69] hover:border-2 hover:text-[#F4BE00] hover:bg-transparent text-[14px]">
-                <span>{buttonText}</span>
-                <ArrowUpIcon className="rotate-45" />
-              </Button2>
-
+              <Link href="/case-study">
+                <Button2 className="mt-6 p-[20px] hover:border-[#2B4C69] hover:border-2 hover:text-[#F4BE00] hover:bg-transparent text-[14px]">
+                  <span>{buttonText}</span>
+                  <ArrowUpIcon className="rotate-45" />
+                </Button2>
+              </Link>
             </div>
           </div>
 

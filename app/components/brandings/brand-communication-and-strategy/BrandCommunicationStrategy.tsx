@@ -29,6 +29,7 @@ const BrandCommunicationStrategy = () => {
       />
       <WhyChooseUsSection
         badgeText="Services Highlight"
+        bgImage="/assests/img/web-development/wd-services-bg.jpg"
         heading={
           <>
             Integrated Communication &  <br />
@@ -74,7 +75,7 @@ const BrandCommunicationStrategy = () => {
             "Selected projects highlighting how strong communication and positioning drive brand impact.",
         }}
       />
-      <OurBlogs />
+      <OurBlogs bgImage="/assests/img/web-development/wd-services-bg.jpg" />
       <SuccessStory
         title="Let’s Define Your Brand Voice"
         subtitle=" Start building a clear, consistent, and compelling communication foundation."

@@ -67,11 +67,11 @@ export default function Page() {
           description="Explore real technology success stories where Vibes turns complex challenges into measurable outcomes, delivering smarter, scalable digital solutions."
           buttonText="Dive Into Success Stories"
           cards={cards}
-          bgColor="#dfe8dd"
+          bgImage="/assests/img/technology-details/common-casestudy-bg.jpg"
         />
       )}
 
-      <OurBlogs />
+      <OurBlogs bgImage="/assests/img/web-development/wd-services-bg.jpg" />
 
       <MarqueeTabsSlider
         badgeText="Trusted Clients"
@@ -89,7 +89,7 @@ export default function Page() {
         buttonText="Talk to Experts"
         arrowImage="/assests/img/technology-details/arrow.png"
         className="bg-black"
-        onButtonClick={() => router.push("/contact")}
+        onButtonClick={() => router.push("/contact-us")}
       />
     </div>
   );

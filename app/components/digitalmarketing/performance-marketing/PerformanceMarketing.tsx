@@ -29,6 +29,8 @@ const PerformanceMarketing = () => {
         highlightText="Advertising Solutions"
         description="Results-focused advertising strategies designed to generate high-quality leads, maximize reach, and drive measurable conversions across search and social platforms with precision targeting and data-backed optimization."
         mainImage="/assests/img/performance-marketing/pm-overview-left-img.png"
+        bgImage="/assests/img/web-development/wd-services-bg.jpg"
+
         features={[
           {
             icon: "/assests/img/web-development/built-way-icon-1.png",
@@ -54,10 +56,11 @@ const PerformanceMarketing = () => {
       />
       <WhyChooseUsSection
         badgeText="Growth Strategy"
+        bgImage="/assests/img/technology-details/common-casestudy-bg.jpg"
         heading={
           <>
             How Brands  <br />
-            <span className="highlight relative w-fit font-semibold">Move Forward?</span>
+            <span className="highlight relative w-fit z-9 font-semibold">Move Forward?</span>
           </>
         }
         description="Focused branding strategies designed to strengthen identity, build trust, and drive long-term progress."
@@ -85,7 +88,8 @@ const PerformanceMarketing = () => {
         ]}
       />
       <WhyChooseUs
-        backgroundImage="/assests/img/technology-details/common-casestudy-bg.jpg"
+        badgeText="WHAT SETS US APART  "
+        backgroundImage="/assests/img/web-development/wd-services-bg.jpg"
         heading="Vibes Performance "
         highlightText="Advantage"
         description="A results-focused model blending strategy, data, creativity, and transparency to drive consistent growth"
@@ -110,7 +114,7 @@ const PerformanceMarketing = () => {
 
         ]}
       />
-      <OurBlogs />
+      <OurBlogs bgImage="/assests/img/technology-details/common-casestudy-bg.jpg" />
       <SuccessStory
         title="Turn Clicks Into Conversions"
         subtitle="High-impact performance strategies built to maximize ROI and accelerate results."

@@ -14,6 +14,7 @@ type WhyChooseSectionProps = {
   items: WhyChooseItem[];
   bgClass?: string;
   unionImage?: string;
+  bgImage?: string;
 };
 
 export default function WhyChooseSection({
@@ -21,11 +22,15 @@ export default function WhyChooseSection({
   heading,
   description,
   items,
-  bgClass = "bg-[#FAF8F3]",
+  bgImage,
   unionImage = "/assests/img/web-development/Union.png",
 }: WhyChooseSectionProps) {
   return (
-    <section className={`section-gap ${bgClass}`}>
+    <section className="section-gap bg-no-repeat bg-cover bg-center"
+      style={{
+        backgroundImage: bgImage ? `url(${bgImage})` : "none",
+      }}
+    >
       <div className="container mx-auto max-w-screen-xl px-4 md:px-8">
 
         {/* Badge */}

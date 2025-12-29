@@ -141,7 +141,7 @@ const page = () => {
       <MilestoneMetrics />
       {/* <MarqueeTabsSlider /> */}
       <HomeGallery />
-      {/* <OurBlogs /> */}
+      {/* <OurBlogs />  */}
     </div>
   );
 };

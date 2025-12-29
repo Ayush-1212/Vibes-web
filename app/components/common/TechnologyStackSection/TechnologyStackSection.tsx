@@ -8,8 +8,9 @@ type TechnologyStackProps = {
   description: string;
   topLogos: string[];
   bottomLogos?: string[];
-  bgClass?: string;
   marqueeSpeed?: number;
+  bgImage?: string;
+
 };
 
 const TechnologyStackSection: React.FC<TechnologyStackProps> = ({
@@ -18,11 +19,15 @@ const TechnologyStackSection: React.FC<TechnologyStackProps> = ({
   description,
   topLogos,
   bottomLogos = [],
-  bgClass = "bg-[#466E59]",
+  bgImage,
   marqueeSpeed = 25,
 }) => {
   return (
-    <section className={`${bgClass} section-gap overflow-hidden`}>
+    <section className="section-gap overflow-hidden bg-no-repeat bg-cover bg-center"
+      style={{
+        backgroundImage: bgImage ? `url(${bgImage})` : "none",
+      }}
+    >
       <div className="container mx-auto max-w-screen-xl px-4 md:px-8">
 
         {/* HEADER */}

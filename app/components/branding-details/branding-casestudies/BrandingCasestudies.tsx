@@ -38,11 +38,12 @@ const BrandingCasestudies = () => {
 
                     </div>
 
-
-                    <Button2 className="mt-5 p-[20px]">
-                        <span>Explore Case Studies</span>
-                        <ArrowUpIcon className="transform rotate-45" />
-                    </Button2>
+                    <Link href="/case-study">
+                        <Button2 className="mt-5 p-[20px]">
+                            <span>Explore Case Studies</span>
+                            <ArrowUpIcon className="transform rotate-45" />
+                        </Button2>
+                    </Link>
                 </div>
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-2 items-center mb-0">
                     <div className="overflow-hidden">
@@ -57,18 +58,16 @@ const BrandingCasestudies = () => {
                     <div className="p-20">
                         <div className="flex-1 ">
                             <h3 className="font-poppins font-medium text-[32px] leading-[1.23] tracking-norma]">
-                                Building a <span className="highlight relative z-9 w-fit font-poppins font-semibold text-[32px] leading-[1.23] tracking-normal">New-Age Brand</span>
+                                Building a <span className="highlight1 relative z-9 w-fit font-poppins font-semibold text-[32px] leading-[1.23] tracking-normal">New-Age Brand</span>
                             </h3>
 
                             <p className="text-[#525252] mt-5 max-w-lg">
                                 A focused branding approach shaped distinct B2B and B2C identities through research-led rebranding, campaigns, and consistent digital presence.
                             </p>
-
                             <Button2 className="mt-5 p-0! p-[20px] hover:text-[#F4BE00] bg-transparent  text-[#204667] text-[16px]">
-                                <Link href=""><span>Read More</span></Link>
+                                <Link href="case-study/tomorrows-india"><span>Read More</span></Link>
                                 <ArrowUpIcon className="transform rotate-45" />
                             </Button2>
-
                         </div>
 
                     </div>
@@ -79,7 +78,7 @@ const BrandingCasestudies = () => {
                     <div className="p-20">
                         <div className="flex-1 ">
                             <h3 className="font-poppins font-medium text-[32px] leading-[1.23] tracking-norma]">
-                                Luxury <span className="highlight relative z-9 w-fit font-poppins font-semibold text-[32px] leading-[1.23] tracking-normal">Brand Storytelling</span>
+                                Luxury <span className="highlight1 relative z-9 w-fit font-poppins font-semibold text-[32px] leading-[1.23] tracking-normal">Brand Storytelling</span>
                             </h3>
 
                             <p className="text-[#525252] mt-5 max-w-lg">
@@ -88,7 +87,7 @@ const BrandingCasestudies = () => {
                             </p>
 
                             <Button2 className="mt-5 p-0! p-[20px] hover:text-[#F4BE00] bg-transparent  text-[#204667] text-[16px]">
-                                <Link href=""><span>Read More</span></Link>
+                                <Link href="case-study/interio-haven"><span>Read More</span></Link>
                                 <ArrowUpIcon className="transform rotate-45" />
                             </Button2>
 
@@ -119,7 +118,7 @@ const BrandingCasestudies = () => {
                     <div className="p-20">
                         <div className="flex-1 ">
                             <h3 className="font-poppins font-medium text-[32px] leading-[1.23] tracking-norma]">
-                                Integrated <span className="highlight relative z-9 w-fit font-poppins font-semibold text-[32px] leading-[1.23] tracking-normal">Brand Identity</span>
+                                Integrated <span className="highlight1 relative z-9 w-fit font-poppins font-semibold text-[32px] leading-[1.23] tracking-normal">Brand Identity</span>
                             </h3>
 
                             <p className="text-[#525252] mt-5 max-w-lg">
@@ -127,7 +126,7 @@ const BrandingCasestudies = () => {
                             </p>
 
                             <Button2 className="mt-5 p-0! p-[20px] hover:text-[#F4BE00] bg-transparent  text-[#204667] text-[16px]">
-                                <Link href=""><span>Read More</span></Link>
+                                <Link href="case-study/maxim-alert"><span>Read More</span></Link>
                                 <ArrowUpIcon className="transform rotate-45" />
                             </Button2>
 
@@ -149,7 +148,7 @@ const BrandingCasestudies = () => {
                     <div className="w-full ps-20 pt-5 pb-5">
                         <div className="flex-1 ">
                             <h3 className="font-poppins font-medium text-[32px] leading-[1.23] tracking-norma]">
-                                Complete <span className="highlight relative z-9 w-fit font-poppins font-semibold text-[32px] leading-[1.23] tracking-normal">Brand Framework </span>
+                                Complete <span className="highlight1 relative z-9 w-fit font-poppins font-semibold text-[32px] leading-[1.23] tracking-normal">Brand Framework </span>
                             </h3>
 
                             <p className="text-[#525252] mt-5">
@@ -157,7 +156,7 @@ const BrandingCasestudies = () => {
                             </p>
 
                             <Button2 className="mt-5 p-0! p-[20px] hover:text-[#F4BE00] bg-transparent  text-[#204667] text-[16px]">
-                                <Link href=""><span>Read More</span></Link>
+                                <Link href="case-study/buzaria"><span>Read More</span></Link>
                                 <ArrowUpIcon className="transform rotate-45" />
                             </Button2>
 

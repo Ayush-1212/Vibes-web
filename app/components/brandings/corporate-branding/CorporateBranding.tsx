@@ -29,6 +29,7 @@ const CorporateBranding = () => {
       />
       <WhyChooseUsSection
         badgeText="Services Highlight"
+        bgImage="/assests/img/web-development/wd-services-bg.jpg"
         heading={
           <>
             Unified Branding  <br />
@@ -73,7 +74,7 @@ const CorporateBranding = () => {
             "Turning brand challenges into growth stories with strategies to solve, scale, and sustain showing how clear vision and 360° digital expertise drive results.",
         }}
       />
-      <OurBlogs />
+      <OurBlogs bgImage="/assests/img/web-development/wd-services-bg.jpg" />
       <SuccessStory
         title="Build a Brand That Commands Trust"
         subtitle="Branding designed to deliver clarity, consistency, and credibility across every business touchpoint."

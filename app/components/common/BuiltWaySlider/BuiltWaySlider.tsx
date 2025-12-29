@@ -18,7 +18,7 @@ type BuiltWaySliderProps = {
   heading: React.ReactNode;
   description?: string;
   slides: BuiltWaySlide[];
-  bgColor?: string;
+  bgImage?: string;
 };
 
 export default function BuiltWaySlider({
@@ -26,13 +26,17 @@ export default function BuiltWaySlider({
   heading,
   description,
   slides,
-  bgColor = "bg-[#EEF4EE]",
+  bgImage,
 }: BuiltWaySliderProps) {
   const swiperRef = useRef<any>(null);
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
-    <section className={`built-way-wrapper section-gap ${bgColor}`}>
+    <section className="built-way-wrapper section-gap bg-no-repeat bg-cover bg-center"
+      style={{
+        backgroundImage: bgImage ? `url(${bgImage})` : "none",
+      }}
+    >
       <div className="container mx-auto max-w-screen-xl px-4 md:px-8">
 
         {/* BADGE */}

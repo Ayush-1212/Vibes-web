@@ -21,34 +21,31 @@ const page = () => {
         backgroundImage="/assests/img/technology-details/common-casestudy-bg.jpg"
         heading="How We"
         highlightText="Elevate Your Brand"
-        description="Combining strategy, creativity, and data-driven insights."
+        description="Combining strategy, creativity, and data-driven insights to build distinctive brands that stand out, connect meaningfully, and drive measurable business impact."
         centerText={`Branding,\nDone Right!`}
         slides={[
           {
-        title: "Building Trust",
-        desc: "New events or brands struggle to gain audience credibility.",
-    },
-    {
-        title: "Unclear Messaging",
-        desc: "Event benefits often fail to communicate value effectively.",
-    },
-    {
-        title: "Quality Leads vs Clicks",
-        desc: "Generating impactful leads, not just website traffic, is a challenge.",
-    },
-    {
-        title: "Low Awareness",
-        desc: "Even strong promotion efforts sometimes fail to reach the right audience.",
-    },
-    {
-        title: "Targeting the Right Audience",
-        desc: "Finding and engaging the ideal online participants remains difficult.",
-    },
+            title: "Expertise",
+            desc: "Deep branding expertise driven by strategy and proven frameworks aligned with long-term goals.",
+          },
+          {
+            title: "Creativity",
+            desc: "Purpose-driven creativity that transforms brand stories into clear, compelling, and visual  experiences.",
+          },
+          {
+            title: "Data-Backed Insights",
+            desc: "Decisions driven by market research, audience behaviour, and insights for measurable results.",
+          },
+          {
+            title: "Industry Experience",
+            desc: "Proven cross-industry experience enables adaptable branding solutions tailored to unique sector challenges.",
+          },
+
         ]}
       />
 
       <BrandingCasestudies />
-      <OurBlogs />
+      <OurBlogs bgImage="/assests/img/web-development/wd-services-bg.jpg" />
       <SuccessStory
         title="Build the Brand You Imagine"
         subtitle=" Branding designed to create clarity, and long-term impact"

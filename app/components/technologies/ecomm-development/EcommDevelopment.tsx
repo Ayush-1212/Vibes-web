@@ -29,6 +29,8 @@ const EcommDevelopment = () => {
         highlightText="Online Growth"
         description="Comprehensive e-commerce services covering development, integrations, optimization, and scalability."
         mainImage="/assests/img/web-development/webdevelopment-about-img.png"
+        bgImage="/assests/img/web-development/wd-services-bg.jpg"
+
         features={[
           {
             icon: "/assests/img/web-development/built-way-icon-1.png",
@@ -57,6 +59,7 @@ const EcommDevelopment = () => {
 
       <WorkflowSection
         badgeText="Process"
+        bgImage="/assests/img/technology-details/common-casestudy-bg.jpg"
         heading={
           <>
             A Clear Path from {" "}<br />
@@ -92,7 +95,7 @@ const EcommDevelopment = () => {
           {
             id: "05",
             title: "Core Feature Implementation:",
-            desc: "Product Catalog,Shopping Cart & Checkout,Payment Gateways,Security,Integrations",
+            desc: "A complete e-commerce setup with structured product catalogs, smooth cart and checkout, secure payment gateways, robust security, and seamless integrations for shipping, CRM, analytics, and marketing tools.",
             icon: "/assests/img/web-development/workflow-icon-4.png",
           },
           {
@@ -118,37 +121,40 @@ const EcommDevelopment = () => {
       />
       <WhyChooseSection
         badgeText="Why Choose Vibes?"
+        bgImage="/assests/img/web-development/wd-services-bg.jpg"
         heading={
           <>
             <span className="highlight relative z-9 w-fit font-poppins font-semibold text-[40px] leading-[1.23] tracking-normal">Choose Vibes.</span> Choose Certainty.
           </>
         }
-        description="Vibes delivers high-performing, scalable, secure digital solutions built with precision and trust."
+        description="Scalable e-commerce solutions built for performance, security, and seamless customer experiences."
         items={[
           {
-            title: "Insight-Led Execution",
-            desc: "Smart decisions guide every build, ensuring each solution aligns with goals.",
+            title: "Conversion-Focused Design",
+            desc: "Built for intuitive navigation, seamless journeys, and higher sales conversions.",
             icon: "/assests/img/web-development/why-choose-icon2.png",
           },
           {
-            title: "Future-Ready Architecture",
-            desc: "Code crafted for speed, stability, and effortless scaling.",
+            title: "Scalable Architecture",
+            desc: "Flexible, future-ready systems supporting business growth and high traffic.",
             icon: "/assests/img/web-development/why-choose-icon1.png",
           },
           {
-            title: "Delivery You Can Count On",
-            desc: "Every milestone met without compromising quality.",
+            title: "End-to-End Delivery",
+            desc: "Complete execution from strategy and development to launch and ongoing support.",
             icon: "/assests/img/web-development/why-choose-icon3.png",
           },
           {
-            title: "Continuous Care & Support",
-            desc: "Ongoing updates, fixes, and monitoring.",
+            title: "Secure & Optimized Performance",
+            desc: "Fast, reliable, and secure platforms that enhance user trust and experience.",
             icon: "/assests/img/web-development/why-choose-icon4.png",
           },
         ]}
       />
       <TechnologyStackSection
         badgeText="Technology we use"
+        bgImage="/assests/img/web-development/wd-technology-bg.jpg"
+
         heading={
           <>
             Powered by Modern <span className="highlight relative z-9">Technologies</span>

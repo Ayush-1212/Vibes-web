@@ -74,7 +74,7 @@ const WhyChooseUs: React.FC<WhyChooseUsProps> = ({
         backgroundRepeat: "no-repeat",
       }}
     >
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto max-w-screen-xl px-4 md:px-8">
 
         {/* BADGE */}
         <div className="flex justify-center mb-5">

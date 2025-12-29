@@ -29,9 +29,15 @@ const slides: BuiltWaySlide[] = [
     icon: "/assests/img/web-development/built-way-icon-3.png",
   },
   {
-    id: "testing",
-    title: "Application Testing",
-    desc: "Ensuring flawless performance with rigorous, end-to-end quality checks.",
+    id: "figma",
+    title: "Figma Mockup",
+    desc: "Turning ideas into pixel-perfect visual prototypes for faster approvals.",
+    icon: "/assests/img/web-development/built-way-icon-1.png",
+  },
+  {
+    id: "maintenance",
+    title: "Maintenance & Support",
+    desc: "Keeping your digital products smooth, secure, and always up-to-date.",
     icon: "/assests/img/web-development/built-way-icon-1.png",
   },
 ];
@@ -49,7 +55,7 @@ const WebDevelopment = () => {
             <span className="hero-highlight relative z-9 w-fit font-poppins font-semibold text-[65px] leading-[116%] tracking-normal capitalize text-[#F4BE00]">Development</span>
           </>
         }
-        description="Vibes builds secure scalable websites with strong UI/UX and reliable backend systems for seamless user experiences"
+        description="Vibes delivers high-performing, scalable, secure digital solutions- built with precision, expertise, clear communication, and on-time delivery brands trust"
       />
       <AboutSection
         badgeText="ABOUT US"
@@ -57,6 +63,8 @@ const WebDevelopment = () => {
         highlightText="Speed and Scalability"
         description="Vibes develops secure, bespoke web platforms engineered for high performance, scalability, and reliability."
         mainImage="/assests/img/web-development/webdevelopment-about-img.png"
+        bgImage="/assests/img/web-development/wd-services-bg.jpg"
+
         features={[
           {
             icon: "/assests/img/web-development/built-way-icon-1.png",
@@ -84,6 +92,7 @@ const WebDevelopment = () => {
 
       <WorkflowSection
         badgeText="Workflow"
+        bgImage="/assests/img/technology-details/common-casestudy-bg.jpg"
         heading={
           <>
             Development{" "}
@@ -144,40 +153,9 @@ const WebDevelopment = () => {
         ]}
       />
 
-      <WhyChooseSection
-        badgeText="Why Choose Us"
-        heading={
-          <>
-            <span className="highlight relative z-9 w-fit font-poppins font-semibold text-[40px] leading-[1.23] tracking-normal">Choose Vibes.</span> Choose Certainty.
-          </>
-        }
-        description="Vibes delivers high-performing, scalable, secure digital solutions built with precision and trust."
-        items={[
-          {
-            title: "Insight-Led Execution",
-            desc: "Smart decisions guide every build, ensuring each solution aligns with goals.",
-            icon: "/assests/img/web-development/why-choose-icon2.png",
-          },
-          {
-            title: "Future-Ready Architecture",
-            desc: "Code crafted for speed, stability, and effortless scaling.",
-            icon: "/assests/img/web-development/why-choose-icon1.png",
-          },
-          {
-            title: "Delivery You Can Count On",
-            desc: "Every milestone met without compromising quality.",
-            icon: "/assests/img/web-development/why-choose-icon3.png",
-          },
-          {
-            title: "Continuous Care & Support",
-            desc: "Ongoing updates, fixes, and monitoring.",
-            icon: "/assests/img/web-development/why-choose-icon4.png",
-          },
-        ]}
-      />
-
       <TechnologyStackSection
         badgeText="Technology we use"
+        bgImage="/assests/img/web-development/wd-technology-bg.jpg"
         heading={
           <>
             Technology <span className="highlight relative z-9">Stack</span>
@@ -202,15 +180,48 @@ const WebDevelopment = () => {
           "/assests/img/web-development/mongodb-logo.png",
         ]}
       />
+      <WhyChooseSection
+        badgeText="Why Choose Us"
+        bgImage="/assests/img/web-development/wd-services-bg.jpg"
+        heading={
+          <>
+            <span className="highlight relative z-9 w-fit font-poppins font-semibold text-[40px] leading-[1.23] tracking-normal">Choose Vibes.</span> Choose Certainty.
+          </>
+        }
+        description="Vibes delivers high-performing, scalable, secure digital solutions built with precision and trust."
+        items={[
+          {
+            title: "Insight-Led Execution",
+            desc: "Smart decisions guide every build, ensuring each solution aligns with goals and delivers real impact.",
+            icon: "/assests/img/web-development/why-choose-icon2.png",
+          },
+          {
+            title: "Future-Ready Architecture",
+            desc: " Code is crafted for speed, stability, and effortless scaling as your business and demands grow.",
+            icon: "/assests/img/web-development/why-choose-icon1.png",
+          },
+          {
+            title: " Delivery You Can Count On",
+            desc: "Timelines are honored with precision, ensuring every milestone is met without compromising quality.",
+            icon: "/assests/img/web-development/why-choose-icon3.png",
+          },
+          {
+            title: "Continuous Care & Support",
+            desc: " Ongoing updates, fixes, and monitoring keep your digital systems secure, smooth, and high-performing.",
+            icon: "/assests/img/web-development/why-choose-icon4.png",
+          },
+        ]}
+      />
 
       <BuiltWaySlider
         badgeText="Customized Solutions for You"
+        bgImage="/assests/img/technology-details/common-casestudy-bg.jpg"
         heading={
           <>
             Built <span className="highlight relative z-9 w-fit font-poppins font-semibold text-[40px] leading-[1.23] tracking-normal">Your Way</span>
           </>
         }
-        description="Vibes offers flexible, modular solutions whether you need a full build or just a specific feature."
+        description="Vibes offers flexible, modular solutions whether you need a full build or just a specific feature. Every block is delivered with precision, performance, and complete scalability."
         slides={slides}
       />
       <SuccessStory

@@ -52,6 +52,7 @@ const PmisDevelopment = () => {
       />
       <BuiltWaySlider
         badgeText="Core Purpose"
+        bgImage="/assests/img/web-development/wd-services-bg.jpg"
         heading={
           <>
             Why PMIS Matter:<br /> <span className="highlight relative z-9 w-fit font-poppins font-semibold text-[40px] leading-[1.23] tracking-normal">Purpose & Value</span>
@@ -90,6 +91,7 @@ const PmisDevelopment = () => {
 
       <WhyChooseSection
         badgeText="Monitoring Tools"
+        bgImage="/assests/img/web-development/wd-services-bg.jpg"
         heading={
           <>
             <span className="highlight relative z-9 w-fit font-poppins font-semibold text-[40px] leading-[1.23] tracking-normal">PMIS Modules</span> That<br /> Enable Governance
@@ -122,6 +124,7 @@ const PmisDevelopment = () => {
 
       <TechnologyStackSection
         badgeText="Government Projects"
+        bgImage="/assests/img/web-development/wd-technology-bg.jpg"
         heading={
           <>
             Proven Public Sector<br /><span className="highlight relative z-9">Deployments</span>

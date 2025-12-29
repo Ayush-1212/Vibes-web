@@ -10,6 +10,7 @@ type WhyChooseUsSectionProps = {
   badgeText: string;
   heading: React.ReactNode;
   description: string;
+  bgImage?: string;
   cards: WhyChooseCard[];
 };
 
@@ -18,10 +19,15 @@ const WhyChooseUsSection: React.FC<WhyChooseUsSectionProps> = ({
   heading,
   description,
   cards,
+  bgImage,
 }) => {
   return (
-    <section className="relative w-full section-gap">
-      <div className="container mx-auto px-4">
+    <section className="relative w-full section-gap bg-no-repeat bg-cover bg-center"
+      style={{
+        backgroundImage: bgImage ? `url(${bgImage})` : "none",
+      }}
+    >
+      <div className="container mx-auto max-w-screen-xl px-4 md:px-8">
         <div className="grid grid-cols-12 gap-4 items-center">
 
           {/* LEFT CONTENT */}
