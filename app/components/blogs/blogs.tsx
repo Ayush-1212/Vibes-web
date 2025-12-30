@@ -63,7 +63,7 @@ export default function OurBlogs({ tData }: BlogsProps) {
       if (error) return <p>Error loading blogs</p>;
     
       const blogs = (data?.blog_list.filter((blog: any) => blog.blog_service === tData.service))?.slice(0,5) ?? [];
-      console.log(blogs)
+    //   console.log(blogs)
         
     return (
         <section
@@ -95,7 +95,7 @@ export default function OurBlogs({ tData }: BlogsProps) {
 
                     </div>
 
-                    <Link href="/blog">
+                    <Link href="/digital-insights-blogs">
                         <Button2 className="mt-5 p-[20px] cursor-pointer">
                             <span>Explore Our Blogs</span>
                             <ArrowUpIcon className="transform rotate-45" />

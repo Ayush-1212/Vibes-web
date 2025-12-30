@@ -43,7 +43,7 @@ export default function BlogListing() {
 
               <Link
                 key={LatestBlog.blog_id}
-                href={`/blog/${LatestBlog.blog_slug}`}
+                href={`/digital-insights-blogs/${LatestBlog.blog_slug}`}
                 className="group"
               >
                 <div className="bg-white rounded-2xl shadow-md hover:shadow-xl transition">
@@ -67,7 +67,7 @@ export default function BlogListing() {
                 {LatestBlogList.map((blog) => (
                   <Link
                     key={blog.blog_id}
-                    href={`/blog/${blog.blog_slug}`}
+                    href={`/digital-insights-blogs/${blog.blog_slug}`}
                     className="group"
                   >
                     <li className="mb-2">
@@ -129,7 +129,7 @@ export default function BlogListing() {
             {filteredBlogs.map((blog: any) => (
               <Link
                 key={blog.blog_id}
-                href={`/blog/${blog.blog_slug}`}
+                href={`/digital-insights-blogs/${blog.blog_slug}`}
                 className="group"
               >
                 <div className="bg-white h-[410px] rounded-1xl shadow-md hover:shadow-xl transition">
