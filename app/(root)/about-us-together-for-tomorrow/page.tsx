@@ -5,6 +5,12 @@ import MissionVision from '@/app/components/who-we-are/mission-vision/MissionVis
 import OurTeam from '@/app/components/who-we-are/our-team/OurTeam'
 import TimelineJourney from '@/app/components/who-we-are/timeline-journey/TimelineJourney'
 import React from 'react'
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "About Us | Vibes",
+  description: "Learn more about Vibes, our mission, values, and digital expertise.",
+};
 
 const page = () => {
     return (
