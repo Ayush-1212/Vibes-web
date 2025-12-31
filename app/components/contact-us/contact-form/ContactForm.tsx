@@ -102,14 +102,14 @@ const ContactForm = () => {
 
   return (
     <section className="w-full section-gap">
-      <div className="container mx-auto max-w-screen-xl px-4 md:px-8">
+      <div className="container mx-auto max-w-screen-xl px-4 md:px-8 mb-10">
         <div className="flex justify-center mb-5">
           <div className="
-        px-6 py-2 
-        rounded-full 
-        border border-[#F4BE00] 
-        inline-flex items-center gap-2
-      ">
+              px-6 py-2 
+              rounded-full 
+              border border-[#F4BE00] 
+              inline-flex items-center gap-2
+            ">
             <span
               className="w-2 h-2 rounded-full bg-[#F4BE00]"
             ></span>
@@ -124,7 +124,7 @@ const ContactForm = () => {
         <p className="text-[#707070] font-normal text-[16px] leading-[130%] tracking-[0] text-center max-w-2xl mx-auto mt-5">
           From concept to execution, building digital experiences that drive long-term value.
         </p>
-      </div >
+      </div>
 
       <div className="container mx-auto px-4">
 
@@ -257,7 +257,7 @@ const ContactForm = () => {
               <Button2
                 type="submit"
                 disabled={isLoading}
-                className="mt-5 p-[20px]"
+                className="mt-5 p-[20px] cursor-pointer"
               >
                 <span>{isLoading ? "Submitting..." : "Submit"}</span>
                 <ArrowUpIcon className="rotate-45" />

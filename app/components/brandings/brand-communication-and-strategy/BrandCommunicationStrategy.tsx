@@ -11,6 +11,7 @@ interface blogContent {
   Subtitle: React.ReactNode;
   bgImage?: string;
   highlighttitle: string,
+  service:string
 }
 const textcontent: blogContent = {
   title: 'Branding ',
@@ -20,7 +21,8 @@ const textcontent: blogContent = {
       nsights, perspectives, and trends shaping effective brand communication<br /> in evolving markets.
     </>
   ),
-  bgImage: '/assets/img/web-development/wd-services-bg.jpg'
+  bgImage: '/assets/img/web-development/wd-services-bg.jpg',
+  service:'branding'
 };
 
 const images = [
@@ -99,7 +101,7 @@ const BrandCommunicationStrategy = () => {
         buttonText="Talk to Experts"
         arrowImage="/assests/img/technology-details/arrow.png"
         className="bg-black"
-        onButtonClick={() => router.push("/contact")}
+        onButtonClick={() => router.push("/contact-for-digital-requirements")}
       />
     </div>
   )

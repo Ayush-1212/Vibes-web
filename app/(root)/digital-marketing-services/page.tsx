@@ -18,6 +18,7 @@ interface blogContent {
   Subtitle: React.ReactNode;
   bgImage?: string;
   highlighttitle: string;
+  service:string
 }
 const textcontent: blogContent = {
   title: 'Ideas, insights, and intelligent ',
@@ -27,7 +28,8 @@ const textcontent: blogContent = {
       Subtext: Insights focused on performance, visibility, and sustainable<br /> digital growth.
     </>
   ),
-  bgImage: '/assets/img/web-development/wd-services-bg.jpg'
+  bgImage: '/assets/img/web-development/wd-services-bg.jpg',
+  service:'digital'
 };
 
 const slides: SlideItem[] = [
@@ -192,7 +194,7 @@ export default function Page() {
         highlightTitle="Digital Work"
         description="A showcase of strategic digital campaigns, performance marketing, and brand-building initiatives that deliver measurable results across industries."
         slides={slides}
-        ctaText="View Our Digital Work"
+        ctaText="Talk to us today"
         bgImage="/assests/img/web-development/wd-services-bg.jpg"
       />
 
@@ -240,7 +242,7 @@ export default function Page() {
         buttonText="Talk to Experts"
         arrowImage="/assests/img/technology-details/arrow.png"
         className="bg-black"
-        onButtonClick={() => router.push("/contact")}
+        onButtonClick={() => router.push("/contact-for-digital-requirements")}
       />
     </div>
   );

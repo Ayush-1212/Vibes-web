@@ -18,6 +18,7 @@ interface blogContent {
   Subtitle: React.ReactNode;
   bgImage?: string;
   highlighttitle: string;
+  service:string;
 }
 const textcontent: blogContent = {
   title: 'Tech Ideas &',
@@ -27,7 +28,8 @@ const textcontent: blogContent = {
       Explore curated articles on emerging tech, smart solutions, and expert perspectives from<br /> Vibes built to inform, inspire, and accelerate digital growth.
     </>
   ),
-  bgImage: '/assets/img/web-development/wd-services-bg.jpg'
+  bgImage: '/assets/img/web-development/wd-services-bg.jpg',
+  service:'technology'
 };
 
 const logos = [
@@ -112,7 +114,7 @@ export default function Page() {
         buttonText="Talk to Experts"
         arrowImage="/assests/img/technology-details/arrow.png"
         className="bg-black"
-        onButtonClick={() => router.push("/contact-us")}
+        onButtonClick={() => router.push("/contact-for-digital-requirements")}
       />
     </div>
   );

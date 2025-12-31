@@ -9,11 +9,13 @@ import React from 'react'
 import { useRouter } from "next/navigation";
 import WhyChooseUs from '@/app/components/common/why-choose-us/WhyChooseUs';
 
+
 interface blogContent {
   title: string;
   Subtitle: React.ReactNode;
   bgImage?: string;
   highlighttitle: string,
+  service:string
 }
 const textcontent: blogContent = {
   title: 'Branding',
@@ -23,7 +25,8 @@ const textcontent: blogContent = {
       Expert perspectives, trends, and strategic thinking that explore branding, <br />identity, and communication shaping how brands grow and stay relevant.
     </>
   ),
-  bgImage: '/assets/img/web-development/wd-services-bg.jpg'
+  bgImage: '/assets/img/web-development/wd-services-bg.jpg',
+  service:'branding'
 };
 
 const page = () => {
@@ -69,9 +72,8 @@ const page = () => {
         buttonText="Get Started with Us"
         arrowImage="/assests/img/technology-details/arrow.png"
         className="bg-black"
-        onButtonClick={() => router.push("/contact")}
+        onButtonClick={() => router.push("/contact-for-digital-requirements")}
       />
-
     </div>
   )
 }

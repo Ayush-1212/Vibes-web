@@ -17,7 +17,7 @@ const services = [
             "Influencer Marketing",
             "Event Marketing",
         ],
-        url: "/digital-marketing/campaign-management",
+        url: "/digital-marketing-services/campaign-management",
     },
     {
         title: "Performance Marketing",
@@ -27,7 +27,7 @@ const services = [
         hoverBgImage: "/assests/img/technology-details/tech-cards-bg.png",
         icon: "/assests/img/digital-m-details/growth.png",
         tags: ["Lead Generation", "Meta Ads", "Google Ads", "LinkedIn Ads"],
-        url: "/digital-marketing/performance-marketing",
+        url: "/digital-marketing-services/performance-marketing",
     },
     {
         title: "Social Media Management ",
@@ -37,7 +37,7 @@ const services = [
         hoverBgImage: "/assests/img/technology-details/tech-cards-bg.png",
         icon: "/assests/img/digital-m-details/social-media.png",
         tags: ["Content Creation & Planning", "B2B: LinkedIn Management", "B2C: LinkedIn Management"],
-        url: "/digital-marketing/social-media-management",
+        url: "/digital-marketing-services/social-media-management",
     },
     {
         title: "Search Engine Optimization",
@@ -47,7 +47,7 @@ const services = [
         hoverBgImage: "/assests/img/technology-details/tech-cards-bg.png",
         icon: "/assests/img/digital-m-details/seo.png",
         tags: ["On-Page SEO", "Off-Page SEO", "Technical SEO", "LLM", "Keyword Strategy"],
-        url: "/digital-marketing/search-engine-optimization",
+        url: "/digital-marketing-services/search-engine-optimization",
     },
 ];
 
@@ -157,7 +157,7 @@ border-[7px] border-[#ffffff]">
                         {service.description}
                     </p>
 
-                    <Button2 className="mt-5 p-[20px] bg-transparent text-[#204667] hover:text-[#F4BE00]">
+                    <Button2 className="mt-5 p-[20px]  cursor-pointer bg-transparent text-[#204667] hover:text-[#F4BE00]">
                         <Link href={service.url}>
                             <span>View More</span>
                         </Link>

@@ -30,7 +30,7 @@ export default function CaseStudiesCard({ data }: CaseStudiesCardProps) {
           className="bg-white mb-[70px] rounded-2xl p-1 ps-2 pb-3 shadow-[0_8px_30px_rgba(0,0,0,0.06)] w-full"
         >
           {/* Image */}
-          <div className=" case-study-card-common border-1 border-gray-400 relative w-full h-[450px] rounded-xl overflow-hidden group">
+          <div className=" case-study-card-common border-1 border-gray-400 relative w-full h-[390px] rounded-xl overflow-hidden group">
             <Image
               src={item.img}
               alt={item.title}
@@ -60,8 +60,13 @@ export default function CaseStudiesCard({ data }: CaseStudiesCardProps) {
             </div>
 
             {/* View More Link */}
+<<<<<<< HEAD
             <Link href={`/case-study/${item.slug}`}>
               <Button3 className="text-[#204667] cursor-pointer !p-1 flex items-center gap-2 hover:text-[#F4BE00]">
+=======
+            <Link href={`/case-studies/${item.slug}`}>
+              <Button3 className="text-[#204667] cursor-pointer flex items-center gap-2 hover:text-[#F4BE00]">
+>>>>>>> a8717815a11e286f667774e628433a55ccb9d90c
                 <span>{item.buttonText || "View More"}</span>
                 <ArrowUpIcon className="rotate-45" />
               </Button3>

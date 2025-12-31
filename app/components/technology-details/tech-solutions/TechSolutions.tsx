@@ -22,7 +22,7 @@ const services = [
             "Annual Maintenance (AMC)",
         ],
 
-        url: "/technology/web-development",
+        url: "/technology-services/web-development",
     },
 
     {
@@ -35,7 +35,7 @@ const services = [
 
         tags: ["Android App Development", "iOS App Development"],
 
-        url: "/technology/app-development"
+        url: "/technology-services/app-development"
     },
 
     {
@@ -54,7 +54,7 @@ const services = [
             "B2B E-commerce",
             "B2C E-commerce",
         ],
-        url: "/technology/ecomm-development",
+        url: "/technology-services/ecomm-development",
     },
 
     {
@@ -72,7 +72,7 @@ const services = [
             "CRM Development",
             "Website Enhancement",
         ],
-        url: "/technology/pmis-development",
+        url: "/technology-services/pmis-development",
     },
 ];
 
@@ -154,7 +154,7 @@ const TechSolutions = () => {
                                 >
                                     <p className="font-poppins font-medium text-[12px]  tracking-normal text-[#737373]">{service.description}</p>
 
-                                    <Button2 className="mt-5 p-[20px] hover:text-[#F4BE00] bg-transparent  text-[#204667] text-[16px]">
+                                    <Button2 className="mt-5 p-[20px] hover:text-[#F4BE00] bg-transparent  text-[#204667] text-[16px]  cursor-pointer">
                                         <Link href={service.url}><span>View More</span></Link>
                                         <ArrowUpIcon className="transform rotate-45" />
                                     </Button2>
