@@ -51,7 +51,7 @@ export default function SuccessStory({
               onClick={onButtonClick}
               className="mt-5 p-[20px] bg-[#fff] cursor-pointer"
             >
-              <span className="text-[#000]">{buttonText}</span>
+              <span className="text-[#000] cursor-pointer">{buttonText}</span>
               <ArrowUpIcon className="transform rotate-45 text-[#000]" />
             </Button2>
           </div>

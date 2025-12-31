@@ -155,7 +155,7 @@ const PmisDevelopment = () => {
         buttonText="Let’s Connect"
         arrowImage="/assests/img/technology-details/arrow.png"
         className="bg-black"
-        onButtonClick={() => router.push("/contact")}
+        onButtonClick={() => router.push("/contact-for-digital-requirements")}
       />
 
     </div>
