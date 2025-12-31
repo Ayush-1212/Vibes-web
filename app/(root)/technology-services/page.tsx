@@ -18,7 +18,7 @@ interface blogContent {
   Subtitle: React.ReactNode;
   bgImage?: string;
   highlighttitle: string;
-  service:string;
+  service: string;
 }
 const textcontent: blogContent = {
   title: 'Tech Ideas &',
@@ -29,7 +29,7 @@ const textcontent: blogContent = {
     </>
   ),
   bgImage: '/assets/img/web-development/wd-services-bg.jpg',
-  service:'technology'
+  service: 'technology'
 };
 
 const logos = [
