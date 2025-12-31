@@ -12,7 +12,7 @@ interface blogContent {
   Subtitle: React.ReactNode;
   bgImage?: string;
   highlighttitle: string,
-  service:string
+  service: string
 }
 const textcontent: blogContent = {
   title: 'Ideas, insights, and intelligent ',
@@ -23,7 +23,7 @@ const textcontent: blogContent = {
     </>
   ),
   bgImage: '/assets/img/web-development/wd-services-bg.jpg',
-  service:'digital'
+  service: 'digital'
 };
 
 const SocialMediaManagement = () => {
@@ -45,7 +45,7 @@ const SocialMediaManagement = () => {
         heading="Strategic Social Media "
         highlightText="Services"
         description=" End-to-end social media solutions focused on planning, storytelling, and performance crafted to align brand objectives with audience behaviour."
-        mainImage="/assests/img/performance-marketing/pm-overview-left-img.png"
+        mainImage="/assests/img/digital-m-details/social-media-left-img.png"
         bgImage="/assests/img/web-development/wd-services-bg.jpg"
         features={[
           {

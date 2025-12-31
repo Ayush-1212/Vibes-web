@@ -11,6 +11,8 @@ type ServiceItem = {
     url: string;
     highlighted?: boolean;
     icon?: string;
+    bgImage?: string;
+
 };
 
 const services: ServiceItem[] = [
@@ -26,6 +28,7 @@ const services: ServiceItem[] = [
         ],
         url: "/branding-services/corporate-branding",
         highlighted: true,
+        bgImage: "/assests/img/digital-m-details/dm-bg-1.jpeg"
     },
     {
         title: "Brand Upliftment",
@@ -37,6 +40,7 @@ const services: ServiceItem[] = [
             "Graphic Design",
         ],
         url: "/branding-services/brand-upliftment",
+        bgImage: "/assests/img/digital-m-details/dm-bg-2.jpeg"
     },
     {
         title: "Brand Communication & Strategy",
@@ -49,6 +53,7 @@ const services: ServiceItem[] = [
             "Brand Positioning",
         ],
         url: "/branding-services/brand-communication-and-strategy",
+        bgImage: "/assests/img/digital-m-details/dm-bg-3.jpeg"
     },
 ];
 const Brandingservices: ServiceItem[] = [

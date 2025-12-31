@@ -13,7 +13,7 @@ interface blogContent {
   Subtitle: React.ReactNode;
   bgImage?: string;
   highlighttitle: string,
-  service:string
+  service: string
 }
 const textcontent: blogContent = {
   title: 'Ideas, insights, and intelligent ',
@@ -24,7 +24,7 @@ const textcontent: blogContent = {
     </>
   ),
   bgImage: '/assets/img/web-development/wd-services-bg.jpg',
-  service:'digital'
+  service: 'digital'
 };
 
 const CampaignManagement = () => {
@@ -46,7 +46,7 @@ const CampaignManagement = () => {
         heading="Campaign Execution That "
         highlightText="Drives Engagement"
         description=" From audience discovery to on-ground activation, campaigns are designed, managed, and optimized to deliver visibility, relevance, and results across multiple touchpoints."
-        mainImage="/assests/img/performance-marketing/pm-overview-left-img.png"
+        mainImage="/assests/img/digital-m-details/compaign-left-img.png"
         bgImage="/assests/img/web-development/wd-services-bg.jpg"
         features={[
           {
