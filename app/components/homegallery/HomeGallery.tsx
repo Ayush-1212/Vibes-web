@@ -9,7 +9,7 @@ const HomeGallery = () => {
   return (
     <section className="home-gallery-wrapper section-gap">
 
-      <div className="container mx-auto mb-5">
+      <div className="container mx-auto mb-5 p-2 md:p-0">
         <div className="flex justify-center mb-5">
           <div className="
         px-6 py-2 

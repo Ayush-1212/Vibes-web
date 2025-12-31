@@ -48,7 +48,7 @@ const SectionWithSlider: FC<SectionProps> = ({
         {/* LEFT SIDE CONTENT */}
 
         <div
-          className="p-15 md:col-span-5 space-y-6
+          className="p-10 md:p-15 md:col-span-5 space-y-6
   max-h-[772px] overflow-y-auto pr-2"
         >
           <div className="space-y-2">

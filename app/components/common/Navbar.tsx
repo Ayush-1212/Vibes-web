@@ -25,7 +25,7 @@ const Navbar = () => {
       className={` fixed inset-x-0 z-100 h-22 transition-all duration-300
         ${scrolled ? "bg-black/90 backdrop-blur-sm" : "bg-[rgba(6,6,6,0.24)]"}
       `}>
-      <div className="h-full max-w-(--breakpoint-xl) mx-auto flex items-center justify-between mx-auto px-4">
+      <div className="h-full  flex items-center justify-between mx-auto px-4">
         <Logo />
 
         {/* Desktop Menu */}
