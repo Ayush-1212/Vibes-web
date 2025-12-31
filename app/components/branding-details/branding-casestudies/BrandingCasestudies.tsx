@@ -38,7 +38,7 @@ const BrandingCasestudies = () => {
 
                     </div>
 
-                    <Link href="/case-study">
+                    <Link href="/case-studies">
                         <Button2 className="mt-5 p-[20px] cursor-pointer">
                             <span>Explore Case Studies</span>
                             <ArrowUpIcon className="transform rotate-45" />

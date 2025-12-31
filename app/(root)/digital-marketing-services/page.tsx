@@ -194,7 +194,7 @@ export default function Page() {
         highlightTitle="Digital Work"
         description="A showcase of strategic digital campaigns, performance marketing, and brand-building initiatives that deliver measurable results across industries."
         slides={slides}
-        ctaText="View Our Digital Work"
+        ctaText="Talk to us today"
         bgImage="/assests/img/web-development/wd-services-bg.jpg"
       />
 
