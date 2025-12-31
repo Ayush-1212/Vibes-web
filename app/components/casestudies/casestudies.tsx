@@ -33,18 +33,16 @@ export default function CaseStudies() {
     return (
         <section className="casestudies-wrapper section-gap">
             <div className="container mx-auto max-w-screen-xl px-4 md:px-8">
-
                 <div className="flex justify-start mb-5">
                     <div className="px-6 py-2 rounded-full border border-[#F4BE00] inline-flex items-center gap-2">
                         <span className="w-2 h-2 rounded-full bg-[#F4BE00]"></span>
                         <span className="font-[Poppins] font-semibold text-[10px] leading-[1.23] uppercase text-[#F4BE00]">
                             CASE STUDIES
-                            
                         </span>
                     </div>
                 </div>
 
-                <div className="flex justify-between items-start">
+                <div className="flex flex-col md:flex-row justify-between items-start">
                     <div>
                         <h3 className="font-poppins font-medium text-[48px] leading-[123%]">
                             Vision to <span className=" z-9 relative w-fit highlight font-semibold">Verified Results</span>
