@@ -15,7 +15,7 @@ interface blogContent {
   Subtitle: React.ReactNode;
   bgImage?: string;
   highlighttitle: string,
-  service:string
+  service: string
 }
 const textcontent: blogContent = {
   title: 'Branding',
@@ -26,7 +26,7 @@ const textcontent: blogContent = {
     </>
   ),
   bgImage: '/assets/img/web-development/wd-services-bg.jpg',
-  service:'branding'
+  service: 'branding'
 };
 
 const page = () => {
