@@ -59,14 +59,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-      <div>
-        <StoreProvider>
-          <Navbar/>
-          {children}
-           <Toaster position="top-right" reverseOrder={false} />
-          <Footer/>
-          </StoreProvider>
-      </div>
+    <div>
+      <StoreProvider>
+        <Navbar />
+        {children}
+        <Toaster position="top-right" reverseOrder={false} />
+        <Footer />
+      </StoreProvider>
+    </div>
 
   );
 }

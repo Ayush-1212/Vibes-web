@@ -4,7 +4,7 @@ import { Facebook, Instagram, Twitter, Youtube, Linkedin } from "lucide-react";
 
 export default function FooterRightSection() {
     return (
-        <div className="text-white grid grid-cols-12 gap-y-8 ps-5  items-center">
+        <div className="text-white lg:grid grid-cols-12 gap-y-8 ps-5  items-center">
             <div className="col-span-4">
                 <ul className="space-y-3 text-[15px] font-light tracking-wide">
                     <li className="list-disc list-inside font-[500] text-[#7C7C7C] text-[16px] leading-[100%] tracking-[0] "><Link href="/about-us-together-for-tomorrow" className="hover:text-[#F4BE00] transition-colors">Who we are</Link></li>
