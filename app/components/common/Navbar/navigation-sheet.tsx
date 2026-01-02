@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import {
     Sheet,
+    SheetClose,
     SheetContent,
     SheetTitle,
     SheetTrigger,
@@ -25,9 +26,16 @@ export const NavigationSheet = () => {
                     {open ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
                 </Button>
             </SheetTrigger>
-            <SheetContent className="px-6 py-3 bg-black">
-                <Logo />
-                <NavMenu orientation="vertical" className="mt-6 [&>div]:h-full" />
+            <SheetContent className=" px-6 py-3 bg-black">
+                <div className="flex justify-between items-center">
+                    <Logo />
+                    <SheetClose asChild>
+                        <Button variant="ghost" size="icon">
+                            <X className="h-6 w-6" />
+                        </Button>
+                    </SheetClose>
+                </div>
+                <NavMenu onLinkClick={() => setOpen(false)} orientation="vertical" className="mt-6 [&>div]:h-full" />
             </SheetContent>
         </Sheet>
     );
